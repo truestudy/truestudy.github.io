@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Dalam Sig Terdiri Atas Data - QnA</title>
+    <meta name="description" content="Data Dalam Sig Terdiri Atas Data, , , , , , , 0, Tutorial SIG Part 2: Jenis Data dalam Sistem Informasi Geografis (SIG, indowhiz.blogspot.com, 893 x 659, jpeg, , 20, data-dalam-sig-terdiri-atas-data, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Data Dalam Sig Terdiri Atas Data - QnA" />
+    <meta property="og:description" content="Data Dalam Sig Terdiri Atas Data, , , , , , , 0, Tutorial SIG Part 2: Jenis Data dalam Sistem Informasi Geografis (SIG, indowhiz.blogspot.com, 893 x 659, jpeg, , 20, data-dalam-sig-terdiri-atas-data, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Data Dalam Sig Terdiri Atas Data - QnA" />
+    <meta name="twitter:description" content="Data Dalam Sig Terdiri Atas Data, , , , , , , 0, Tutorial SIG Part 2: Jenis Data dalam Sistem Informasi Geografis (SIG, indowhiz.blogspot.com, 893 x 659, jpeg, , 20, data-dalam-sig-terdiri-atas-data, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://truestudy.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://truestudy.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://truestudy.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://truestudy.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://truestudy.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://truestudy.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://truestudy.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://truestudy.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Data Dalam Sig Terdiri Atas Data</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">sandirizqi4545oyrt08</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Data+Dalam+Sig+Terdiri+Atas+Data" alt="Data Dalam Sig Terdiri Atas Data">
+                    </div>
+                    <p></p>
+                    <p>Data dalam SIG terdiri atas data.. </p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#data-dalam-sig-terdiri-atas-data">1.
+                                            Data dalam SIG terdiri atas data.. </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#data-yang-diolah-dalam-sig-terdiri-atas-data">2.
+                                            data yang diolah dalam sig terdiri atas data </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#data-yang-diolah-dalam-sig-terdiri-atas-data">3.
+                                            data yang diolah dalam SIG terdiri atas data</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#manipulasi-data-pada-proses-analisis-data-sig-berfungsi">4.
+                                            manipulasi data pada proses analisis data SIG berfungsi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-sig-modern-dan-sig-konvensional-adalaha-pengolahan-data-dan-analisisb-pengarsiran-datac-sumber-datad-konversi-datae-perolehan-data-lapangan">5.
+                                            perbedaan SIG modern dan SIG konvensional adalaha. pengolahan data dan analisisb. pengarsiran datac. sumber datad. konversi datae. perolehan data lapangan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#data-sig-pada-umumnya-bersumber-pada-data">6.
+                                            data sig pada umumnya bersumber pada data</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#basis-data-dalam-sig-dibedakan-atas-data-grafis-dan">7.
+                                            Basis data dalam sig dibedakan atas data grafis dan....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sig-tidak-dapat-dilepas-dari-basis-data-karena-sig-sendiri-memerlukan-data-yang-disimpan-di-dalam">8.
+                                            SIG tidak dapat dilepas dari basis data karena SIG sendiri memerlukan data yang disimpan di dalam</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#data-vektor-digunakan-untuk-menampilkan-informasi-pada-peta-dalam-sig-kelebihan-penggunaan-data-ini-dalam-sig-yaitu">9.
+                                            Data vektor digunakan untuk menampilkan informasi pada peta dalam SIG. Kelebihan penggunaan data ini dalam SIG yaitu ... *</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#yang-merupakan-sumber-data-sig-adalah">10.
+                                            yang  merupakan sumber data SIG adalah.  </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sig-melibatkan-beberapa-komponen-penting-seperti-dataperangkat-dan-operator-sistem-keunggulan-sig-dalam-aspek-data-adalah">11.
+                                            sig melibatkan beberapa komponen penting seperti data,perangkat, dan operator sistem. keunggulan sig dalam aspek data adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebelum-data-sig-diproses-dan-dianalisis-data-harus-di">12.
+                                            sebelum data SIG diproses dan dianalisis data harus di...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-data-geografi-yang-merupakan-masukan-data-dalam-sig">13.
+                                            contoh data geografi yang merupakan masukan data dalam SIG</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#data-sig-bersumber-pada-data">14.
+                                            Data SIG bersumber pada data</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#isi-data-sig-apa-saja">15.
+                                            Isi data SIG apa saja?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#data-terestrial-merupakan-salah-satu-sumber-data-sig-yang-di-peroleh-dari-pengukuran-lamgsung-contoh-data-terestrial-yang-di-gunakan-dalam-sig-yaitu">16.
+                                            Data terestrial merupakan salah satu sumber data sig yang di peroleh dari pengukuran lamgsung . Contoh data terestrial yang di gunakan dalam sig yaitu...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sig-terdiri-atas-beberapa-tahap-kerja-proses-yang-dilakukan-setelah-pengolahan-data-yaitu">17.
+                                            SIG terdiri atas beberapa tahap kerja.proses yang dilakukan setelah pengolahan data yaitu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tentang-data-atribut-dan-data-spasial-dalam-sig%e2%80%8b">18.
+                                            jelaskan tentang data atribut dan data spasial dalam SIG!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-data-atribut-dan-data-spasial-dalam-sig">19.
+                                            jelaskan data atribut  dan data spasial dalam sig</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sumber-data-dalam-sig">20.
+                                            Sumber data dalam SIG</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tentang-data-atribut-dan-data-spasial-dalam-sig%e2%80%8b">21.
+                                            jelaskan tentang data atribut dan data spasial dalam sig!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#data-teristis-dalam-sig">22.
+                                            Data teristis dalam sig</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#isi-data-suatu-lokasi-dalam-sig-merupakan-data">23.
+                                            isi data suatu lokasi dalam SIG merupakan data </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#data-vektor-digubakan-untuk-menampilkan-informasi-pada-peta-dalam-sig-kelebihan-penggunaan-data-ini-dalam-sig-yaitu">24.
+                                            Data vektor digubakan untuk menampilkan informasi pada peta dalam sig. Kelebihan penggunaan data ini dalam sig,  yaitu...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#data-yg-diolaj-dlm-sig-terdiri-atas-data">25.
+                                            Data yg diolaj dlm SiG terdiri atas data</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#macam-macam-data-yang-dikelola-sig">26.
+                                            macam macam data yang dikelola SIG</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-sig-digunakan-data-spasial-dan-data">27.
+                                            dalam sig digunakan data spasial dan data?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-bantu-jawab-ya-sig-digunakan-untuk-memperolleh-data-keruangan-terkini-untuk-kepentingan-analisis-keruangan-oleh-karena-itu-sig-terdiri-atas-beberapa-tahap-dalam-pengoperasiannya-dan-saling-t">28.
+                                            Tolong bantu jawab ya. SIG digunakan untuk memperolleh data keruangan terkini untuk kepentingan analisis keruangan. Oleh karena itu, SIG terdiri atas beberapa tahap dalam pengoperasiannya dan saling terintegrasi seperti updating data. Tujuan updating data dalam proses SIG adalah...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sumber-data-dan-basis-data-dalam-sig">29.
+                                            sumber data dan basis data dalam SIG</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#data-sig-dapat-dikategorikan-menjadi-data-spseial-dan-data-deskriptif-yang-dimaksud-dengan-data-spesial-adalah%e2%80%8b">30.
+                                            data sig dapat dikategorikan menjadi data spseial dan data deskriptif yang dimaksud dengan data spesial adalah​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="data-dalam-sig-terdiri-atas-data">
+                            1. Data dalam SIG terdiri atas data.. </h2><br />
+                        <p>Sumber data SIG terdiri atas<strong> data spasial dan data atribut.</strong></p><p>Berikut adalah pembahasannya.</p>Pembahasan<p><strong>Data spasial</strong> adalah data yang berisi tentang lokasi suatu objek dalam peta berdasarkan posisi geografis. Data spasial merupakan data yang berupa gambar yang berhubungan dengan lokasi, posisi, bentuk dan hunungan antar unsurnya. </p><br /><p><strong>Data atribut</strong> adalah suatu data yang merepresentasikan aspek deskriptif pada fenomena yang dimodelkan dan tidak tidak berkaitan dengan posisi geografi objek tertentu. Contoh: data sensus ekonomi dan penduduk, jumlah pengangguran dan angka kelahiran.</p>Pelajari lebih lanjut<p>1. Urutan sub sistem SIG https://brainly.co.id/tugas/13545386</p>-----------------------------------------------<p>Semoga membantu.</p><br /><br /><p>Detil tambahan</p><br /><p>Kelas:  12 SMA</p><p>Mapel:  Geografi</p><p>Kategori: 12.8.3 Bab 3 - Pemanfaatan Peta, Pengindraan Jauh dan SIG</p><p>Kata kunci: SIG, data sig, data spasial dan data atribut.</p><br />
+                                            <h2 class="ez-toc-section" id="data-yang-diolah-dalam-sig-terdiri-atas-data">
+                            2. data yang diolah dalam sig terdiri atas data </h2><br />
+                        1. data analisis lebar<br />2. penjumlahan aritmatika<br />3. garis bidang<br />
+                                            <h2 class="ez-toc-section" id="data-yang-diolah-dalam-sig-terdiri-atas-data">
+                            3. data yang diolah dalam SIG terdiri atas data</h2><br />
+                        <p><strong>SOAL
+</strong></p><p>Hallo kawan - kawan, pada kesempatan yang sangat baik ini izinkan saya sedikit membantu kawan - kawan untuk menjawab pertanyaan yang kawan - kawan ajukan yaitu dengan pertanyaan  </p><p><strong>Data yang diolah dalam SIG terdiri atas data
+</strong></p><p>mengenai mata pelajaran Geografi kategori siswa Sekolah Menengah Pertama (SMP) untuk lebih jelasnya mari kita sama - sama menyimak jawaban singkat yang saya tuliskan berikut ini yaa ....
+</p><p><strong>
+</strong></p><p><strong>JAWABAN
+</strong></p><p><strong>*Pendahuluan
+</strong></p><p>SIG atau dengan kepanjangan Sistem Informasi Geografi, merupakan suatu sistem informasi yang memberikn beberapa informasi mengenai data geografi, SIG biasabya terdiri dari data atribut dan data spesial, SIG sangan penting bagi pemerintahan, kaerna SIG akan menunjukkan data yang menyangkut tentang kondisi geografis suatu wilayah/
+</p><p><strong>*Pembahasan
+</strong></p><p>Pada dasarnya SIG dibedakan menjadi dua yaitu data manual yang mengolah menggunakan suatu catatan manual dengan buku dan lain sebagainya, kemudain ada juag SIG digital yaitu penyajian maupun pengolahhannya dengan menggunakan komputer yaitu dengan program - program tertentu yang akan mempermudah dalam memanipulasi data SIG.
+</p><p><strong>*Kesimpulan
+</strong></p><p>SIG mengolah mengenai beberapa data yaitu diantaranya adalah data geografis, kondisi alama, iklim, suhu, kepadatan penduduk, dan kemajuan suatu wilayah.
+</p><p>Sekian dari jawaban saya, semoga bermanfaat dan dapat membantu. Jangan lupa untuk terus semangat belajar yaa !. Nah untuk pembahasan soal - soal mengenai mata pelajaran Geografi kategori siswa Sekolah Menengah Pertama (SMP), temen – temen juga bisa  cek  soal dan jawaban yang lain yaa, tentunya telah terverivikasi dari situs brainly, yaitu dengan mengunjungi beberapa link yang telah saya tuliskan di bawah ini ya..
+</p><p>
+</p><p>
+</p><p><strong>PELAJARI LEBIH LANJUT
+</strong></p><p>Cek soal 1 “ <strong>SIG yang sering digunakan untuk jaringan listrik, telepon, atau pipa saluran air minum</strong> ” dan jawabannya dari soal 1 dapat di lihat melalui link : https://brainly.co.id/tugas/9908563
+</p><p>Cek soal 2 “ <strong>SIG mampu menganalisis data dari berbagai sudut pandang. Karakteristik sig tersebut merupakan bukti bahwa</strong> ” dan jawabannya dari soal 2 dapat di lihat melalui link : https://brainly.co.id/tugas/9315976
+</p><p>Cek soal 3 “ <strong>SIG dan PJ merupakan salah satu analisis penelitian geografi. sebutkan beberapa bentuk analis penelitian geografi lainnya dan jelaskan!</strong> ” dan jawabannya dari soal 3 dapat di lihat melalui link : https://brainly.co.id/tugas/7968892
+</p><p>
+</p><p>
+</p><p>Iyappp.. jangan lupa untuk terus semangat belajar ya kawan – kawan...!
+</p><p>
+</p><p>*Good Luck !*
+</p><p>
+</p><p>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+</p><p>
+</p><p><strong>Detail Jawaban
+</strong></p><p>Kelas  : 8
+</p><p>Mata pelajaran  : Geografi
+</p><p>Kategori  : Bab 4 - Mobilitas Sosial
+</p><p>Kata kunci  : SIG, Geografis, Kondisi, Wilayah
+</p><p>Kode  : 8.8.2004</p><br />
+                                            <h2 class="ez-toc-section" id="manipulasi-data-pada-proses-analisis-data-sig-berfungsi">
+                            4. manipulasi data pada proses analisis data SIG berfungsi</h2><br />
+                        Pembenahan peta sebelumnya yang sudah diolah dengan sistem informasi geografis<br /><br />Semoga membantu!!!<br />
+                                            <h2 class="ez-toc-section" id="perbedaan-sig-modern-dan-sig-konvensional-adalaha-pengolahan-data-dan-analisisb-pengarsiran-datac-sumber-datad-konversi-datae-perolehan-data-lapangan">
+                            5. perbedaan SIG modern dan SIG konvensional adalaha. pengolahan data dan analisisb. pengarsiran datac. sumber datad. konversi datae. perolehan data lapangan</h2><br />
+                        Perbedaan SIG modern dan SIG konvensional adalah<br />a. pengolahan data dan analisis<br />
+                                            <h2 class="ez-toc-section" id="data-sig-pada-umumnya-bersumber-pada-data">
+                            6. data sig pada umumnya bersumber pada data</h2><br />
+                        Data SIG (Sistem Informasi Geografis) bersumber pada 3 data, yaitu:<br /><br />1.)  Data Lapangan<br />2.) Data Peta<br />3.)  Data Citra Penginderaan Jauh<br />
+                                            <h2 class="ez-toc-section" id="basis-data-dalam-sig-dibedakan-atas-data-grafis-dan">
+                            7. Basis data dalam sig dibedakan atas data grafis dan....</h2><br />
+                        Data numerik  ....................<br />
+                                            <h2 class="ez-toc-section" id="sig-tidak-dapat-dilepas-dari-basis-data-karena-sig-sendiri-memerlukan-data-yang-disimpan-di-dalam">
+                            8. SIG tidak dapat dilepas dari basis data karena SIG sendiri memerlukan data yang disimpan di dalam</h2><br />
+                        dalam hardware yaitu di perangkat komputer dan tersimpan dalam hardiskBasis data spasial (geodatabase)<br /><br />Semoga membantu!!!<br />
+                                            <h2 class="ez-toc-section" id="data-vektor-digunakan-untuk-menampilkan-informasi-pada-peta-dalam-sig-kelebihan-penggunaan-data-ini-dalam-sig-yaitu">
+                            9. Data vektor digunakan untuk menampilkan informasi pada peta dalam SIG. Kelebihan penggunaan data ini dalam SIG yaitu ... *</h2><br />
+                        <p><strong>Jawaban:</strong></p><strong>Keunggulan penggunaan data vektor dalam Sistem Informasi Geografis yakni sebagai berikut:</strong><strong>1.</strong><strong> </strong><strong>Mempunyai</strong><strong> resolusi spasial yang tinggi</strong><strong>2.</strong><strong> </strong><strong>Ruang</strong><strong> atau tempat penyimpanan kecil</strong><strong>3.</strong><strong> </strong><strong>Memiliki</strong><strong> batas-batas yang tegas dan jelas sehingga sangat baik untuk pembuatan peta-peta </strong><strong>administratif.</strong><p></p><strong>SEMOGA </strong><strong>MEMBANTU</strong><br />
+                                            <h2 class="ez-toc-section" id="yang-merupakan-sumber-data-sig-adalah">
+                            10. yang  merupakan sumber data SIG adalah.  </h2><br />
+                        imformasi atau internet<br />
+                                            <h2 class="ez-toc-section" id="sig-melibatkan-beberapa-komponen-penting-seperti-dataperangkat-dan-operator-sistem-keunggulan-sig-dalam-aspek-data-adalah">
+                            11. sig melibatkan beberapa komponen penting seperti data,perangkat, dan operator sistem. keunggulan sig dalam aspek data adalah</h2><br />
+                        1. Data dapat dikelola dengan format yg jelas<br />2. Biaya lebih murah dibandingkan dg survey lapangan<br />3. Data spasial dan non spasial dapat dikelola bersama<br />4. Data untuk perancangan secara cepat dan tepat<br />5. Analisis data dan perubahan dapat dilakukan secara cepat<br />
+                                            <h2 class="ez-toc-section" id="sebelum-data-sig-diproses-dan-dianalisis-data-harus-di">
+                            12. sebelum data SIG diproses dan dianalisis data harus di...</h2><br />
+                        di periksa terlebih dahulu karna takut ada kesalahan dalam SIG tersebutDicheck terlebih dahulu lebih baik<br />
+                                            <h2 class="ez-toc-section" id="contoh-data-geografi-yang-merupakan-masukan-data-dalam-sig">
+                            13. contoh data geografi yang merupakan masukan data dalam SIG</h2><br />
+                        Data masukan dalam SIG  disimpan dalam komputer sebagai data dasar / data base. data base digunakan untuk proses pengolahan lebih lanjut. seluruh data yang akan dimasukan kedalam SIG harus dalam format digital, baik bentuk numerik maupun alfanumerik.<br />data base meliputi posisinya pada permukaan bumi serta atribut dari kenampakantersebut yang akan tersimpan dalam bentuk titik (dot), garis (vektor), area (poligon), dan piksel (grid).<br /><br />#Semoga membantu :-)<br />
+                                            <h2 class="ez-toc-section" id="data-sig-bersumber-pada-data">
+                            14. Data SIG bersumber pada data</h2><br />
+                        1. Data Lapangan<br />2. Data Peta<br />3. Data Citra Penginderaan Jauh<br />
+                                            <h2 class="ez-toc-section" id="isi-data-sig-apa-saja">
+                            15. Isi data SIG apa saja?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>SELALU WASPADA</p><p>INGAT MAKAN</p><p>GA JELAS</p><br />
+                                            <h2 class="ez-toc-section" id="data-terestrial-merupakan-salah-satu-sumber-data-sig-yang-di-peroleh-dari-pengukuran-lamgsung-contoh-data-terestrial-yang-di-gunakan-dalam-sig-yaitu">
+                            16. Data terestrial merupakan salah satu sumber data sig yang di peroleh dari pengukuran lamgsung . Contoh data terestrial yang di gunakan dalam sig yaitu...</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Data terestial merupakan salah satu sumber data SIG yang diperoleh dari pengukuran langsung. Contoh data terestial yang digunakan dalam SIG adalah<strong> data curah hujan, suhu udara, pH tanah, kedalaman air tanah, kemiringan lereng, dan jumlah penduduk</strong>. Data terestial adalah data yang diperoleh dari pengukuran langsung di lapangan.</p><p></p><p><strong>Penjelasan:</strong></p><p>Data yang digunakan dalam SIG dapat diperoleh dari beberapa sumber. Sumber data SIG diantaranya adalah :</p>Data penginderaan jauh, yaitu data citra satelit atau citra fotoData terestial, yaitu data hasil pengukuran langsung di lapanganData peta, yaitu data dalam bentuk petaData statistik, yaitu data hasil catatan statistik seperti data sensus dari BPS.<p></p><p><strong>Pelajari lebih lanjut</strong> tentang materi tahap editing data SIG, pada https://brainly.co.id/tugas/24161989</p><p><strong></strong></p><p><strong>#BelajarBersamaBrainly</strong></p><br />
+                                            <h2 class="ez-toc-section" id="sig-terdiri-atas-beberapa-tahap-kerja-proses-yang-dilakukan-setelah-pengolahan-data-yaitu">
+                            17. SIG terdiri atas beberapa tahap kerja.proses yang dilakukan setelah pengolahan data yaitu</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>tahap kerja SIG</p><p>1.pemasukan data.</p><p>2.manajemen pengolaan data</p><p>3.manipulasi dan analisis data </p><p>4.hasil/keluaran</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tentang-data-atribut-dan-data-spasial-dalam-sig%e2%80%8b">
+                            18. jelaskan tentang data atribut dan data spasial dalam SIG!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Data atribut merupakan data yang memberi deskripsi atau penjelasan tentang suatu fenomena yang ada di permukaan bumi atau penjelasan setiap objek yang ada di permukaan bumi. Data ini merepresentasikannya dalam bentuk kata-kata, angka, atau tabel.</p><p></p><p>Data spasial merupakan data grafis yang menunjukkan kenampakan lokasi geografis atau tempat-tempat di muka bumi. Data ini umumnya merupakan peta yang menginterpretasikan dan memproyeksi seluruh fenomena objek di bumi, baik fenomena alami maupun buatan manusia</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-data-atribut-dan-data-spasial-dalam-sig">
+                            19. jelaskan data atribut  dan data spasial dalam sig</h2><br />
+                        data spasial adalah data dalam bentuk gambar terdiri dari data raster (pixel) dan data vektor (koordinat), sementara data atribut adalah data tambahan yg menjelaskan arti penting dari data spasial, seperti nama tempat, luas wilayah, jumlah pddk, dll.<br />
+                                            <h2 class="ez-toc-section" id="sumber-data-dalam-sig">
+                            20. Sumber data dalam SIG</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Data lapangan, Data ini diperoleh langsung dari pengukuran lapangan secara langsung, seperti misalnya pH tanah, salinitas air, curah hujan, jenis tanah, dan sebagainya.</p><p></p><p>2. Data peta, Informasi yang lebih terekam pada peta kertas atau film, dikonversikan ke dalam bentuk digital. Misalnya, peta geologi, peta tanah dan sebagainya. Apabila data sudah terekam dalam bentuk peta, tidak lagi diperlukan data lapangan, kecuali untuk mengecek kebenarannya.</p><p></p><p>3. Data citra pengideraan jauh, Citra penginderaan jauh yang berupa foto udara atau radar dapat diinterpretasi terlebih dahulu sebelum dikonversi ke dalam bentuk digital. Sementara itu, citra yang diperoleh dari satelit yang sudah dalam bentuk digital dapat langsung digunakan setelah diadakan koreksi seperlunya.</p><p></p><p><strong>Maaf kalo salah</strong><strong> </strong></p><p><strong>Semoga membantu</strong><strong>:</strong><strong>)</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tentang-data-atribut-dan-data-spasial-dalam-sig%e2%80%8b">
+                            21. jelaskan tentang data atribut dan data spasial dalam sig!​</h2><br />
+                        Data spasial adalah data dalam bentuk gambar terdiri dari data raster (pixel) dan data vektor (koordinat), sementara Data atribut adalah data tambahan yg menjelaskan arti penting dari data spasial, seperti nama tempat, luas wilayah, jumlah pddk, dll.<p></p><br />
+                                            <h2 class="ez-toc-section" id="data-teristis-dalam-sig">
+                            22. Data teristis dalam sig</h2><br />
+                        <p>Hai kawan-kawan Brainly!
+</p><p>Dalam pengolahan data di sistem SIG di kenal beberapa jenis data salah satunya data teritris yaitu sering disebut dengan data lapangan, yuk simak penjelasannya!
+</p>Pembahasan
+<p>Sistem Informasi Geografis atau yang disingkat dengan SIG adalah seperangkat alat yang digunakan untuk mengumpulkan, memasukkan, menyimpan atau memanipulasi, analisis data spasial menjadi sebuah informasi-informasi yang berkenaan dengan bumi. Dan dalam proses SIG dikenal dengan ada 3 subsistem yaitu masukan data (input data), manipulasi dan analisis data, menyajikan data (output data).
+</p><p>Dalam proses input data terdapat empat jenis data dasar yang digunakan antara lain:
+</p>Data pengindraan jauh (remote sensing) adalah data berupa citra dan foto / non foto.
+<strong>Data teristris (data lapangan), yaitu data yang diperoleh langsung melalui hasil obbservasi di lapangan seperti data sifat fisik tanah, keadaan cuaca dan sebagainya.
+</strong>Data peta dasar (map), yaitu data yang dibuat pada bidang datar yang telah dikonversikan dalam bentuk digital, contoh peta geologi, peta topografi dan sebagainya.
+Data  statistik  (statistic) atau dikenal dengan data skunder yaitu data hasil statistik dalam bentuk tabel, laporan, survei lapangan, dan sensus penduduk yang diperoleh dari lembagai seperti BPS
+<p>Semoga jawabannya bermanfaat ya!
+</p><p>
+</p>Pelajari lebih lanjut  <p>1.	Materi tentang data teristris https://brainly.co.id/tugas/13770861
+</p><p><strong>----------------------------------------  </strong></p>Detail Jawaban  <p><strong>Kelas: </strong>12
+</p><p><strong>Mapel: </strong>Geografi  </p><p><strong>Bab:</strong> Pemanfaatan Peta, Pengindraan Jauh dan SIG
+</p><p><strong>Kode: </strong>12.8.3
+</p><p><strong>Kata Kunci: </strong>SIG, Data, Teristris
+</p><br />
+                                            <h2 class="ez-toc-section" id="isi-data-suatu-lokasi-dalam-sig-merupakan-data">
+                            23. isi data suatu lokasi dalam SIG merupakan data </h2><br />
+                        Sistem Informasi Geografis (bahasa Inggris: Geographic Information System disingkat GIS) adalah sistem informasi khusus yang mengelola data yang memiliki informasi spasial (bereferensi keruangan). Atau dalam arti yang lebih sempit, adalah sistem komputer yang memiliki kemampuan untuk membangun, menyimpan, mengelola dan menampilkan informasi berefrensi geografis, misalnya data yang diidentifikasi menurut lokasinya, dalam sebuah database. Para praktisi juga memasukkan orang yang membangun dan mengoperasikannya dan data sebagai bagian dari sistem ini. <br />
+                                            <h2 class="ez-toc-section" id="data-vektor-digubakan-untuk-menampilkan-informasi-pada-peta-dalam-sig-kelebihan-penggunaan-data-ini-dalam-sig-yaitu">
+                            24. Data vektor digubakan untuk menampilkan informasi pada peta dalam sig. Kelebihan penggunaan data ini dalam sig,  yaitu...</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Data vektor digunakan untuk menampilkan informasi pada peta dalam SIG. Kelebihan penggunaan data vektor dalam SIG adalah :</p>Memiliki struktur data yang lebih rumitLebih efisien dalam analisisTransformasi proyeksi lebih mudahSebagai sarana representasi yang baikLebih akurat, presisi dan telitiAtribut data berhubungan langsung dengan database.<p></p><p><strong>Penjelasan:</strong></p><p>Data yang digunakan dalam sistem informasi geografis terdiri dari data vektor dan data raster. Data vektor adalah data yang terdiri dari pola keruangan berbentuk titik, garis dan poligon. Sedangkan data raster adalah data yang berbentuk grid atau pixel (contohnya citra penginderaan jauh).</p><p><strong></strong></p><p><strong>Pelajari lebih lanjut</strong> tentang materi kelebihan data raster dan data vektor, pada https://brainly.co.id/tugas/12705175</p><p><strong></strong></p><p><strong>#BelajarBersamaBrainly</strong></p><br />
+                                            <h2 class="ez-toc-section" id="data-yg-diolaj-dlm-sig-terdiri-atas-data">
+                            25. Data yg diolaj dlm SiG terdiri atas data</h2><br />
+                        terdiri atas data spasial dan data atribut. data spasial juga terdiri dari dua, yaitu data raster dan data vektor.<br />
+                                            <h2 class="ez-toc-section" id="macam-macam-data-yang-dikelola-sig">
+                            26. macam macam data yang dikelola SIG</h2><br />
+                        Data spasial,  atribut<br />
+                                            <h2 class="ez-toc-section" id="dalam-sig-digunakan-data-spasial-dan-data">
+                            27. dalam sig digunakan data spasial dan data?</h2><br />
+                        data atribut <br /><br />*semoga membantu* :)<br />
+                                            <h2 class="ez-toc-section" id="tolong-bantu-jawab-ya-sig-digunakan-untuk-memperolleh-data-keruangan-terkini-untuk-kepentingan-analisis-keruangan-oleh-karena-itu-sig-terdiri-atas-beberapa-tahap-dalam-pengoperasiannya-dan-saling-t">
+                            28. Tolong bantu jawab ya. SIG digunakan untuk memperolleh data keruangan terkini untuk kepentingan analisis keruangan. Oleh karena itu, SIG terdiri atas beberapa tahap dalam pengoperasiannya dan saling terintegrasi seperti updating data. Tujuan updating data dalam proses SIG adalah...</h2><br />
+                        KELAS : 12<br />MAPEL : GEOGRAFI <br />MATERI : SISTEM INFORMASI GEOGRAFI <br /><br />JAWABAN : <br />tujuan updating data dalam tahapan sig yaitu <br />→ untuk memperbaharui data yg telah lama dan menyesuaikan dg kondisi data terbaru sehingga salah satu keunggulan dalam sig yaitu mudah dalam melakukan pembaharuan data. <br />→ tujuan lain dari updating data yaitu untuk memberikan informasi baru kepada pengguna <br /><br />contoh dari updating data dalam sig seperti pembaharuan dalam pembuatan peta penggunaan lahan, sebab peta penggunaan lahan bersifat dinamis yg akan selalu mengalami perubahan <br /><br />semoga manfaat <br />
+                                            <h2 class="ez-toc-section" id="sumber-data-dan-basis-data-dalam-sig">
+                            29. sumber data dan basis data dalam SIG</h2><br />
+                        
+Sistem
+ Informasi Geografi atau SIG merupakan salah satu sistem geospasial 
+berbasis komputer yang saat ini sangat penting perannya dalam kehidupan.
+ Kehidupan anda pasti tidak akan lepas dari SIG contohnya adalah dalam 
+smartphone pasti terdapat fitur GPS atau map. SIG memiliki basis data 
+tertentu sehingga ia dapat berjalan dengan baik. Basis data SIG adalah 
+kumpulan data yang saling berkaitan yang diperkukan dalam SIG baik itu 
+data spasial maupun non spasial. Basis data didefiniskan sebagai suatu 
+kumpulan file yang memiliki kaitan antara file satu dengan file lain 
+hingga membentuk satu bangunan data yang hasil akhirnya akan 
+menginformasikan sesuatu seperti wilayah, organisasi, perusahaan dan 
+instansi dalam batasan tertentu.
+
+Beberapa istilah yang digunakan dalam pengelolaan basis data adalah:
+
+1. Entitas adalah orang, tempat, kejadian atua konsep yang informasinya direkam.
+
+2. 
+Atribut (elemen data) adalah sebutan untuk mewakili suatu entitas 
+sebagai contoh atribut seorang siswa adalah nama, alamat dan umur.
+
+3. 
+Nilai data adalah informasi yang disimpan pada tiap data elemen sebagai 
+contoh atribut nama karyawan menunjukkan tempat informasi nama karyawan 
+disimpan sedangkan nilai data misalnya Beji, merupakan isi data nama 
+karyawan.
+
+4. 
+Record adalah kumpulan elemen yang saling berkaitan menginformasikan 
+tentang suatu entitas secara lengkap. Satu record mewakili satu data 
+tentang seseorang misalnya nomor, nama dan alamat karyawan.
+
+5. File adalah kumpulan record-record sejenis yang memiliki panjagn elemen sama, atribut sama, namun berbeda nilai datanya.
+
+6. Struktur data merupakan bentuk hubungan antara berbagi record di dalam file komputer. 
+
+<br />
+
+
+
+<br />
+
+Basis 
+data dapat diklasifikasikan menjadi tipe, dimensi dan struktur. Tipe 
+basis data ada dua macam yaitu basis data spasial dan non spasial. Basis
+ data spasial adalah data yang dapat diamati di lapangan yang berkaitan 
+dengan data di permukaan maupun di dalam bumi. Data ini dapat diukur 
+atau ditentukan oleh besaran lintang dan bujur oleh sistem koordinat 
+lain. Data spasial ada 3 macam yaitu titik, garis dan poligon yang 
+diorganisasikan dalam bentuk lapis-lapis (layer) peta. Basis data non 
+spasial adalah data yang melengkapi keterangan data spasial keterangan 
+kenampakan/feature data baik statistik, numerik maupun deskriptif dengan
+ tampilan tabular diagram maupun tekstual.
+
+<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="data-sig-dapat-dikategorikan-menjadi-data-spseial-dan-data-deskriptif-yang-dimaksud-dengan-data-spesial-adalah%e2%80%8b">
+                            30. data sig dapat dikategorikan menjadi data spseial dan data deskriptif yang dimaksud dengan data spesial adalah​</h2><br />
+                        <p>Data spasial adalah data yang memiliki referensi ruang kebumian (georeference) di mana berbagai data atribut terletak dalam berbagai unit spasial. Sekarang ini data spasial menjadi media penting untuk perencanaan pembangunan dan pengelolaan sumber daya alam yang berkelanjutan pada cakupan wilayah continental, nasional, regional maupun lokal.</p><p></p><p><strong>Jawaban:</strong></p><p>Data spasial adalah data yang memiliki referensi ruang kebumian di mana berbagai data atribut terletak dalam berbagai unit spasial. </p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/w-mNHyo2wHM?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>geografi</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/sebutkan-klasifikasi-kota-berdasarkan-pertumbuhan-kota-dan-sosio-kulturalnya.html">Sebutkan Klasifikasi Kota Berdasarkan Pertumbuhan Kota Dan Sosio Kulturalnya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/kostum-tarian-sajojo.html">Kostum Tarian Sajojo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/agno3-diuraikan-menjadi.html">Agno3 Diuraikan Menjadi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/1-2-5-jam-120-detik-menit.html">1 2 5 Jam 120 Detik Menit</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/pantun-bencana-alam.html">Pantun Bencana Alam</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/basuh-lantai-di-lingga.html">Basuh Lantai Di Lingga</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/sebutkan-teknik-pembuatan-keramik.html">Sebutkan Teknik Pembuatan Keramik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/bagaimana-klasifikasi-sayuran-daun-dengan-kualitas-bagus.html">Bagaimana Klasifikasi Sayuran Daun Dengan Kualitas Bagus</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/nama-senyawa-sno2-yang-paling-tepat-adalah.html">Nama Senyawa Sno2 Yang Paling Tepat Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/butsir-adalah-alat-untuk.html">Butsir Adalah Alat Untuk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/cos-58.html">Cos 58</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/contoh-minority-consent.html">Contoh Minority Consent</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/pidato-bahasa-indramayu.html">Pidato Bahasa Indramayu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/bhiksuka.html">Bhiksuka</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/dongeng-sunda-gagak-hayang-kapuji.html">Dongeng Sunda Gagak Hayang Kapuji</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/pitik-tulak.html">Pitik Tulak</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/64-pangkat-2-3.html">64 Pangkat 2 3</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/tentukan-keliling-segitiga-berikut-23-cm.html">Tentukan Keliling Segitiga Berikut 23 Cm</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/ngendika.html">Ngendika</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/apa-yang-dimaksud-properti-tari.html">Apa Yang Dimaksud Properti Tari</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://truestudy.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://truestudy.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

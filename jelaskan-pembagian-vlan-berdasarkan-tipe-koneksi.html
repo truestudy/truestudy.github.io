@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jelaskan Pembagian Vlan Berdasarkan Tipe Koneksi - QnA</title>
+    <meta name="description" content="Jelaskan Pembagian Vlan Berdasarkan Tipe Koneksi, Pahami ID VLAN dan Tipe VLAN dulu, Sebelum Lanjut ke Konfigurasi nya., , , , Ardian Fawaid, 2020-07-19T21:42:37.000000Z, 20, Jelaskan Pembagian Vlan Berdasarkan Tipe Koneksi - Alister Caleb, alistercaleb.blogspot.com, 1267 x 1800, jpeg, , 20, jelaskan-pembagian-vlan-berdasarkan-tipe-koneksi, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jelaskan Pembagian Vlan Berdasarkan Tipe Koneksi - QnA" />
+    <meta property="og:description" content="Jelaskan Pembagian Vlan Berdasarkan Tipe Koneksi, Pahami ID VLAN dan Tipe VLAN dulu, Sebelum Lanjut ke Konfigurasi nya., , , , Ardian Fawaid, 2020-07-19T21:42:37.000000Z, 20, Jelaskan Pembagian Vlan Berdasarkan Tipe Koneksi - Alister Caleb, alistercaleb.blogspot.com, 1267 x 1800, jpeg, , 20, jelaskan-pembagian-vlan-berdasarkan-tipe-koneksi, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jelaskan Pembagian Vlan Berdasarkan Tipe Koneksi - QnA" />
+    <meta name="twitter:description" content="Jelaskan Pembagian Vlan Berdasarkan Tipe Koneksi, Pahami ID VLAN dan Tipe VLAN dulu, Sebelum Lanjut ke Konfigurasi nya., , , , Ardian Fawaid, 2020-07-19T21:42:37.000000Z, 20, Jelaskan Pembagian Vlan Berdasarkan Tipe Koneksi - Alister Caleb, alistercaleb.blogspot.com, 1267 x 1800, jpeg, , 20, jelaskan-pembagian-vlan-berdasarkan-tipe-koneksi, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://truestudy.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://truestudy.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://truestudy.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://truestudy.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://truestudy.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://truestudy.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://truestudy.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://truestudy.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Jelaskan Pembagian Vlan Berdasarkan Tipe Koneksi</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">fajargunawan715</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Jelaskan+Pembagian+Vlan+Berdasarkan+Tipe+Koneksi" alt="Jelaskan Pembagian Vlan Berdasarkan Tipe Koneksi">
+                    </div>
+                    <p></p>
+                    <p>jelas pembagian VLAN berdasarkan tipe dan koneksi​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelas-pembagian-vlan-berdasarkan-tipe-dan-koneksi%e2%80%8b">1.
+                                            jelas pembagian VLAN berdasarkan tipe dan koneksi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-cara-mengecek-koneksi-pada-vlan%e2%80%8b">2.
+                                            jelaskan cara mengecek koneksi pada vlan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-antara-vlan-dengan-tipe-penomeran-normal-dan-vlan-bertipe-extended-jelaskanbantu-jawab-kakpliss%e2%80%8b">3.
+                                            Apa perbedaan antara VLAN dengan tipe penomeran normal dan VLAN bertipe extended? Jelaskan!bantu jawab kak,pliss​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tipe-koneksi-ke-internet-dengan-kabel5buah">4.
+                                            jelaskan tipe koneksi ke internet dengan kabel(5buah)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-percobaan-pengetesan-koneksi-setelah-konfigurasi-vlan">5.
+                                            Sebutkan percobaan pengetesan koneksi setelah konfigurasi VLAN</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-karakteristrik-dari-setiap-tipe-dari-vlan-berdasarkan-membership-tolong-bantu-dong-kak%e2%80%8b">6.
+                                            sebutkan karakteristrik dari setiap tipe dari vlan berdasarkan membership tolong bantu dong kak​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jelaskan-dan-sebutkan-kelebihan-dari-koneksi-internet-menggunakan-wifi-dan-adsl2-tuliskan-dan-jelaskan-berbagi-tipe-koneksi-ke-internet">7.
+                                            1) Jelaskan dan sebutkan kelebihan dari koneksi internet menggunakan wifi dan ADSL
+2) Tuliskan dan jelaskan berbagi tipe koneksi ke internet</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-sebutkan-tipe-tipe-koneksi-internet-dengan-menggunakan-koneksi-broandband-%e2%80%8b">8.
+                                            1. Sebutkan tipe - tipe koneksi internet dengan menggunakan koneksi Broandband !​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-apa-yang-dimaksud-dengan-vlan-jelaskan2-jelaskan-3-tipe-vlan-yang-diketahui-pada-saat-melakukan-konfigurasi3-buatlah-gambar-atau-desain-dari-topologi-vlan-tentukan-juga-ip-dan-pembagian-vlan">9.
+                                            1. apa yang dimaksud dengan VLAN? jelaskan!2. jelaskan 3 tipe VLAN yang diketahui pada saat melakukan konfigurasi!3. buatlah gambar atau desain dari topologi VLAN! tentukan juga IP dan pembagian VLAN nya! (minimal 4PC)4. jelaskan cara mengkonfigurasi desain atau gambar topologi yang telah dibuat secara rinci!5. jelaskan bagaimana cara melakukan pengujian dari konfigurasi yang telah dilakukan!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tipe-koneksi-internet-yang-cocok-d-gunakan-di-rumah">10.
+                                            Jelaskan tipe koneksi internet yang cocok d gunakan di rumah.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-beberapa-tipe-koneksi-kejaringan">11.
+                                            Tuliskan beberapa tipe koneksi kejaringan </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tipe-tipe-sambungan-terbagi-menjadi-3-yaitu-a-access-trunk-hybridb-access-mode-vlanc-data-trunk-defaultd-data-default-vlane-default-hybrid-access%e2%80%8b">12.
+                                            Tipe - tipe sambungan terbagi menjadi 3, yaitu ....a.access, trunk, hybridb.access, mode, vlanc.data, trunk, defaultd.data, default, vlane.default, hybrid, access​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-berbagai-tipe-koneksi-yang-dapat-digunakan-untuk-menghubungkan-sebuah-komputer-ke-internet">13.
+                                            Jelaskan berbagai tipe koneksi yang dapat digunakan untuk menghubungkan sebuah komputer ke internet</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-berbagai-tipe-koneksi-yang-dapat-digunakan-untuk-menghubungkan-sebuah-komputer-ke-internet%e2%80%8b">14.
+                                            Jelaskan berbagai tipe koneksi yang dapat digunakan untuk menghubungkan sebuah komputer ke internet​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-membedakan-tipe-tipe-vlan">15.
+                                            Apa yang membedakan tipe tipe VLAN</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-hal-yang-perlu-dilakukan-untuk-mengkoneksikan-komputer-clien-dalam-jaringan-dengan-vlan-berbida-cisco-catalyst-%e2%80%8b">16.
+                                            jelaskan hal yang perlu dilakukan untuk mengkoneksikan komputer clien dalam jaringan  dengan VLAN berbida  cisco catalyst.....​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tentang-keanggotaan-vlan-berdasarkan-mac-anddres">17.
+                                            Jelaskan tentang keanggotaan VLAN berdasarkan MAC anddres</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tipe-tipe-vlan-voice">18.
+                                            tipe tipe vlan voice</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-kegunaan-koneksi-kabel-utp-tipe-crossover-dan-straight">19.
+                                            jelaskan perbedaan kegunaan koneksi kabel utp tipe crossover dan straight?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-tipe-tipe-koneksi-komputer-ke-internet">20.
+                                            sebutkan dan jelaskan tipe tipe koneksi komputer ke internet</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-beberapa-tipe-koneksi-yang-kamu-ketahui">21.
+                                            sebutkan beberapa tipe koneksi yang kamu ketahui</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-tipe-koneksi-utama-di-internet">22.
+                                            apakah tipe koneksi utama di internet?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tentang-keanggotaan-vlan-berdasarkan-protokol-yang-digunakan%e2%80%8b">23.
+                                            jelaskan tentang keanggotaan vlan berdasarkan protokol yang digunakan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-beberapa-tipe-koneksi-kejaringan">24.
+                                            Tuliskan beberapa tipe koneksi kejaringan </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-tipe-tipe-koneksi-internet">25.
+                                            sebutkan tipe-tipe koneksi internet</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebut-dan-jelaskan-tipe-sambungan-vlan">26.
+                                            Sebut dan jelaskan tipe sambungan VLAN</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tipe-koneksi-internet-melalui-isp">27.
+                                            tipe koneksi internet melalui ISP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#segmentasi-vlan-adalah-a-kegiatan-membagi-suatu-vlan-yang-mempunyai-banyak-anggota-kedalam-beberapa-vlan-yang-berbeda-b-kegiatan-membagi-dan-menyatukan-suatu-vlan-yang-mempunyai-banyak-anggota-k">28.
+                                            Segmentasi VLAN adalah... A. Kegiatan membagi suatu VLAN yang mempunyai banyak anggota kedalam beberapa VLAN yang berbeda .B. Kegiatan membagi dan menyatukan suatu VLAN yang mempunyai banyak anggota kedalam beberapa VLAN yang berbeda .C. Kegiatan menyatukan suatu VLAN yang mempunyai banyak anggota kedalam beberapa VLAN yang berbeda .D. Kegiatan membagi suatu VLAN yang mempunyai banyak anggota kedalam beberapa VLAN yang sama Kegiatan menyatukan suatu VLAN yang mempunyai banyak anggota kedalam beberapa VLAN yang sama</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penggolongan-jaringan-berdasarkan-metode-koneksinya-terbagi-2-jelaskan">29.
+                                            Penggolongan jaringan berdasarkan metode koneksinya terbagi 2 jelaskan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-tipe-jaringan-komputer-berdasarkan-sistem-koneksi-atau-cara-pemprosessan-data">30.
+                                            sebutkan dan jelaskan tipe jaringan komputer berdasarkan sistem koneksi atau cara pemprosessan data ?</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="jelas-pembagian-vlan-berdasarkan-tipe-dan-koneksi%e2%80%8b">
+                            1. jelas pembagian VLAN berdasarkan tipe dan koneksi​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Trunk Link, yaitu koneksi yang menghubungkan antar Switch di dalam sebuah jaringan komputer</p><p>Access Link, yaitu koneksi yang menghubungkan ke PC (data user)</p><p>Hybrid Link, yaitu koneksi gabungan dari Trunk dan Access</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-cara-mengecek-koneksi-pada-vlan%e2%80%8b">
+                            2. jelaskan cara mengecek koneksi pada vlan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.gunakan 4 Switch 2950-24.</p><p>Gunakan 16 PC Generic.</p><p>Hubungkan 4 PC dengan 1 Switch yang masing-masing menggunakan kabel Copper Straight-Through.</p><p>Hubungkan ke-4 Switch dengan kabel Copper Cross-Over.</p><p>2.Sekarang, mulai setting masing-masing IP PC. Klik PC =&gt; Desktop =&gt; IP Configuration.</p><p>3.Sebelum melakukan setting switch, kita tentukan dahulu IP mana yang akan masuk ke VLAN 10 dan VLAN 20. Perhatikan juga port yang digunakan.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-antara-vlan-dengan-tipe-penomeran-normal-dan-vlan-bertipe-extended-jelaskanbantu-jawab-kakpliss%e2%80%8b">
+                            3. Apa perbedaan antara VLAN dengan tipe penomeran normal dan VLAN bertipe extended? Jelaskan!bantu jawab kak,pliss​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Normal Range VLAN</p><p>- Digunakan untuk jaringan skala kecil dan menengah.</p><p>- memiliki banyak fitur</p><p>- Konfigurasi disimpan di dalam file database VLAN,</p><p>Extended Range VLANs</p><p>- Memungkinkan para service provider untuk memperluas infrastrukturnya kepada konsumen yang lebih banyak</p><p>- Memiliki fitur yang lebih sedikit dibandingakn VLAN normal range.</p><p>Disimpan dalam NVRAM (file running configuration).</p><p><strong></strong></p><p><strong></strong></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tipe-koneksi-ke-internet-dengan-kabel5buah">
+                            4. jelaskan tipe koneksi ke internet dengan kabel(5buah)</h2><br />
+                        <p><strong>Jawaban: </strong>Adanya hanya 4 buah</p><p><strong>Penjelasan: </strong>1. dial up = kecepatan akses internet dial up melalui jalur pstn.</p><p>2. ADSL = suatu teknologi modern yang bekerja pada frekuensi antara 34 kHz sampai 1104 kHz.</p><p>3. LAN = jaringan komputer yang jaringannya hanya mencakup wilayah kecil.</p><p>4. TV kabel = jaringan untuk koneksi ke internet dengan kecepatan maksimum 27 Mbps downstream dan 2,5 Mbps upstream.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-percobaan-pengetesan-koneksi-setelah-konfigurasi-vlan">
+                            5. Sebutkan percobaan pengetesan koneksi setelah konfigurasi VLAN</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>setelah konfigurasi VLAN pengetesan hanya akan berhasil dalam satu VLAN jika mengetes ke VLAN lain akan gagal</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-karakteristrik-dari-setiap-tipe-dari-vlan-berdasarkan-membership-tolong-bantu-dong-kak%e2%80%8b">
+                            6. sebutkan karakteristrik dari setiap tipe dari vlan berdasarkan membership tolong bantu dong kak​</h2><br />
+                        <p></p><p></p><p><strong>Penjelasan:</strong></p><p></p><p></p><p>Berdasarkan perbedaan pemberian membership VLAN terbagi menjadi lima jenis, yaitu :</p><p></p><p>1. Port based : VLAN jenis nini akan melakukan konfigurasi pada port dan memasukkannya</p><p>pada kelompok VLAN sendiri sehingga apabila port tersebut akan dihubungkan dengan beberapa VLAN maka port tersebut harus berubah fungsi menjadi port trunk (VTP).</p><p></p><p></p><p>2. MAC based : Pada jenis VLAN yang kedua yaitu MAC based yaitu sebuah VLAN dengan sistem Membership atau pengelompokan pada jenis ini didasarkan pada MAC Address. Tiap switch memiliki tabel MAC Address tiap komputer beserta kelompok VLAN tempat komputer itu berada.</p><p></p><p>3. Protocol based : Karena VLAN bekerja pada layer 2 (OSI) maka penggunaan protokol (IP dan IP Extended) sebagai dasar VLAN dapat dilakukan.</p><p></p><p></p><p>4. IP Subnet Address based : VLAN selain bekerja pada layer 2, VLAN dapat bekerja pada layer 3, sehingga alamat subnet dapat digunakan sebagai dasar VLAN.</p><p></p><p>5. Authentication based : Device atau komputer bisa diletakkan secara otomatis di dalam jaringan VLAN yang didasarkan pada autentifikasi user atau komputer menggunakan protokol 802.1x.</p><p></p><p></p><p>SEMOGA MEMBANTU^^</p><br />
+                                            <h2 class="ez-toc-section" id="1-jelaskan-dan-sebutkan-kelebihan-dari-koneksi-internet-menggunakan-wifi-dan-adsl2-tuliskan-dan-jelaskan-berbagi-tipe-koneksi-ke-internet">
+                            7. 1) Jelaskan dan sebutkan kelebihan dari koneksi internet menggunakan wifi dan ADSL
+2) Tuliskan dan jelaskan berbagi tipe koneksi ke internet</h2><br />
+                        1. Kelebihan adsl = stabil, cepat<br />Kelebiham wifi = cepat, mudah dan efisien<br /><br />2. Adsl, dialup, wireless, wired<br />
+                                            <h2 class="ez-toc-section" id="1-sebutkan-tipe-tipe-koneksi-internet-dengan-menggunakan-koneksi-broandband-%e2%80%8b">
+                            8. 1. Sebutkan tipe - tipe koneksi internet dengan menggunakan koneksi Broandband !​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>WiFi</p><p>kuota </p><p>sinyal </p><p>koneksi bikin kesel</p><p>sinyal bikin kesel</p><br />
+                                            <h2 class="ez-toc-section" id="1-apa-yang-dimaksud-dengan-vlan-jelaskan2-jelaskan-3-tipe-vlan-yang-diketahui-pada-saat-melakukan-konfigurasi3-buatlah-gambar-atau-desain-dari-topologi-vlan-tentukan-juga-ip-dan-pembagian-vlan">
+                            9. 1. apa yang dimaksud dengan VLAN? jelaskan!2. jelaskan 3 tipe VLAN yang diketahui pada saat melakukan konfigurasi!3. buatlah gambar atau desain dari topologi VLAN! tentukan juga IP dan pembagian VLAN nya! (minimal 4PC)4. jelaskan cara mengkonfigurasi desain atau gambar topologi yang telah dibuat secara rinci!5. jelaskan bagaimana cara melakukan pengujian dari konfigurasi yang telah dilakukan!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Sebuah Virtual LAN adalah sembarang domain siaran yang dipartisi dan diisolasi dalam jaringan komputer pada lapisan tautan data. LAN adalah singkatan untuk jaringan area lokal dan dalam konteks ini virtual mengacu pada objek fisik yang dibuat dan diubah oleh logika tambahan.</p><p></p><p>2. - Static vlan: Merupakan cara utk membuat vlan dgn konfigurasi manual dan tingkat keamanan yg baik. Pd port switch dikonfigurasi secara manual. Vlan yg dibuat akan disimpan kebasis bersama dgn nomor dan nama vlan.</p><p>- Dynamic vlan: Mode ini digunakan secara luas dijaringan skala besar. Keanggotaan port ynamic vlan dibuat dgn menggunakan server khusus yg disebut dgn vlan memberahip policy server.</p><p>- Broadcast domain: Suatu area atau wilayah yg memungkinkan utk paket broadcast dikirimkan. Apabila dlm jaringan lan, maka broadcast akan dikirim kesemua piranti yg terhubung dgn switch.</p><p></p><p>Semoga membantu.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tipe-koneksi-internet-yang-cocok-d-gunakan-di-rumah">
+                            10. Jelaskan tipe koneksi internet yang cocok d gunakan di rumah.</h2><br />
+                        <p>H+ kalau tidak 4G</p><p></p><p>maap kalo salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-beberapa-tipe-koneksi-kejaringan">
+                            11. Tuliskan beberapa tipe koneksi kejaringan </h2><br />
+                        - Dial-Up<br />- Leased Line<br />- Wireless<br />- LAN<br />- Broadband<br />- ADSL<br />- VSAT<br />- Fiber Optik<br /><br />Semoga membantu...<br />Terima Kasih.. :)<br /><br />
+                                            <h2 class="ez-toc-section" id="tipe-tipe-sambungan-terbagi-menjadi-3-yaitu-a-access-trunk-hybridb-access-mode-vlanc-data-trunk-defaultd-data-default-vlane-default-hybrid-access%e2%80%8b">
+                            12. Tipe - tipe sambungan terbagi menjadi 3, yaitu ....a.access, trunk, hybridb.access, mode, vlanc.data, trunk, defaultd.data, default, vlane.default, hybrid, access​</h2><br />
+                        <p></p><p><strong>Penjelasan:</strong></p><p>default, hybrid, access</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-berbagai-tipe-koneksi-yang-dapat-digunakan-untuk-menghubungkan-sebuah-komputer-ke-internet">
+                            13. Jelaskan berbagai tipe koneksi yang dapat digunakan untuk menghubungkan sebuah komputer ke internet</h2><br />
+                        <p><strong>Jawaban:</strong></p>Dial-up(kecepatan akses internet dial up mela)ADSL(Kecepatan akses internet ADSL)LAN(Kecepatan akses internet LAN)TV kabel(kecepatan akses internet)<p><strong>Penjelasan:</strong></p><p>Semoga membantu:)</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-berbagai-tipe-koneksi-yang-dapat-digunakan-untuk-menghubungkan-sebuah-komputer-ke-internet%e2%80%8b">
+                            14. Jelaskan berbagai tipe koneksi yang dapat digunakan untuk menghubungkan sebuah komputer ke internet​</h2><br />
+                        <p></p><p><strong>Jawaban</strong><strong>:</strong></p><p>1. Dial-Up (Kecepatan Akses Internet-Dial Up mela </p><p>2. ADSL (Kecepatan Akses Internet-ADSL) </p><p>3. LAN (Kecepatan Akses Internet-LAN)</p><p>4. TV Kabel (Kecepatan Akses Internet)</p><p></p><p><strong>Penjelasan:</strong></p><p>Semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-membedakan-tipe-tipe-vlan">
+                            15. Apa yang membedakan tipe tipe VLAN</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jaringan Virtual Local Area Network (VLAN) adalah suatu model jaringan yang tidak terbatas pada lokasi fisik seperti LAN. VLAN merupakan sekelompok perangkat pada satu LAN atau lebih yang dikonfigurasi menggunakan perangkat lunak administrasi sehingga dapat berkomunikasi seperti halnya perangkat tersebut terhubung ke jalur yang sama, sedangkan sebenarnya perangkat tersebut berada pada sejumlah segmen LAN yang berbeda. Hal ini mengakibatkan suatu network dapat dikonfigurasikan secara virtual tanpa harus mengacu pada lokasi fisik peralatan. berikut ini merupakan tipe-tipe Virtual Local Area Network (VLAN). </p><p></p><p>1. Default VLAN</p><p>Default VLAN merupakan VLAN yang sudah ada ketika switch belum dikonfigurasi. Ketika pertama kali switch dinyalakan maka semua port yang ada di switch menjadi anggota default VLAN. Default VLAN dari Switch adalah VLAN 1 dimana VLAN tersebut tidak dapat diubah namanya ataupun dihapus.</p><p></p><p>2. Data VLAN</p><p>Data VLAN adalah VLAN yang dikonfigurasi hanya untuk membawa data-data yang digunakan oleh user yang sering kali juga disebut VLAN Pengguna atau User VLAN. Data VLAN dikonfigurasi hanya untuk user dan tidak memiliki kemampuan untuk mengirim Voice-based traffic.</p><p></p><p>3. Native VLAN</p><p>Native VLAN merupakan VLAN yang muncul ketika kita membuat port Trunking. Port Trunking merupakan port yang digunakan sebagai link atau penghubung antara switch dengan switch atau switch dengan router. Native VLAN berfungsi untuk tagged-traffic dan untagged-traffic. Native VLAN di gunakan untuk port trunking 802.1q. Port trunking 802.1q menempatkan untagged-traffic pada Native VLAN.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-hal-yang-perlu-dilakukan-untuk-mengkoneksikan-komputer-clien-dalam-jaringan-dengan-vlan-berbida-cisco-catalyst-%e2%80%8b">
+                            16. jelaskan hal yang perlu dilakukan untuk mengkoneksikan komputer clien dalam jaringan  dengan VLAN berbida  cisco catalyst.....​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Virtual LAN atau disingkat VLAN merupakan fitur yang dibuat dengan menggunakan jaringan pihak ketiga. Dengan VLan ini kita dapat mengkonfigurasikan beberapa perangkat pada satu LAN atau lebih agar dapat saling berkomunikasi seperti halnya bila perangkat tersebut terhubung langsung pada jalur yang sama, padahal sebenarnya perangkat tersebut berada dalam segmen jaringan LAN yang berbeda.</p><p>Saat ini sudah banyak produk Router Mikrotik yang memiliki tambahan komponen switch chipset. Detail mengenai switch-chip dapat dilihat disini. Sepert halnya pada switch manageable yang beredar saat ini, switch-chip di Routerboard juga bisa mengimplementasikan atau mampu melakukan forwarding paket dengan melakukan VLan. Lalu, bagaimana mengkonfigurasikannya? Nah, artikel kali ini kita akan mencoba melakukan setting VLan dengan menggunakan fitur switch-chip pada routerboard Mikrotik.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tentang-keanggotaan-vlan-berdasarkan-mac-anddres">
+                            17. Jelaskan tentang keanggotaan VLAN berdasarkan MAC anddres</h2><br />
+                        keanggotaan suatu VLAN didasarkan pada MAC address dari setiap workstation atau komputer yang dimiliki oleh user. switch mendeteksi semua MAC address yang dimiliki oleh setiap virtual LAN.<br />
+                                            <h2 class="ez-toc-section" id="tipe-tipe-vlan-voice">
+                            18. tipe tipe vlan voice</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Default VLAN</p><p>2. Data VLAN</p><p>3. native VLAN</p><p>4.Management VLAN</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-kegunaan-koneksi-kabel-utp-tipe-crossover-dan-straight">
+                            19. jelaskan perbedaan kegunaan koneksi kabel utp tipe crossover dan straight?</h2><br />
+                        <strong>KABEL CROSSOVER</strong><br /><strong>Pasangan A                  Pasangan B<br /></strong>Putih Orange 
+<strong>               Putih Hijau</strong><br />
+Orange 
+                      Hijau<br />
+Putih Hijau 
+
+                  Putih Orange<br />Biru 
+
+                            Biru  <br />Putih Biru 
+
+                    Putih Biru<br />hijau 
+
+                            Orange<br />Putih Coklat 
+
+                Putih Coklat<br />Coklat
+
+  
+
+                       Coklat  <br /><br /><strong>KABEL STRAIGHT<br />Pasangan A            Pasangan B<br /></strong><br />
+
+Putih Orange<strong>             Putih Orange</strong>
+
+<br />Orange 
+
+                   Orange<br />Putih Hijau 
+
+               Putih Hijau<br />Biru 
+
+                          Biru<br />Putih Biru 
+
+                 Putih Biru <br />hijau                         Hijau<br />Putih Coklat 
+
+            Putih Coklat<br />Coklat
+
+  
+
+                  Coklat    <br />kabel utp straight digunakan untuk koneksi antar perangkat yang berbeda jenis, <br />sedangkan kabel utp cross digunakan untuk koneksi perangkat yang sejenis<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-tipe-tipe-koneksi-komputer-ke-internet">
+                            20. sebutkan dan jelaskan tipe tipe koneksi komputer ke internet</h2><br />
+                        1. dial up = kecepatan akses internet dial up melalui jalur pstn.<br />2. ADSL = suatu teknologi modern yang bekerja pada frekuensi antara 34 kHz sampai 1104 kHz.<br />3. LAN = jaringan komputer yang jaringannya hanya mencakup wilayah kecil.<br />4. TV kabel = jaringan untuk koneksi ke internet dengan kecepatan maksimum 27 Mbps downstream dan 2,5 Mbps upstream.<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-beberapa-tipe-koneksi-yang-kamu-ketahui">
+                            21. sebutkan beberapa tipe koneksi yang kamu ketahui</h2><br />
+                        1. Dial-up<br />2. ADSL<br />3. LAN<br />4. Tv kabel<br />5. Gprs<br />6. 3G<br />7. Wifi<br />8. Wireless Broadband<br />
+                                            <h2 class="ez-toc-section" id="apakah-tipe-koneksi-utama-di-internet">
+                            22. apakah tipe koneksi utama di internet?</h2><br />
+                        1.koneksi dial up<br />2.              ADSL <br />3.             Leased line<br />4.             Satelit VSAT<br />5.             Handphone<br />6.             wifi/hotspot<br />7.             cable modem<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tentang-keanggotaan-vlan-berdasarkan-protokol-yang-digunakan%e2%80%8b">
+                            23. jelaskan tentang keanggotaan vlan berdasarkan protokol yang digunakan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>keanggotaan vlan</p><p>Agustus 27, 2018</p><p>KEANGGOTAAAN VLAN</p><p>Static VLAN</p><p>Static VLAN merupakan tipe VLAN yang paling umum dan paling secure. Setiap anggota dari suatu VLAN ditentukan berdasarkan nomor port switch. Keanggotaan akan tetap selamanya seperti itu hingga kita menentukan lain. Biasanya dengan memindahkan kabel network ke port yang lain. Kadangkala static VLAN disebut sebagai port based VLAN.</p><p></p><p>Pada static VLAN, proses konfigurasi relatif cukup mudah. Sebagai contoh, port 1 - 10 untuk VLAN 1 dan port 2 -7 untuk VLAN 2.</p><p></p><p>Dynamic VLAN</p><p>Pada dynamic VLAN, keanggotaan akun ditentukan secara otomatis menggunakan software yang diinstallpada server pusat, yang disebut VLAN management policy server (VMPS). Contoh softwarenya adalah CiscoWorks 2000. Dengan menggunakan VMPS, kita dapat menentukan anggota VLAN berdasarkan MAC address, protokol dan aplikasi untuk membentuk dynamic VLAN.</p><p></p><p>Pada VMPS akan dilakukan mapping VLAN dan MAC address. Contoh tabel yang dimaksud dapat dilihat pada tabel berikut.</p><p></p><p>mapping vlan ke mac address</p><p>Mapping VLAN ke MAC Address</p><p>Berikut ini pembagian VLAN berdasarkan sumber lain yang pernah di dapatkan.</p><p></p><p>Port based</p><p>Keanggotaan ditentukan berdasarkan nomor port switch. Proses konfigurasi cukup mudah, namun perpindahan anggota memerlukan perpindahan nomor port switch juga.</p><p></p><p>MAC based</p><p>Keanggotaan ditentukan berdasarkan MAC address. Setiap network card memiliki MAC address, sehingga jika port diubah-ubah tidak akan mengganggu keanggotaan yang sudah ada.</p><p></p><p>Protocol based</p><p>Penentuan anggota VLAN berdasarkan protokol.</p><p></p><p>IP subnet address based</p><p>Keanggotaan ditentukan berdasarkan subnetwork (alokasi IP address)</p><p></p><p>Authentication based</p><p>Keanggotaan VLAN didasarkan pada autentifikasi user atau komputer menggunakan protokol 802.1x</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-beberapa-tipe-koneksi-kejaringan">
+                            24. Tuliskan beberapa tipe koneksi kejaringan </h2><br />
+                        Koneksi Dial Up<br />koneksi dengan jaringan wireless<br />koneksi dengan jaringan leased line<br />koneksi jaringan lokal (LAN)<br />koneksi Broadband<br />koneksi ADSL<br />koneksi satelite VSAT<br />koneksi T1 dan T3 line<br />koneksi fiber optic<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-tipe-tipe-koneksi-internet">
+                            25. sebutkan tipe-tipe koneksi internet</h2><br />
+                        spedy myrepublick indihome<br />
+                                            <h2 class="ez-toc-section" id="sebut-dan-jelaskan-tipe-sambungan-vlan">
+                            26. Sebut dan jelaskan tipe sambungan VLAN</h2><br />
+                        1.Trunk Link<br />2. Access Link<br />3. Hibrid Link (Gabungan Trunk dengan Access<br />
+                                            <h2 class="ez-toc-section" id="tipe-koneksi-internet-melalui-isp">
+                            27. tipe koneksi internet melalui ISP</h2><br />
+                        <strong>Circuit Data Switching</strong><br /><strong>- Proses penyambungan internet dengan mode dial-up mellalui no telepon</strong><br /><br /><strong>Packet Data Switching</strong><br /><strong>- Proses penyambungan internet dengan mode nirkabel melalui APN</strong><br />
+                                            <h2 class="ez-toc-section" id="segmentasi-vlan-adalah-a-kegiatan-membagi-suatu-vlan-yang-mempunyai-banyak-anggota-kedalam-beberapa-vlan-yang-berbeda-b-kegiatan-membagi-dan-menyatukan-suatu-vlan-yang-mempunyai-banyak-anggota-k">
+                            28. Segmentasi VLAN adalah... A. Kegiatan membagi suatu VLAN yang mempunyai banyak anggota kedalam beberapa VLAN yang berbeda .B. Kegiatan membagi dan menyatukan suatu VLAN yang mempunyai banyak anggota kedalam beberapa VLAN yang berbeda .C. Kegiatan menyatukan suatu VLAN yang mempunyai banyak anggota kedalam beberapa VLAN yang berbeda .D. Kegiatan membagi suatu VLAN yang mempunyai banyak anggota kedalam beberapa VLAN yang sama Kegiatan menyatukan suatu VLAN yang mempunyai banyak anggota kedalam beberapa VLAN yang sama</h2><br />
+                        <p><strong>Jawaban:A.</strong><strong> </strong>Kegiatan membagi suatu VLAN yang mempunyai banyak anggota kedalam beberapa VLAN yang berbeda<strong> </strong></p><p></p><p>Maaf Kalau Salah Jawabanya</p><p></p><p><strong>Jawaban:</strong></p><p>Segmentasi VLAN adalah...</p><p>jawab : D</p><p><strong>Penjelasan:</strong></p><p>karena   VLAN (Virtual LAN) adalah model jaringan yang secara logis membagi jaringan menjadi beberapa VLAN yang berbeda.</p><br />
+                                            <h2 class="ez-toc-section" id="penggolongan-jaringan-berdasarkan-metode-koneksinya-terbagi-2-jelaskan">
+                            29. Penggolongan jaringan berdasarkan metode koneksinya terbagi 2 jelaskan</h2><br />
+                        Penggolongan Jaringan Berdasarkan Metode Koneksinya<br /><br />Berdasarkan motode koneksinya, jaringan komputer dibagi menjadi:<br /><br />a.      Jaringan berkabel, yaitu jaringan yang menggunakan kabel untuk menghubungkan anggota jaringan. Ada  beberapa macam kabel yang biasa digunakan dalam jaringan, yaitu kabel koaksial (coaxial), twisted pair yang meliputi kabel UTP (Unshielded Twisted Pair) dan kabel STP (Shielded Twisted Pair), serta serat optic (FO=fiber optic). <br />b.      Jaringan nirkabel, yaitu jaringan yang menggunakan gelombang radio untuk koneksi antar anggota jaringan. Salah satu teknologi yang digunakan dalam wireless network ini adalah teknologi WIFI (wireless fidelity). <br /><br />1. jaringan berkabel (wired line network)<br />jaringan komputer yang memakai media kabel dalam menghubungkan komputer satu dengan komputer lainnya.<br /><br />2. jaringan nirkabel (wireless network)<br />jaringan komputer yang tidak memakai media kabel dalam menghubungkan komputer satu dengan komputer lainnya (contohnya dengan media gelombang radio)<br /><br /># semoga membantu<br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-tipe-jaringan-komputer-berdasarkan-sistem-koneksi-atau-cara-pemprosessan-data">
+                            30. sebutkan dan jelaskan tipe jaringan komputer berdasarkan sistem koneksi atau cara pemprosessan data ?</h2><br />
+                        LAN,WAN,MAN<br /><br />SEMOGA MEMBANTU <br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/6_giEv20En0?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/sebutkan-pembeda-ragam-tangga-nada-pentatonis.html">Sebutkan Pembeda Ragam Tangga Nada Pentatonis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/how-did-roro-jonggrang-refuse-bandung-bondowoso-s-proposal.html">How Did Roro Jonggrang Refuse Bandung Bondowoso s Proposal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/bahasa-ingrisnya-dari.html">Bahasa Ingrisnya Dari</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/mulih-krama-alus.html">Mulih Krama Alus</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/uub-adalah.html">Uub Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/bahasa-inggris-kolam-ikan.html">Bahasa Inggris Kolam Ikan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/pinter-aksara-jawa.html">Pinter Aksara Jawa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/peta-konsep-klasifikasi-5-kingdom.html">Peta Konsep Klasifikasi 5 Kingdom</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/pernyataan-yang-tidak-sesuai-dengan-teks-diatas-adalah.html">Pernyataan Yang Tidak Sesuai Dengan Teks Diatas Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/pola-lantai-tari-melinting.html">Pola Lantai Tari Melinting</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/04-55-dalam-bahasa-inggris.html">04 55 Dalam Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/2-3-8-11.html">2 3 8 11</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/grafik-fungsi-y-2-sin-x.html">Grafik Fungsi Y 2 Sin X</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/buku-kertagama-dikarang-oleh.html">Buku Kertagama Dikarang Oleh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/rumus-sumbu-simetri-fungsi-kuadrat.html">Rumus Sumbu Simetri Fungsi Kuadrat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/jawaban-lks-ips-kelas-8-semester-2.html">Jawaban Lks Ips Kelas 8 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/sebutkan-5-sifat-terpuji-umar-bin-khattab.html">Sebutkan 5 Sifat Terpuji Umar Bin Khattab</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/jawaban-kumaha-damang.html">Jawaban Kumaha Damang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/gambar-faring-bahasa-indonesia.html">Gambar Faring Bahasa Indonesia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/tegese-luhur.html">Tegese Luhur</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://truestudy.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://truestudy.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sandi Atbash - QnA</title>
+    <meta name="description" content="Sandi Atbash, KEAMANAN KOMUNIKASI MENGGUNAKAN ALGORITMA VIGENERE CHIPER, , , , nanzila lubis, 2018-07-18T15:04:09.000000Z, 20, ATBASH CIPHER | by Aman Gondaliya | Medium, medium.com, 1152 x 1152, gif, , 20, sandi-atbash, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sandi Atbash - QnA" />
+    <meta property="og:description" content="Sandi Atbash, KEAMANAN KOMUNIKASI MENGGUNAKAN ALGORITMA VIGENERE CHIPER, , , , nanzila lubis, 2018-07-18T15:04:09.000000Z, 20, ATBASH CIPHER | by Aman Gondaliya | Medium, medium.com, 1152 x 1152, gif, , 20, sandi-atbash, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sandi Atbash - QnA" />
+    <meta name="twitter:description" content="Sandi Atbash, KEAMANAN KOMUNIKASI MENGGUNAKAN ALGORITMA VIGENERE CHIPER, , , , nanzila lubis, 2018-07-18T15:04:09.000000Z, 20, ATBASH CIPHER | by Aman Gondaliya | Medium, medium.com, 1152 x 1152, gif, , 20, sandi-atbash, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://truestudy.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://truestudy.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://truestudy.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://truestudy.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://truestudy.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://truestudy.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://truestudy.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://truestudy.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Sandi Atbash</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">satrialee127</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Sandi+Atbash" alt="Sandi Atbash">
+                    </div>
+                    <p></p>
+                    <p>Sandi OUWYXYZWZ dikunci oleh HKLMEDBLB setelah itu diubah dalam sandi atbash​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sandi-ouwyxyzwz-dikunci-oleh-hklmedblb-setelah-itu-diubah-dalam-sandi-atbash%e2%80%8b">1.
+                                            Sandi OUWYXYZWZ dikunci oleh HKLMEDBLB setelah itu diubah dalam sandi atbash​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sandi-izgxzukzw-dikunci-oleh-abcbabcaa-setelah-menemukan-hasilnya-ubah-ke-sandi-plugboard-kemudian-ubah-lagi-ke-sandi-atbash%e2%80%8b">2.
+                                            sandi IZGXZUKZW dikunci oleh ABCBABCAA. Setelah menemukan hasilnya, ubah ke sandi plugboard kemudian ubah lagi ke sandi atbash​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sandi-zhdezik-dikunci-oleh-bcdecde-kemudian-ubah-menjadi-sandi-atbash-masukkan-sandi-yang-didapat-dalam-huruf-kapital">3.
+                                            Sandi zhdezik dikunci oleh bcdecde kemudian ubah menjadi sandi atbash masukkan sandi yang didapat dalam huruf kapital</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sandi-morse-bisa-di-ubah-ke-dalam-sandi">4.
+                                            Sandi morse bisa di ubah ke dalam sandi...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sandi-dikunci-oleh-edcbabcdeaba-kemudian-ubah-ke-sandi-atbash-bantu-jawab-dong-yg-tau-makasii-hehe%e2%80%8b">5.
+                                            Sandi --.- -.-- .--- -.-- --.. ...- -..- --.- .--. -..- - --.. dikunci oleh EDCBABCDEABA kemudian ubah ke sandi atbash.bantu jawab dong yg tau, makasii hehe​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-dasarnya-sandi-cina-adalah-lanjutan-dari-sandi">6.
+                                            Pada dasarnya sandi cina adalah lanjutan dari sandi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-kata-rahayu-dalam-bentuk-sandi-kotak-1sandi-kotak-2-sandi-morsesandi-andan-sandi-az%e2%80%8b">7.
+                                            tuliskan kata Rahayu dalam bentuk sandi kotak 1,sandi kotak 2 ,sandi Morse,sandi an,dan sandi az​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-sandi-rumputsandi-kotaksandi-balik">8.
+                                            fungsi sandi rumput,sandi kotak,sandi balik
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-sandi-berikut1-merupakan-sandi-dari-kata-%c2%a02-hanya-tulisan-morse-tetapi-sandi-ini-dikenal-dengan-nama-sandi-kimia-karena-menyerupai-hurufsimbol-yang-ada">9.
+                                            Perhatikan sandi berikut!1.) - . - / . . - / . - / - /merupakan sandi dari kata .... 2.hanya tulisan morse tetapi sandi ini dikenal dengan nama sandi kimia karena menyerupai huruf/simbol yang ada pada rumus kimia disebut sandi3.salah satu bentuk aplikasi turunan dari sandi morse. Sandi ini berbentuk seperti rumput, di mana titik pada sandi morse dituliskan dengan rumput yang pendek sedangkan garis pada sandi morse dituliskan dengan rumput yang tinggi4.Perhatikan sandi berikut!//. - / - . - - / - - - //. - - . / . - / - . - / . - / . . // - - / . - / . . . / - . - / . / . - . //. - - - / . . / - . - / . - //- . - / . / . - . . / . . - / . - / . - . // merupakan...5. sebutkan 3 macam sandi! 6)/.../-.-./---/..- /-/.../ dibaca apa sandi disamping . . . .7. apa yang di maksud dengan sandi kimia8)-.- / . / .--. / .-. / .- / -- / ..- / -.- / .- / .- /-. Merupakan sandi dari kata ...9. salah satu bentuk aplikasi turunan dari sandi morse. Sandi ini berbentuk seperti rumput, di mana titik pada sandi morse dituliskan dengan rumput yang pendek sedangkan garis pada sandi morse dituliskan dengan rumput yang tinggi10.Perhatikan sandi berikut!//. . . / . / - - / . - / - . / - - . / . - / - // . - - . / . - / - - . / . . / / merupakan ... ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-sandi-pelana-dengan-sandi-putar%e2%80%8b">10.
+                                            apa perbedaan sandi pelana dengan  sandi putar​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sandi-dikunci-oleh-abcabcabc-cara-kerja-ubah-sandi-morse-ke-huruf-melalui-web-masukkan-sandi-abcabcabc-setelah-memecahkan-kunci-nya-terapkan-sandi-atbash-sa">11.
+                                            Sandi --.- -- ..- -- -. -.. .... .-- -. Dikunci oleh ABCABCABC  Cara kerja : - Ubah sandi morse ke huruf melalui web -Masukkan sandi ABCABCABC - Setelah memecahkan kunci nya terapkan sandi Atbash - Sandi dalam huruf kapital</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-kata-pancasila-dalam-sandi-sandi-kotak-1-sandi-and-sandi-terbalikplss-bantu-kak">12.
+                                            tuliskan Kata PANCASILA Dalam Sandi
+- Sandi Kotak 1
+- Sandi and
+- sandi terbalik
+Plss bantu kak</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sandi-yang-mirip-sandi-rumput-adalah%e2%80%8b">13.
+                                            sandi yang mirip sandi rumput adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-tentukan-sandi-dari-soal-ini-pesan-akatsuki-kunci-pal-jawab-2-tentukan-pesan-dari-soal-ini-sandi-qcxrom-kunci-gum-jawab-3-tentukan-pesan-dari-sandi-atbash-ini-sandi-zoezil-qvov">14.
+                                            1. Tentukan *sandi* dari soal ini Pesan : AKATSUKI Kunci :PAL Jawab : 2. Tentukan *Pesan* dari soal ini Sandi : QCXROM Kunci : GUM Jawab : 3. Tentukan *pesan* dari sandi Atbash ini Sandi : ZOEZIL QVOVP Jawab : 4. Tentukan *pesan* dari sandi Atbash ini Sandi : EVIIVM TLYOLP ZMQRI Jawab : 5. Tentukan *pesan* dari soal ini Sandi : BZWSSK HWSB Kunci : BOH Jawab : Tolong kak secaranya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#yang-bener-menyelesaikan-sandi-atau-memecahkan-sandi%e2%80%8b">15.
+                                            Yang bener menyelesaikan sandi atau memecahkan sandi?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#q-10%c3%972312%c3%972-ntjika-ingin-ungkapkan-perasaanmuentah-senang-entah-sedihgunakanlah-sandi-atbash%e2%80%8b">16.
+                                            Q.10×23+12×2=...Nt:jika ingin ungkapkan perasaanmu,entah senang         entah sedih,gunakanlah sandi atbash:)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sandi-sandi-pramuka-%e2%80%8b">17.
+                                            sandi sandi  pramuka ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-pertanyaan-dan-jawaban-dari-sandi-gerakan-pramuka-1-sandi-huruf-depan2-sandi-huruf-kecil3-sandi-aljabar-4-sandi-jam">18.
+                                            tuliskan pertanyaan dan jawaban dari sandi gerakan pramuka 1) sandi huruf depan2)  sandi huruf kecil3) sandi aljabar 4) sandi jam</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-atbash-code">19.
+                                            apa itu atbash code?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatkan-soal-dari-sandi-sandi-berikutcukup-10-soal-aja1-sandi-alphabet2-sandi-kotak-13-sandi-kotak-24-sandi-a-n">20.
+                                            Buatkan soal dari sandi sandi berikut,,,,cukup 10 soal aja
+1.sandi alphabet
+2.sandi kotak 1
+3.sandi kotak 2
+4.sandi A-N</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sandi-yang-tidak-dapat-dipecahkan-mengunakan-sandi-morse-adalah">21.
+                                            Sandi yang tidak dapat dipecahkan mengunakan sandi morse adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sandi-%c2%a0-%c2%a0-cara-kerja-1-sandi-%c2%a0-%c2%a0-dikunci-oleh-fedaefdcbabc-2-ubah-sandi-yang-ditemukan-itu">22.
+                                            Sandi -. --.. .-. --.. -.- .-- --- --- .. ... ... .. Cara kerja : 1. Sandi -. --.. .-. --.. -.- .-- --- --- .. ... ... .. dikunci oleh FEDAEFDCBABC 2. Ubah sandi yang ditemukan itu dengan sandi ATBASH 3. Tulis sandi yang ditemukan menggunakan huruf besar​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-rumus-sandi-kotak-1-sandi-kotak-2-sandi-morsesandi-angka-sandi-an-dan-sandi-az%e2%80%8b">23.
+                                            tuliskan rumus sandi kotak 1 ,sandi kotak 2 ,sandi Morse,sandi angka ,sandi an ,dan sandi az​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#seperti-apa-sandi-balai-irung-dan-sandi-gugus-depan">24.
+                                            seperti apa sandi balai irung dan sandi gugus depan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-kata-tiyas-eka-rahmadaniar-dalam-bentuk-sandi-kotak-1-sandi-kotak-2-sandi-morse-sandi-angka-sandi-an-dan-sandi-az-%e2%80%8b">25.
+                                            tuliskan kata Tiyas Eka Rahmadaniar dalam bentuk sandi kotak 1, sandi kotak 2 ,sandi Morse ,sandi angka, sandi an, dan sandi az ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sandi-morse-pramuka-menggunakan-beberapa-sandi-sebutkan-sandi-sandi-tersebut%e2%80%8b">26.
+                                            Sandi Morse Pramuka menggunakan beberapa sandi.. sebutkan sandi sandi tersebut!!!!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-arti-sandi-berikutsandi-kotak-1-apa-arti-sandi-horikut%e2%80%8b">27.
+                                            Apa arti sandi berikut?(sandi kotak 1) Apa arti sandi horikut?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-25-sandi-sandi-dalam-pramuka-%e2%80%8b">28.
+                                            sebutkan 25 sandi sandi dalam Pramuka  ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-sandi-sandi-dalam-pramuka">29.
+                                            sebutkan sandi-sandi dalam pramuka</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sandi-sandi-pramuka-beserta-penemuannya">30.
+                                            sandi sandi pramuka beserta penemuannya</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="sandi-ouwyxyzwz-dikunci-oleh-hklmedblb-setelah-itu-diubah-dalam-sandi-atbash%e2%80%8b">
+                            1. Sandi OUWYXYZWZ dikunci oleh HKLMEDBLB setelah itu diubah dalam sandi atbash​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>wzyxwou</p><p><strong>Penjelasan:</strong></p><p>karenaa di balik huruf</p><p>maaf kalau salah </p><br />
+                                            <h2 class="ez-toc-section" id="sandi-izgxzukzw-dikunci-oleh-abcbabcaa-setelah-menemukan-hasilnya-ubah-ke-sandi-plugboard-kemudian-ubah-lagi-ke-sandi-atbash%e2%80%8b">
+                            2. sandi IZGXZUKZW dikunci oleh ABCBABCAA. Setelah menemukan hasilnya, ubah ke sandi plugboard kemudian ubah lagi ke sandi atbash​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Untuk mengubah sandi IZGXZUKZW yang dikunci dengan ABCBABCAA menjadi sandi plugboard, pertama-tama kita harus menentukan pasangan huruf yang dikunci. Misalnya, A bisa dikunci dengan Z, B dengan Y, dan seterusnya.</p><p></p><p>Setelah membuat pasangan huruf, maka sandi IZGXZUKZW bisa diterjemahkan menjadi sandi baru menggunakan pasangan huruf tersebut.</p><p></p><p>Untuk mengubah sandi plugboard menjadi sandi atbash, kita harus membalik urutan abjad. Misalnya, A menjadi Z, B menjadi Y, dan seterusnya. Sandi IZGXZUKZW yang sudah diterjemahkan ke sandi plugboard kemudian bisa diterjemahkan lagi menjadi sandi atbash dengan cara yang sama.</p><br />
+                                            <h2 class="ez-toc-section" id="sandi-zhdezik-dikunci-oleh-bcdecde-kemudian-ubah-menjadi-sandi-atbash-masukkan-sandi-yang-didapat-dalam-huruf-kapital">
+                            3. Sandi zhdezik dikunci oleh bcdecde kemudian ubah menjadi sandi atbash masukkan sandi yang didapat dalam huruf kapital</h2><br />
+                        <p><strong>Sandi zhdezik </strong>yang dikunci oleh bcdecde kemudian ubah menjadi sandi atbash masukkan sandi yang didapat dalam huruf kapital adalah YXWVXWV. Ilmu yang secara khusus mempelajari pembuatan kode-kode ini disebut dengan ilmu Kriptografi.</p><p></p><strong>Pembahasan:</strong><p>Pengiriman informasi rahasia dalam peperangan mulai dilakukan dengan intensif di era perang dunia pertama yang kemudian berkembang jadi sandi teleprinter pada tahun 1917. Dalam kondisi penuh konflik tersebut, manusia mulai berpikir keras secara kreatif untuk mengembangkan banyak hal, terutama juga metode untuk membuat kode dan sandi yang sangat sulit untuk dipecahkan pada saat itu.</p><p>Sampai akhirnya di antara perang dunia pertama dan kedua, metode statistik mulai dipake dalam kriptanalisis dan dalam pengembangan sandi, yang akhirnya menghasilkan sandi Enigma pada tahun 1932.</p><p>Sandi klasik yang lain contohnya adalah<strong> sandi Atbash. </strong>Sandi Atbash ini dilihat dengan cara menukar urutan huruf yang dari depan ke belakang jadi belakang ke depan. </p><p></p><p><strong>Pelajari lebih lanjut :</strong></p><p>Materi tentang kode sasndi morse dalam pramuka dapat dipelajari pada link https://brainly.co.id/tugas/51555572</p><p></p><p><strong></strong></p><p><strong>#BelajarBersamaBrainly</strong></p><p><strong>#SPJ1</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sandi-morse-bisa-di-ubah-ke-dalam-sandi">
+                            4. Sandi morse bisa di ubah ke dalam sandi...</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>untuk kalangan para pramuka</p><p>Semoga membantu :)</p><p><strong>Jawaban:</strong></p><p>kalangan <strong>pramuka</strong><strong>:</strong><strong>v</strong></p><p><strong>Penjelasan:</strong></p><p>maap klo salah:v</p><br />
+                                            <h2 class="ez-toc-section" id="sandi-dikunci-oleh-edcbabcdeaba-kemudian-ubah-ke-sandi-atbash-bantu-jawab-dong-yg-tau-makasii-hehe%e2%80%8b">
+                            5. Sandi --.- -.-- .--- -.-- --.. ...- -..- --.- .--. -..- - --.. dikunci oleh EDCBABCDEABA kemudian ubah ke sandi atbash.bantu jawab dong yg tau, makasii hehe​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sandi atbash yang dihasilkan dari kunci EDCBABCDEABA adalah "MLGRMLGRMRGR".</p><p><strong>Penjelasan:</strong></p><p>Sandi atbash merupakan salah satu metode enkripsi yang membalikkan urutan abjad dalam alfabet. Dalam sandi atbash, huruf A akan diubah menjadi Z, huruf B akan diubah menjadi Y, dan seterusnya. </p><br />
+                                            <h2 class="ez-toc-section" id="pada-dasarnya-sandi-cina-adalah-lanjutan-dari-sandi">
+                            6. Pada dasarnya sandi cina adalah lanjutan dari sandi</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sandi Angka</p><p><strong>Penjelasan:</strong></p><p>Sandi Cina Ini Hakekatnya adalah Lanjutan Sandi Angka, Dimana Setiap Huruf atau coret coretan tersebut dapat kita hitung berdasarkan Kunci, artinya untuk dapat membaca Sandi Cina kita Harus Paham terlebih Dahulu Dengan Sandi Angka.</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-kata-rahayu-dalam-bentuk-sandi-kotak-1sandi-kotak-2-sandi-morsesandi-andan-sandi-az%e2%80%8b">
+                            7. tuliskan kata Rahayu dalam bentuk sandi kotak 1,sandi kotak 2 ,sandi Morse,sandi an,dan sandi az​</h2><br />
+                        <p>padahal gampang lohh, itu sekalian rumusnya</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-sandi-rumputsandi-kotaksandi-balik">
+                            8. fungsi sandi rumput,sandi kotak,sandi balik
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h2><br />
+                          sebagai alat komunikasi ,dan untuk memberi tahu apa yang dia ingin sampai kan tanpa mengunakan angka.... dan sandi itu di gunakan apa bila dia seorang anak pramaka .... pasti bisa menggunakanya.... <br />maaf kalu salah .....?<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-sandi-berikut1-merupakan-sandi-dari-kata-%c2%a02-hanya-tulisan-morse-tetapi-sandi-ini-dikenal-dengan-nama-sandi-kimia-karena-menyerupai-hurufsimbol-yang-ada">
+                            9. Perhatikan sandi berikut!1.) - . - / . . - / . - / - /merupakan sandi dari kata .... 2.hanya tulisan morse tetapi sandi ini dikenal dengan nama sandi kimia karena menyerupai huruf/simbol yang ada pada rumus kimia disebut sandi3.salah satu bentuk aplikasi turunan dari sandi morse. Sandi ini berbentuk seperti rumput, di mana titik pada sandi morse dituliskan dengan rumput yang pendek sedangkan garis pada sandi morse dituliskan dengan rumput yang tinggi4.Perhatikan sandi berikut!//. - / - . - - / - - - //. - - . / . - / - . - / . - / . . // - - / . - / . . . / - . - / . / . - . //. - - - / . . / - . - / . - //- . - / . / . - . . / . . - / . - / . - . // merupakan...5. sebutkan 3 macam sandi! 6)/.../-.-./---/..- /-/.../ dibaca apa sandi disamping . . . .7. apa yang di maksud dengan sandi kimia8)-.- / . / .--. / .-. / .- / -- / ..- / -.- / .- / .- /-. Merupakan sandi dari kata ...9. salah satu bentuk aplikasi turunan dari sandi morse. Sandi ini berbentuk seperti rumput, di mana titik pada sandi morse dituliskan dengan rumput yang pendek sedangkan garis pada sandi morse dituliskan dengan rumput yang tinggi10.Perhatikan sandi berikut!//. . . / . / - - / . - / - . / - - . / . - / - // . - - . / . - / - - . / . . / / merupakan ... ​</h2><br />
+                        <p>1. Dari <strong>sandi</strong> berikut ini  - . - / . . - / . - / - / adalah arti dari kata <strong>kuat.</strong></p><p>2. Walaupun hanya terdiri dari tulisan morse akan tetapi sandi ini dikenal dengan sebutan nama sandi kimia dikarenakan menyerupai huruf/simbol yang ada pada <strong>rumus kimia</strong> yang disebut dengan <strong>sandi kimia.</strong></p><p>3. Termasuk ke dalam salah satu bentuk aplikasi turunan hasil dari sandi morse, di mana sandi ini berbentuk seperti rumput, dan letak titik pada sandi morse dituliskan seperti rumput yang memiliki ukuran pendek sedangkan garis pada sandi morse dituliskan seperti rumput yang memiliki ukuran tinggi disebut dengan <strong>sandi rumput.</strong></p><p>4. Dari <strong>sandi</strong> berikut ini //. - / - . - - / - - - //. - - . / . - / - . - / . - / . . // - - / . - / . . . / - . - / . / . - . //. - - - / . . / - . - / . - //- . - / . / . - . . / . . - / . - / . - . // adalah arti dari kalimat <strong>ayo pakai masker jika keluar.</strong></p><p>5. Berikut ini adalah <strong>3 macam sandi</strong> dalam pramuka: <strong>sandi morse, sandi kotak satu, dan sandi matematika.</strong></p><p>6. Dari <strong>sandi</strong> berikut /.../-.-./---/..- /-/.../ adalah arti dari kata <strong>scouts.</strong></p><p>7. Pengertian dari <strong>sandi kimia</strong> adalah suatu sandi terapan dari sandi morse, selain itu apabila sandi ini bila diterapkan akan menyerupai rumus pada senyawa kimia.</p><p>8. Dari <strong>sandi </strong>berikut -.- / . / .--. / .-. / .- / -- / ..- / -.- / .- / .- /-. adalah arti dari kata <strong>kepramukaan.</strong></p><p>9. Merupakan salah satu bentuk aplikasi turunan dari sandi morse pada pramuka. Bentuk sandi ini seperti rumput, di mana titik pada sandi morse dituliskan dengan bentuk rumput yang ukurannya pendek sedangkan garis pada sandi morse dituliskan dengan bentuk rumput yang ukurannya tinggi adalah pengertian dari <strong>sandi rumput.</strong></p><p>10. Dari <strong>sandi</strong> berikut //. . . / . / - - / . - / - . / - - . / . - / - // . - - . / . - / - - . / . . / /  adalah arti dari kalimat <strong>semangat pagi.</strong></p><p><strong></strong></p><strong>Pembahasan</strong><p>Dalam kegiatan <strong>kepramukaan</strong> akan diajarkan beberapa macam sandi karena kegunaan sandi di dalam kepramukaan memang sangat dibutuhkan saat melakukan kegiatan penjelajahan dengan peralatan komunikasi yang minim untuk dapat menyampaikan pesan secara maksimal kepada anggota yang lain. Sandi di dalam pramuka terdiri dari 3 macam sandi antara lain <strong>sandi morse</strong> yang merupakan sandi paling sering digunakan, selain itu ada <strong>sandi kimia</strong> yang bentuknya menyerupai simbol kimia serta <strong>sandi rumput</strong> yang juga menyerupai bentuk rumput pendek dan rumput panjang.</p><p></p>Pelajari lebih lanjutMateri tentang apa itu sandi pramuka https://brainly.co.id/tugas/5191564Materi tentang macam-macam sandi dalam pramuka https://brainly.co.id/tugas/1122971Materi tentang kode morse https://brainly.co.id/tugas/110104<p></p>Detail Jawaban<p>Kelas: SMA</p><p>Mapel: Seni</p><p>Bab: Bab 13 - Modifikasi Karya Seni</p><p>Kode: 11.19.13</p><p></p><p><strong>#AyoBelajar</strong></p><p><strong>#SPJ2 </strong></p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-sandi-pelana-dengan-sandi-putar%e2%80%8b">
+                            10. apa perbedaan sandi pelana dengan  sandi putar​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sendi Pelana : Sendi yang memungkinkan beberapa gerakan rotasi, namun tidak ke segala arah. Contoh: hubungan tulang telapak tangan dan jari tangan. Sendi Putar : Sendi yang memungkinkan gerakan berputar (rotasi). Contoh: hubungan tulang tengkorak dengan tulang belakang I (atlas)</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah.. follow aku ya</p><br />
+                                            <h2 class="ez-toc-section" id="sandi-dikunci-oleh-abcabcabc-cara-kerja-ubah-sandi-morse-ke-huruf-melalui-web-masukkan-sandi-abcabcabc-setelah-memecahkan-kunci-nya-terapkan-sandi-atbash-sa">
+                            11. Sandi --.- -- ..- -- -. -.. .... .-- -. Dikunci oleh ABCABCABC  Cara kerja : - Ubah sandi morse ke huruf melalui web -Masukkan sandi ABCABCABC - Setelah memecahkan kunci nya terapkan sandi Atbash - Sandi dalam huruf kapital</h2><br />
+                        <p><strong>Kode Morse </strong>merupakan kode yang dipakai dalam kegiatan kepramukaan atau kegiatan lain. Arti dari kode morse disebelah yaitu <strong>QMWMNDHWN</strong></p><p></p><p><strong>Pembahasan:</strong></p><p>Seiring berjalannya waktu, penggunaan password sebagai alat komunikasi cenderung semakin terkikis bahkan usang. Disebut <strong>kode morse, </strong>yang diberikan dalam bentuk kode dengan huruf, angka, tanda baca, dan susunan titik dan garis yang mewakili sinyal tertentu. Kode ini ditemukan pada tahun 1835 oleh Samuel F.B. Morse dan Alfred Vail. </p><p>Namun, kode ini masih ada sampai sekarang karena merupakan salah satu materi yang diajarkan kepada anggota <strong>Pramuka</strong>, khususnya anggota menaik. Ada berbagai jenis kata sandi yang dipelajari anggota Pramuka, antara lain: B. Sandi kotak, sandi numerik, dan  banyak  sandi lainnya yang memiliki fungsi yang sama dengan alat komunikasi. </p><p><strong>Kode Morse adalah kode yang diimplementasikan</strong> dengan menggunakan  sistem yang merepresentasikan huruf, angka, dan  tanda baca. Kemudian tempatkan simbol titik (.) dan garis (-)  sebagai karakter tertentu. Dalam Kode Pramuka, kode Morse dipelajari sebagai  bentuk keterampilan.</p><p>Dalam Kamus Besar Bahasa Indonesia (KBBI) , <strong>kode morse, mereka berbentuk titik dan garis,</strong> yang berarti angka dan tanda baca yang digunakan untuk mengirim dan menerima pesan komunikasi. Kata sandi ini dapat digambarkan sebagai  media yang dapat digunakan untuk  komunikasi, meskipun dilakukan dengan cara yang cukup tradisional. </p><p>Ketika pertama kali muncul, gambar <strong>kode Morse</strong> diperkirakan hanya ada pada abad ke-20 atau sekitar waktu penemuan telegraf. Untuk alasan ini, kode Morse dan telegraf tidak dapat dipisahkan, dan ketika dienkripsi atau ditransmisikan melalui telegraf, itu menjadi  media komunikasi yang  cukup luas dan berkecepatan tinggi, dan telegraf digunakan di hampir semua kantor di seluruh dunia.</p><p>Pada saat telepon ditemukan, <strong>penggunaan kode Morse dan telegraf mulai menurun</strong> karena banyak orang beralih ke telepon. Pada tahun 1997, kode, atau kode Morse, tidak lagi digunakan  sebagai modul komunikasi resmi untuk Angkatan Laut Internasional. Alternatifnya adalah sistem GMDSS yang menggunakan gelombang radio, tetapi sistem GMDSS menggunakan satelit. </p><p></p><p><strong>Pelajari lebih lanjut:</strong></p><p>Materi tentang pramuka brainly.com/question/8747792</p><p></p><p><strong>#BelajarBersamaBrainly #SPJ1</strong></p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-kata-pancasila-dalam-sandi-sandi-kotak-1-sandi-and-sandi-terbalikplss-bantu-kak">
+                            12. tuliskan Kata PANCASILA Dalam Sandi
+- Sandi Kotak 1
+- Sandi and
+- sandi terbalik
+Plss bantu kak</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>sandi terbalik</p><p>Maaf klau salah</p><br />
+                                            <h2 class="ez-toc-section" id="sandi-yang-mirip-sandi-rumput-adalah%e2%80%8b">
+                            13. sandi yang mirip sandi rumput adalah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Sandi Air. Sama seperti sandi rumput tetapi terbalik ke bawah.</p><p>Sandi Gergaji. Perpaduan antara sandi rumput dengan sandi air.</p><p>Sandi Awan</p><p>Sandi Ombak</p><p>Sandi Gedung Bertingkat</p><p></p><p><strong>Penjelasan:</strong></p><p></p><p>kalau mau liat gambar nya ada diatas</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-tentukan-sandi-dari-soal-ini-pesan-akatsuki-kunci-pal-jawab-2-tentukan-pesan-dari-soal-ini-sandi-qcxrom-kunci-gum-jawab-3-tentukan-pesan-dari-sandi-atbash-ini-sandi-zoezil-qvov">
+                            14. 1. Tentukan *sandi* dari soal ini Pesan : AKATSUKI Kunci :PAL Jawab : 2. Tentukan *Pesan* dari soal ini Sandi : QCXROM Kunci : GUM Jawab : 3. Tentukan *pesan* dari sandi Atbash ini Sandi : ZOEZIL QVOVP Jawab : 4. Tentukan *pesan* dari sandi Atbash ini Sandi : EVIIVM TLYOLP ZMQRI Jawab : 5. Tentukan *pesan* dari soal ini Sandi : BZWSSK HWSB Kunci : BOH Jawab : Tolong kak secaranya</h2><br />
+                        <p>Kalau kuncinya lebih dari satu karakter harusnya memakai sandi Vigenere  </p><p></p><p>Berikut kaidahnya:</p><p>Sandi = Pesan + Kunci
+</p><p>Pesan = Sandi - Kunci
+</p><p>
+</p><p>Langkah 1 (samakan panjang karakter)
+</p><p>Pesan (P) = Kunci (K) = Sandi (S)
+</p><p>
+</p><p>Langkah 2 (gunakan tes kasiski)
+</p><p>Untuk mengenkripsi (membuat sandi):
+</p><p>Sn = (Pn+Kn), n &lt; 26
+</p><p>Sn = (Pn+Kn) - 26, n &gt; 26
+</p><p>Untuk mendekripsi (mengetahui pesan)
+:</p><p>Pn = (Sn-Kn), n ≥ 0
+</p><p>Pn = (Sn-Kn) + 26, n &lt; 0
+</p><p>Dengan A=0
+</p><p>
+</p><p>1. Pesan: A-K-A-T-S-U-K-I -&gt; 0 | 10 | 0 | 19 | 18 | 20 | 10 | 8  </p><p>   Kunci: P-A-L-P-A-L-P-A -&gt; 15 | 0 | 11 | 15 | 0 | 11 | 15 | 0
+</p><p>                                               --------------------------------------- +    
+</p><p>   Sandi: P-K-L-I-S-F-Z-I    -&gt; 15 | 10 | 11 | 8 | 18 | 5 | 25 | 8
+</p><p>
+</p><p>2. Sandi: Q-C-X-R-O-M     -&gt; 16 | 2 | 23 | 17 | 14 | 12
+</p><p>    Kunci: G-U-M-G-U-M    -&gt; 6 | 20 | 12 | 6 | 20 | 12
+</p><p>                                               ------------------------------- -  </p><p>    Pesan: K-I-L-L-U-A             10 | 8 | 11 | 11 | 20 | 0  </p><p>
+</p><p>Untuk kaidah sandi kuno atbash (אתבש) cukup menukar urutan hurufnya
+</p><p>Pesan: <strong>A</strong>-B-<strong>C</strong>-D-<strong>E</strong>-F-<strong>G</strong>-H-<strong>I</strong>-J-<strong>K</strong>-L-<strong>M</strong>-N-<strong>O</strong>-P-<strong>Q</strong>-R-<strong>S</strong>-T-<strong>U</strong>-V-<strong>W</strong>-X-<strong>Y</strong>-Z
+</p><p>Sandi: <strong>Z</strong>-Y-<strong>X</strong>-W-<strong>V</strong>-U-<strong>T</strong>-S-<strong>R</strong>-Q-<strong>P</strong>-O-<strong>N</strong>-M-<strong>L</strong>-K-<strong>J</strong>-I-<strong>H</strong>-G-<strong>F</strong>-E-<strong>D</strong>-C-<strong>B</strong>-A
+</p><p>
+</p><p>3. Sandi:  Z-O-E-Z-I-L  Q-V-O-V-P  </p><p>    Pesan: A-L-V-A-R-O  J-E-L-E-K
+</p><p>
+</p><p>Nomor 4 dan 5 caranya sama ^_^
+</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="yang-bener-menyelesaikan-sandi-atau-memecahkan-sandi%e2%80%8b">
+                            15. Yang bener menyelesaikan sandi atau memecahkan sandi?​</h2><br />
+                        <p>Menyelesaikan sandi </p><p>kalo menurutku yaaa</p><br />
+                                            <h2 class="ez-toc-section" id="q-10%c3%972312%c3%972-ntjika-ingin-ungkapkan-perasaanmuentah-senang-entah-sedihgunakanlah-sandi-atbash%e2%80%8b">
+                            16. Q.10×23+12×2=...Nt:jika ingin ungkapkan perasaanmu,entah senang         entah sedih,gunakanlah sandi atbash:)​</h2><br />
+                        Operasi Hitung Campuran<p>10 × 23 + 12 × 2</p><p>= 230 + 24</p><p>= <strong>2</strong><strong>5</strong><strong>4</strong></p><p></p>themarblerace<p><strong>Jawab:</strong></p><p>10×23+12×2=254</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p></p><p>  10</p><p>  23</p><p>  __×</p><p>  30</p><p>20</p><p>___+</p><p>230</p><p></p><p>12</p><p> 2</p><p>__×</p><p>24</p><p></p><p>230+24=254</p><p></p><p>230</p><p>  24</p><p>___+</p><p>254</p><br />
+                                            <h2 class="ez-toc-section" id="sandi-sandi-pramuka-%e2%80%8b">
+                            17. sandi sandi  pramuka ​</h2><br />
+                        <p>Macam Macam Sandi Pramuka</p><p>1.Sandi Koordinat/ Merah Putih. Sandi koordinat disebut juga sebagai sandi merah putih. ...</p><p>2. Sandi Napoleon. ...</p><p>3. Sandi Jam. ...</p><p>4. Sandi Angka/ Nomor. ...</p><p>Sandi Siput. ...</p><p>6. Sandi Semaphore. ...</p><p>7. Sandi AND. ...</p><p>8.Sandi Braille.</p><p></p><p>Dan Berikut Sandi-Sandi yang biasa dipergunakan oleh para Pramuka.</p><p>-Sandi Abjad / Sandi Balik. Kunci : A = Z atau Z = A, bisa juga ditulis a = z atau sebaliknya. ...</p><p>-Sandi Koordinat/Merah Putih. ...</p><p>-Sandi Napoleon. ...</p><p>-Sandi Jam. ...</p><p>-Sandi Angka/Nomor. ...</p><p>-Sandi Geser. ...</p><p>-Sandi Huruf Berjasa. ...</p><p>-Sandi Panas dan Sandi Dingin.</p><p></p><p>____________________________________</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-pertanyaan-dan-jawaban-dari-sandi-gerakan-pramuka-1-sandi-huruf-depan2-sandi-huruf-kecil3-sandi-aljabar-4-sandi-jam">
+                            18. tuliskan pertanyaan dan jawaban dari sandi gerakan pramuka 1) sandi huruf depan2)  sandi huruf kecil3) sandi aljabar 4) sandi jam</h2><br />
+                        4.Cara menggunakan sandi ini hanya dengan pukul 03.00 sebagai acuan A, senlanjutnya setiap 5 menit berubah menjadi huruf berikut nya.<br /><br />03.00	= A<br />03.05 = B<br />03.10	=	C<br />03.15 = D<br />dan seterusnya.<br /><br />Contoh penggunaan :<br />04.15 03.00 03.15 03.00<br />P A D A<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="apa-itu-atbash-code">
+                            19. apa itu atbash code?</h2><br />
+                        <p>Atbash code atau Atbash Cipher merupakan suatu teknik enkripsi, dimana huruf alphabet disubtitusi dengan kebalikannya. Maksud dari kebalikan disini adalah huruf awal diganti dengan huruf terakhir, huruf kedua diganti dengan sebelum terakhir, dst...</p>atbash code adalalah suatu code<br />
+                                            <h2 class="ez-toc-section" id="buatkan-soal-dari-sandi-sandi-berikutcukup-10-soal-aja1-sandi-alphabet2-sandi-kotak-13-sandi-kotak-24-sandi-a-n">
+                            20. Buatkan soal dari sandi sandi berikut,,,,cukup 10 soal aja
+1.sandi alphabet
+2.sandi kotak 1
+3.sandi kotak 2
+4.sandi A-N</h2><br />
+                        4. sandi A-N:    MUTIA= ZHGVN<br />                         FIKA=SVXN<br />                         ISA=VFN<br />                         HANIN=UNAVA<br />                         IRA=VEN  <br />                         AWIM=NJVZ   <br />                         DIRA=QVEN<br />                         NAURA=ANHEN <br />                         ADHA=NQUN<br />                         IKA=VXN<br /><br />
+                                            <h2 class="ez-toc-section" id="sandi-yang-tidak-dapat-dipecahkan-mengunakan-sandi-morse-adalah">
+                            21. Sandi yang tidak dapat dipecahkan mengunakan sandi morse adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>anda harus ....</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sandi-%c2%a0-%c2%a0-cara-kerja-1-sandi-%c2%a0-%c2%a0-dikunci-oleh-fedaefdcbabc-2-ubah-sandi-yang-ditemukan-itu">
+                            22. Sandi -. --.. .-. --.. -.- .-- --- --- .. ... ... .. Cara kerja : 1. Sandi -. --.. .-. --.. -.- .-- --- --- .. ... ... .. dikunci oleh FEDAEFDCBABC 2. Ubah sandi yang ditemukan itu dengan sandi ATBASH 3. Tulis sandi yang ditemukan menggunakan huruf besar​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>N Z R Z K W O O I S S I</p><p><strong>Penjelasan:</strong></p><p>1. Sandi -. --.. .-. --.. -.- .-- --- --- .. ... ... .. dikunci oleh FEDAEFDCBABC menjadi:</p><p>N Z R Z K W O O I S S I</p><p></p><p>2. Ubah sandi tersebut dengan sandi ATBASH:</p><p>M A I A X D L L R H H R</p><p></p><p>3. Tulis sandi tersebut menggunakan huruf besar:</p><p>MAIAXDLLRHHRR</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-rumus-sandi-kotak-1-sandi-kotak-2-sandi-morsesandi-angka-sandi-an-dan-sandi-az%e2%80%8b">
+                            23. tuliskan rumus sandi kotak 1 ,sandi kotak 2 ,sandi Morse,sandi angka ,sandi an ,dan sandi az​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>semoga membantu , cuma bisa jawab ini</p><p><strong>Jawaban:</strong></p><p> sandi morse nya udah ada yang jawab, jdi aku jwb ini aja</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="seperti-apa-sandi-balai-irung-dan-sandi-gugus-depan">
+                            24. seperti apa sandi balai irung dan sandi gugus depan</h2><br />
+                        saya tdk pernah dengar tentang sandi balai irung dan sandi gudep.adanya sandi morse,kotak,aljabar,a-n,a-z,china,jam, orari,dll.<br />
+                                            <h2 class="ez-toc-section" id="tuliskan-kata-tiyas-eka-rahmadaniar-dalam-bentuk-sandi-kotak-1-sandi-kotak-2-sandi-morse-sandi-angka-sandi-an-dan-sandi-az-%e2%80%8b">
+                            25. tuliskan kata Tiyas Eka Rahmadaniar dalam bentuk sandi kotak 1, sandi kotak 2 ,sandi Morse ,sandi angka, sandi an, dan sandi az ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sandi Morse:</p><p>- / .. / -.-- /.- / ... = Tiyas </p><p>. / -.- / .- = Eka</p><p>-.- / .- / .... / -- / .- / -.. / .- / -. / .. / .- / .-. = Rahmadaniar</p><p></p><p>Sandi Angka:</p><p>20 9 25 1 19 = Tiyas</p><p>5 11 1 = Eka </p><p>18 1 8 13 1 4 1 14 9 1 18 = Rahmadaniar</p><p></p><p><strong>Penjelasan: </strong></p><p><strong>jangan lupa likenya yaa</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sandi-morse-pramuka-menggunakan-beberapa-sandi-sebutkan-sandi-sandi-tersebut%e2%80%8b">
+                            26. Sandi Morse Pramuka menggunakan beberapa sandi.. sebutkan sandi sandi tersebut!!!!​</h2><br />
+                        <p>1. Sandi Koordinat/merah putih</p><p>2. sandi Napoleon</p><p>3. sandi jam</p><p>4. sandi angka</p><p>5. sandi siput</p><p>6. sandi semaphore</p><p>7. sandi AND</p><p>8. Sandi Hellen Keller</p><p>9. sandi braille</p><p>10. sandi Morse</p><p>11. sandi rumput</p><p>12. sandi kimia</p><br />
+                                            <h2 class="ez-toc-section" id="apa-arti-sandi-berikutsandi-kotak-1-apa-arti-sandi-horikut%e2%80%8b">
+                            27. Apa arti sandi berikut?(sandi kotak 1) Apa arti sandi horikut?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Arti sandinya adalah=</p><p> *Jolydame*</p><p></p><p><strong>Penjelasan:</strong></p><p>Maaf tapi itu Termasuk (Sandi Kotak 2)</p><p>semoga Membantu^^,Maaf apabila Jawaban Dari saya Salah, mohon dima'afkan. </p><p></p><p>Kelas  = 7 SMP</p><p>Ekskul = PRAMUKA    </p><p>= Sandi Kotak 1 &amp; Sandi Kotak </p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-25-sandi-sandi-dalam-pramuka-%e2%80%8b">
+                            28. sebutkan 25 sandi sandi dalam Pramuka  ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.sandi Morse</p><p>2. Sandi Ular</p><p>3. Sandi Koordinat atau Merah Putih</p><p>4. Sandi Angka</p><p>Sandi Rumput</p><p>6. Sandi Kotak</p><p>7. Sandi Napoleon</p><p>8.sandi Abjad Inter</p><p>9.Sandi Kurung</p><p>10.sandi Sisipan</p><p>11.sandi AN dan sandi balik</p><p>12.sandi siput</p><p>13.sandi Jepang</p><p>14.sandi sungai</p><p>15,sandi semaphore</p><p>maaf baru bisa 15 saja yang saya ketahui, maaf klo salah</p><p><strong>Jawaban:</strong></p><p>1.	Sandi semaphore</p><p>2.	Sandi morse</p><p>3.	Sandi kapal</p><p>4.	Sandi naskah</p><p>5.	Sandi balok</p><p>6.	Sandi dawai</p><p>7.	Sandi lampu kilat</p><p>8.	Sandi bendera</p><p>9.	Sandi kodok</p><p>10.	Sandi telepon</p><p>11.	Sandi panah</p><p>12.	Sandi papan</p><p>13.	Sandi kaset</p><p>14.	Sandi sandiwara</p><p>15.	Sandi semut</p><p>16.	Sandi tali</p><p>17.	Sandi biner</p><p>18.	Sandi angka</p><p>19.	Sandi angin</p><p>20.	Sandi binatang</p><p>21.	Sandi burung</p><p>22.	Sandi ikan</p><p>23.	Sandi kelereng</p><p>24.	Sandi mata-mata</p><p>25.	Sandi raungan.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-sandi-sandi-dalam-pramuka">
+                            29. sebutkan sandi-sandi dalam pramuka</h2><br />
+                        -Sandi anggka
+-sandi kordinat
+-sandi kanji
+-sandi rumput
+-sandi AN
+-sandi AZ
+-sandi morse
+-sandi kotak 1,2,3 
+-sandi bulan bintang
+-sandi aplikasi
+-sandi jam
+-sandi merah putih
+-sandi sabun mandi
+-sandi brainle
+-dll<br />
+                                            <h2 class="ez-toc-section" id="sandi-sandi-pramuka-beserta-penemuannya">
+                            30. sandi sandi pramuka beserta penemuannya</h2><br />
+                        sandi napoleon⇒napoleon<br />sandi morse⇒morse<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/nZM8uAsHcJ8?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>bahasa_lain</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/dina-hi-yuni-what-s-your-daughter-doing-these-days.html">Dina Hi Yuni What s Your Daughter Doing These Days</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/mengubah-amilum-menjadi-maltosa.html">Mengubah Amilum Menjadi Maltosa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/ciri-batik-tradisional.html">Ciri Batik Tradisional</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/apakah-epidermis-memiliki-klorofil.html">Apakah Epidermis Memiliki Klorofil</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/not-pianika-payung-teduh.html">Not Pianika Payung Teduh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/birama-halo-halo-bandung.html">Birama Halo Halo Bandung</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/04-55-dalam-bahasa-inggris.html">04 55 Dalam Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/metode-ilmiah-yang-benar.html">Metode Ilmiah Yang Benar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/apa-yang-dapat-diterapkan-bagi-pemilik-google-sheet.html">Apa Yang Dapat Diterapkan Bagi Pemilik Google Sheet</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/pengertian-idzhar-syafawi.html">Pengertian Idzhar Syafawi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/akar-tunjang-pada-tanaman-bakau-berfungsi-untuk.html">Akar Tunjang Pada Tanaman Bakau Berfungsi Untuk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/gerak-imitatif-adalah.html">Gerak Imitatif Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/contoh-dialog-congratulation-singkat-2-orang.html">Contoh Dialog Congratulation Singkat 2 Orang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/istri-raja-firaun-yang-menemukan-nabi-musa-bernama.html">Istri Raja Firaun Yang Menemukan Nabi Musa Bernama</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/fungsi-dari-align-left.html">Fungsi Dari Align Left</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/kitab-al-quran-terdiri-dari.html">Kitab Al Quran Terdiri Dari</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/berikut-kepercayaan-atau-rasa-yakin.html">Berikut Kepercayaan Atau Rasa Yakin</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/apa-yang-dimaksud-dengan-aerofon.html">Apa Yang Dimaksud Dengan Aerofon</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/aksara-jawa-gladhen.html">Aksara Jawa Gladhen</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/apa-yang-dimaksud-properti-tari.html">Apa Yang Dimaksud Properti Tari</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://truestudy.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://truestudy.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

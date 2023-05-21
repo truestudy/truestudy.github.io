@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jelaskan Level Level Sebuah Arsitektur Komputer Modern - QnA</title>
+    <meta name="description" content="Jelaskan Level Level Sebuah Arsitektur Komputer Modern, , , , , , , 0, SAT&#039;S SHOUT: ARSITEKTUR KOMPUTER DAN STRUKTUR KOGNISI MANUSIA, satsshout.blogspot.com, 949 x 611, jpeg, , 20, jelaskan-level-level-sebuah-arsitektur-komputer-modern, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jelaskan Level Level Sebuah Arsitektur Komputer Modern - QnA" />
+    <meta property="og:description" content="Jelaskan Level Level Sebuah Arsitektur Komputer Modern, , , , , , , 0, SAT&#039;S SHOUT: ARSITEKTUR KOMPUTER DAN STRUKTUR KOGNISI MANUSIA, satsshout.blogspot.com, 949 x 611, jpeg, , 20, jelaskan-level-level-sebuah-arsitektur-komputer-modern, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jelaskan Level Level Sebuah Arsitektur Komputer Modern - QnA" />
+    <meta name="twitter:description" content="Jelaskan Level Level Sebuah Arsitektur Komputer Modern, , , , , , , 0, SAT&#039;S SHOUT: ARSITEKTUR KOMPUTER DAN STRUKTUR KOGNISI MANUSIA, satsshout.blogspot.com, 949 x 611, jpeg, , 20, jelaskan-level-level-sebuah-arsitektur-komputer-modern, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://truestudy.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://truestudy.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://truestudy.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://truestudy.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://truestudy.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://truestudy.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://truestudy.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://truestudy.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Jelaskan Level Level Sebuah Arsitektur Komputer Modern</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">sukamtoanto4098</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Jelaskan+Level+Level+Sebuah+Arsitektur+Komputer+Modern" alt="Jelaskan Level Level Sebuah Arsitektur Komputer Modern">
+                    </div>
+                    <p></p>
+                    <p>jelaskan level level sebuah arsitektur komputer modern?​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-level-level-sebuah-arsitektur-komputer-modern%e2%80%8b">1.
+                                            jelaskan level level sebuah arsitektur komputer modern?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-level-level-sebuah-arsitektur-komputer-modern">2.
+                                            jelaskan level-level sebuah arsitektur komputer modern</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-level-level-sebuah-arsitektur-komputer-moderen">3.
+                                            Jelaskan level level sebuah arsitektur komputer moderen</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-level-sedang-pada-level-tari">4.
+                                            jelaskan pengertian level sedang pada level tari</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tentang-level-tinggilevel-sedang-dan-level-rendah-dalam-level-gerak-tari%e2%80%8b">5.
+                                            jelaskan tentang level tinggi,level sedang dan level rendah dalam level gerak tari​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-bagaimanakah-gerak-level-rendah-level-sedang-level-tinggi">6.
+                                            Jelaskan bagaimanakah gerak level rendah, level sedang, level tinggi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-jelaskan-yang-dimaksud-dengan-level2-jelaskan-yang-dimaksud-dengan-level-tinggi3-sebutkan-macam-macam-level4-berikan-contoh-gerak-dengan-level-rendah5-sebutkan-fungsi-level%e2%80%8b">7.
+                                            1. Jelaskan yang dimaksud dengan level2. Jelaskan yang dimaksud dengan level tinggi3. Sebutkan macam-macam level4. Berikan contoh gerak dengan level rendah5. Sebutkan fungsi level​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-hubungan-antara-gerak-tari-dengan-level-rendahlevel-sedang-dan-level-tinggi%e2%80%8b">8.
+                                            jelaskan hubungan antara gerak tari dengan level rendah,level sedang dan level tinggi!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ada-berapa-macam-level-yang-kamu-ketahui-dan-jelaskan-masing-masing-level-tersebut-kabana-dimaksu%e2%80%8b">9.
+                                            . Ada berapa macam level yang kamu ketahui ?Dan jelaskan masing-masing level tersebut....kabana dimaksu​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-dan-jelaskan-tiga-level-sebuah-arsitektur-komputer-modern-menurut-maurice-wilke">10.
+                                            tuliskan dan jelaskan tiga level sebuah arsitektur komputer modern menurut Maurice Wilke</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-karya-seni-arsitektur-dalam-level-mikro">11.
+                                            Sebutkan karya seni arsitektur dalam level Mikro</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arsitektur-komputer-digital-pada-era-1940-memiliki-berapa-level">12.
+                                            Arsitektur Komputer digital pada era 1940 memiliki berapa level?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-security-levellevel-keamanan-pada-suatu-pelabuhan-dan-jelaskan-sikap-kita-terhadap-level-keamanan-tersebut">13.
+                                            Sebutkan security level/level keamanan pada suatu pelabuhan dan jelaskan sikap kita terhadap level keamanan tersebut</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-dan-berikan-contoh-gerak-tari-dengan-level-tinggi-level-rendah-level-sedang">14.
+                                            Jelaskan dan berikan contoh gerak tari dengan level tinggi level rendah level sedang</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-level-rendah-level-sedang-dan-level-tinggi-pada-gerak-tari%e2%80%8b">15.
+                                            Jelaskan perbedaan level rendah level sedang dan level tinggi pada gerak tari​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-dari-a-level-tinggib-level-sedangc-level-rendah">16.
+                                            Jelaskan perbedaan dari : 
+a. level tinggi
+b level sedang
+c level rendah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbandingan-arsitektur-komputer-modern">17.
+                                            Perbandingan arsitektur komputer modern ???</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-level-sedang-medium-pada-level-tari">18.
+                                            Jelaskan pengertian level sedang medium pada level Tari</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-penerapan-level-tinggi-level-sedang-level-rendah">19.
+                                            jelaskan penerapan level tinggi level sedang level rendah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tentang-level-tinggilevel-sedang-dan-level-rendah-dalam-level-gerak-tari%e2%80%8b">20.
+                                            jelaskan tentang level tinggi,level sedang dan level rendah dalam level gerak tari​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berapa-level-pembagian-mesin-komputer">21.
+                                            Berapa level pembagian mesin komputer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-penerapan-level-tinggi-level-sedang-level-rendah">22.
+                                            Jelaskan penerapan level tinggi level sedang level rendah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-level-interaktifitas-dalam-media-pembelajaran-berbasis-komputer">23.
+                                            Jelaskan Level Interaktifitas dalam media pembelajaran berbasis Komputer?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tingkat-bahasa-pemrograman-yang-berisi-instruksi-intruksi-yang-di-tujukan-kepada-komputer-dengan-menggunakan-kode-kode-biner-adalah-a-high-levelb-pemrograman-java-scriptc-medium-leveld-low-level">24.
+                                            Tingkat bahasa pemrograman yang berisi instruksi-intruksi yang di tujukan kepada komputer dengan menggunakan kode-kode biner adalah...A.high levelB.pemrograman java scriptC.medium levelD.low level​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tiga-elemen-level-gerak-dalam-tari-level-rendah-level-sedang-dan-level-tinggi">25.
+                                            Jelaskan tiga elemen level gerak dalam tari, level rendah, level sedang dan level tinggi!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-level-level-raid%e2%80%8b">26.
+                                            Jelaskan level-level RAID?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-level-tinggilevel-sedangdan-level-rendah">27.
+                                            jelaskan level tinggi,level sedang,dan level rendah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-level-sedang-mediumpada-level-tari">28.
+                                            Jelaskan pengertian level Sedang (Medium)pada level tari</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-level-abstraksi-pd-komputer%e2%80%8b">29.
+                                            3 level abstraksi pd komputer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tiga-elemen-level-gerak-dalam-tari-level-rendah-level-sedang-dan-level-tinggi%e2%80%8b">30.
+                                            Jelaskan tiga elemen level gerak dalam tari, level rendah, level sedang dan level tinggi!​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="jelaskan-level-level-sebuah-arsitektur-komputer-modern%e2%80%8b">
+                            1. jelaskan level level sebuah arsitektur komputer modern?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>• level 0 atau level logika digital merupakan level yang paling rendah yang berupa rangkaian gerbang logika dalam susunan rangkaian hardware komputer.</p><p>• Level 1 atau level arsitektur mikro,terdiri atas rangkaian dasar prosesor yang berupa ALU (Arithnetic Logic Unit) untuk melakukan operasi aritmatika.</p><p>• Level 2 atau level arsitektur perangkat intruksi yang sering disebut level ISA mengandung perintah atau intruksi dasar sebuah komputer.</p><p>• Level 3 atau level sistem operasi merupakan tingkat pada kondisi mesin diatur oleh program yang disebut sebagai sistem operasi.</p><p>• Level 4 atau level bahasa assembler ( bahasa rakitan ) . Pada level ini, intruksi intruksi program sudah mulai dikerjakan oleh progammer aplikasi.</p><p>• Level 5 atau level bahasa tingkat tinggi.  ketika progammer dapat melakukan pemrograman dengan bahasa yang lebih manusiawi. Hal tersebut memudahkan manusia untuk memberikan intruksi intruksi pada mesin.Namun, memiliki kelemahan yaitu prosesnya lebih lama karena memerlukan interpreter.</p><p><strong>Penjelasan:</strong></p><p>Semoga Membantu :)</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-level-level-sebuah-arsitektur-komputer-modern">
+                            2. jelaskan level-level sebuah arsitektur komputer modern</h2><br />
+                        <p><strong>Level-level </strong>dari sebuah <strong>arsitektur komputer modern </strong>terbagi atas 6 level. Pembagian antara level-level tersebut antara lain:</p>Level 0 atau <strong>level logika digital</strong>.Level 1 atau <strong>level arsitektur mikro</strong>.Level 2 atau<strong> level arsitektur perangkat instruksi (ISA).</strong>Level 3 atau<strong> level sistem operasi</strong>.Level 4 atau<strong> level bahasa rakitan</strong>.Level 5 atau<strong> level bahasa tingkat tinggi</strong>.<p></p>Pembahasan<p>Berikut adalah pembahasan mengenai level-level yang terdapat pada arsitektur komputer modern:</p>Level 0 atau <strong>level logika digital</strong>. Merupakan level arsitektur komputer terendah yang hanya berbentuk rangkaian gerbang logika pada hardware atau perangkat keras komputer.Level 1 atau <strong>level arsitektur mikro</strong>. Merupakan rangkaian dasar prosesor yang terdiri dari Arithmetic Logic Unit (ALU) yang berfungsi untuk melakukan operasi aritmatika pada komputer.Level 2 atau<strong> level arsitektur perangkat instruksi (ISA). </strong>Merupakan level arsitektur yang berfungsi untuk mengatur instruksi dasar yang mengandung perintah dalam pengoperasian sebuah komputer.Level 3 atau<strong> level sistem operasi</strong>. Merupakan program sistem yang mengatur jalannya perangkat lunak komputer.Level 4 atau<strong> level bahasa rakitan</strong>. Merupakan serangkaian program khusus yang hanya dikerjakan oleh programmer aplikasi.Level 5 atau<strong> level bahasa tingkat tinggi</strong>. Merupakan pemrograman tingkat lanjut yang memudahkan kita untuk memberikan perintah dan instruksi menggunakan bahasa mesin.<p></p>Pelajari lebih lanjutMateri tentang yang dimaksud software https://brainly.co.id/tugas/7141545Materi tentang langkah-langkah membuat program https://brainly.co.id/tugas/6040769Materi tentang yang dimaksud dengan sistem komputer https://brainly.co.id/tugas/4046724<p></p>Detail jawaban<p>Kelas : 7</p><p>Mapel : TI</p><p>Bab : Perangkat Lunak Komputer </p><p>Kode: 7.11.8</p><p><strong>#AyoBelajar #SPJ2</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-level-level-sebuah-arsitektur-komputer-moderen">
+                            3. Jelaskan level level sebuah arsitektur komputer moderen</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. Level 0 atau level logika digital</p><p>Merupakan level yang paling rendah yang berupa rangkaian gerbang logika dalam susunan rangkaian hardware komputer.</p><p>b. Level 1 atau level arsitektur mikro,</p><p>Terdiri atas rangkaian dasar prosesor yang berupa ALU (Arithmetic Logic Unit) untuk melakukan operasi Aritmatika.</p><p>c. Level 2 atau level arsitektur perangkat instruksi yang sering disebut level ISA</p><p>Mengandung perintah atau instruksi dasar sebuah komputer.</p><p>d. Level 3 atau level sistem operasi</p><p>Merupakan tingkat pada kondisi mesin diatur oleh program yang disebut sbg sistem operasi.</p><p>e. Level 4 atau level bahasa assembler (bahasa rakitan)</p><p>Pada level ini, instruksi-instruksi program sudah mulai dikerjakan oleh programmer aplikasi.</p><p>f. Level 5 atau level bahasa tingkat tinggi</p><p>Ketika programmer dapat melakukan pemrograman dengan bahasa yang lebih manusiawi. Hal tersebut memudahkan manusia untuk memberikan instruksi-instruksi pada mesin. Namun, memiliki kelemahan yaitu prosesnya lebih lama karena memerlukan interpreter.</p><p><strong>Penjelasan:</strong></p><p>#maaf kaLo salah</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-level-sedang-pada-level-tari">
+                            4. jelaskan pengertian level sedang pada level tari</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong></p><p>Level Sedang</p><p>Gerak pada level sedang hampir dimiliki oleh semua tari tradisional di Indonesia. Level sedang ditunjukkan pada posisi penari berdiri secara lurus di atas pentas. Gerak yang dilakukan memiliki kesan maskulinitas karena gerak seperti ini sering dilakukan oleh penari pria. </p><p></p><p>Properti dengan menggunakan tongkat sering di jumpai pada gerak tari Jawa, Sunda, Kalimantan, dan</p><p>Papua, serta daerah lain. Tongkat dapat berupa tombak atau sejenisnya. Tongkat atau tombak yang digunakan biasanya menunjukkan bahwa tari tersebut bertema peperangan.</p><p></p><p>Gerak level sedang juga ditunjukkan pada misalnya semua penari melakukan gerak rampak dengan badan agak condong. Pose gerak seper ti ini memberi kesan kokoh dan kuat. Gerak ini juga memberi</p><p> </p><p>kesan maskulinitas yaitu gerakan yang biasa ditarikan untuk peran laki- laki.</p><p>-------------------------------------------------------------</p><p><strong>Jawaban:</strong></p><p><strong>Level sedang pada level tari</strong></p><p><strong>Gerak pada level sedang hampir dimiliki oleh semua tari tradisional di Indonesia. Level sedang ditunjukkan pada posisi penari berdiri secara lurus di atas pentas. Gambar 10.7 me nunjukkan posisi penari berdiri dengan menggunakan tong- kat dan kaki diangkat. Gerak yang dilakukan memiliki kesan maskulinitas karena gerak seperti ini sering dilakukan oleh penari pria. Properti dengan menggunakan tongkat sering di jumpai pada gerak tari Jawa, Sunda, Kalimantan, dan Papua, serta daerah lain. Tongkat dapat berupa tombak atau sejenisnya. Tongkat atau tombak yang digunakan biasanya me nunjukkan bahwa tari tersebut bertema peperangan. Gerak level sedang juga ditunjukkan pada gambar 10.8. Semua penari melakukan gerak rampak dengan badan agak condong. Pose gerak seperti ini memberi kesan kokoh dan kuat. Gerak ini juga memberi kesan maskulini- tas yaitu gerakan yang biasa ditarikan untuk peran laki-laki.</strong></p><p></p><p><strong>CONTOK Level sedang pada level tari</strong></p><strong>Tari Piring Sumatra Barat
+</strong><strong>Tari Payung Sumatra Barat
+</strong><strong>Tari Tor-tor Sumatra Utara
+</strong><strong>Tari Andun Bengkulu
+</strong><strong>Tari Selampir Delapan Jambi
+</strong><strong>Tari Jangget Lampung
+</strong><strong>Tari Malinting Lampung
+</strong><strong>Tari Tanggai Sumatra Selatan
+</strong><strong>Tari Yapong Jakarta
+</strong><strong>Tari Jaipong Jawa Barat
+</strong><strong>Tari Serimpi Jogjakarta
+</strong><strong>Tari Bedhaya Jogjakarta
+</strong><strong>Tari Blambangan Cakil Jawa Tengah
+</strong><strong>Tari Gambyong Jawa Tengah
+</strong><p></p><p><strong>Penjelasan:</strong></p><p>SEMOGA BERMANFAAT</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tentang-level-tinggilevel-sedang-dan-level-rendah-dalam-level-gerak-tari%e2%80%8b">
+                            5. jelaskan tentang level tinggi,level sedang dan level rendah dalam level gerak tari​</h2><br />
+                        <p>1. level tinggi</p><p>2. level sedang</p><p>3. level rendah</p><p><strong>Penjelasan:</strong></p><p>1. level tinggi : Level tinggi pada gerak tari sering dilakukan pada tradisi tari balet. Penari balet sering melakukan gerakan pada level tinggi dengan melayang. Untuk dapat melakukan gerak melayang diperlukan teknik gerak dengan baik dan benar</p><p></p><p>2. level sedang : Gerak pada level sedang hampir dimiliki oleh semua tari tradisional di Indonesia. Level sedang ditunjukkan pada posisi penari berdiri secara lurus di atas pentas. Gerak yang dilakukan memiliki kesan maskulinitas karena gerak seperti ini sering dilakukan oleh penari pria</p><p></p><p>3. level rendah : Berguling dari satu tempat ke tempat lain. Terus bergerak seolah tanpa lelah. Gerak berguling yang dilakukan dalam tari disebut dengan level rendah. Ketinggian minimal dicapai penari adalah pada saat rebah di lantai.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-bagaimanakah-gerak-level-rendah-level-sedang-level-tinggi">
+                            6. Jelaskan bagaimanakah gerak level rendah, level sedang, level tinggi</h2><br />
+                        -)level rendah dapat dilihat pada gerakan berguling dari satu tempat ketempat lain,ketinggian minimal yang dicapai adalah pada saat rebah dilantai<br />-)level sedang pada dasarnya,ditunjukan pada posisi penari berdiri secara lurus<br />-)level tinggi dalam tari dapat dilihat saat penari sedang meloncat,terbang dll<br /><br />Maaf klo slah(;<br />
+                                            <h2 class="ez-toc-section" id="1-jelaskan-yang-dimaksud-dengan-level2-jelaskan-yang-dimaksud-dengan-level-tinggi3-sebutkan-macam-macam-level4-berikan-contoh-gerak-dengan-level-rendah5-sebutkan-fungsi-level%e2%80%8b">
+                            7. 1. Jelaskan yang dimaksud dengan level2. Jelaskan yang dimaksud dengan level tinggi3. Sebutkan macam-macam level4. Berikan contoh gerak dengan level rendah5. Sebutkan fungsi level​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>1. Level adalah alat untuk mengukur ketinggian dengan batasan ketinggian  tertentu. Misalnya, level meter pada tangki air, berguna untuk mengukur ketinggian air dalam tangki dengan satuan panjang (meter) maupun prosentase.</strong></p><p></p><p><strong>Penjelasan:</strong></p><p></p><p><strong>Jawaban:</strong></p><p>panjang</p><p><strong>Penjelasan:</strong></p><p>Level adalah alat untuk mengukur ketinggian dengan batasan ketinggian tertentu. Misalnya, level meter pada tangki air, berguna untuk mengukur ketinggian air dalam tangki dengan satuan panjang (meter) maupun prosentase.</p><p></p><p>Jenis jenis lever meter:</p><p></p><p>Manual, dengan alat ukur manual/penggaris/tabung ukur.</p><p>Pelampung, dengan bantuan tali.</p><p>Ultrasonic, dengan bantuan pantulan signal gelombang ultra sonic.</p><p>Leser, dengan bantuan gelombang leser.</p><p>Tekanan, dengan mengukur tekanan pada dasar pengukuran.</p><p>Electrik, dengan mencelupkan dua buah konduktor, dan dihitung resistansinya.</p><p>Altimeter (pengukur ketinggian pesawat) juga merupakan bagian dari lever meter.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-hubungan-antara-gerak-tari-dengan-level-rendahlevel-sedang-dan-level-tinggi%e2%80%8b">
+                            8. jelaskan hubungan antara gerak tari dengan level rendah,level sedang dan level tinggi!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Level Tinggi adalah suatu gerakan tarian dimana para penarinya melakukan gerakan seperti melompat/melayang. Level Sedang adalah gerakan pada saat sang penari berdiri dan duduk. Level Rendah adalah gerakan tarian dimana penari sedang melakukan gerakan tiduran atau tertembak.</p><br />
+                                            <h2 class="ez-toc-section" id="ada-berapa-macam-level-yang-kamu-ketahui-dan-jelaskan-masing-masing-level-tersebut-kabana-dimaksu%e2%80%8b">
+                            9. . Ada berapa macam level yang kamu ketahui ?Dan jelaskan masing-masing level tersebut....kabana dimaksu​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ada 4 </p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah jawabannya</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-dan-jelaskan-tiga-level-sebuah-arsitektur-komputer-modern-menurut-maurice-wilke">
+                            10. tuliskan dan jelaskan tiga level sebuah arsitektur komputer modern menurut Maurice Wilke</h2><br />
+                        1. Level ISA, berisi perintah-perintah yang akan diinterpretasi oleh digital circuit hardware.<br />2. Level Interpreter, adalah penerjemah yang terintegrasi dengan ISA yang berguna menjalankan setiap instruksi pada level ISA.<br />3. Level Digital Logic, merupakan komponen hardware yang menjalankan instruksi secara langsung.<br /><br /><br /><br />semoga bermanfaat !<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-karya-seni-arsitektur-dalam-level-mikro">
+                            11. Sebutkan karya seni arsitektur dalam level Mikro</h2><br />
+                        <p>Jawaban:</p><p>Desain bangunan ,desain perabotan dan desain produk</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="arsitektur-komputer-digital-pada-era-1940-memiliki-berapa-level">
+                            12. Arsitektur Komputer digital pada era 1940 memiliki berapa level?</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Fisika</p><p>a. Level 0 atau level logika digital</p><p> Merupakan level yang paling rendah yang berupa rangkaian gerbang logika dalam susunan rangkaian hardware komputer.</p><p>b. Level 1 atau level arsitektur mikro, </p><p>Terdiri atas rangkaian dasar prosesor yang berupa ALU (Arithmetic Logic Unit) untuk melakukan operasi Aritmatika.</p><p>c. Level 2 atau level arsitektur perangkat instruksi yang sering disebut level ISA</p><p> Mengandung perintah atau instruksi dasar sebuah komputer.</p><p>d. Level 3 atau level sistem operasi</p><p> Merupakan tingkat pada kondisi mesin diatur oleh program yang disebut sbg sistem operasi.</p><p>e. Level 4 atau level bahasa assembler (bahasa rakitan) </p><p> Pada level ini, instruksi-instruksi program sudah mulai dikerjakan oleh programmer aplikasi.</p><p>f. Level 5 atau level bahasa tingkat tinggi</p><p> Ketika programmer dapat melakukan pemrograman dengan bahasa yang lebih manusiawi. Hal tersebut memudahkan manusia untuk memberikan instruksi-instruksi pada mesin. Namun, memiliki kelemahan yaitu prosesnya lebih lama karena memerlukan interpreter.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-security-levellevel-keamanan-pada-suatu-pelabuhan-dan-jelaskan-sikap-kita-terhadap-level-keamanan-tersebut">
+                            13. Sebutkan security level/level keamanan pada suatu pelabuhan dan jelaskan sikap kita terhadap level keamanan tersebut</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ship security plan</p><p>ship</p><p>company security officer ( perwira keamanan dan perusahaan)</p><p> port facility security officer ( perwira keamanan fasilitas pelabuhan)</p><p>security ty level ( tingkat keamanan)</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-dan-berikan-contoh-gerak-tari-dengan-level-tinggi-level-rendah-level-sedang">
+                            14. Jelaskan dan berikan contoh gerak tari dengan level tinggi level rendah level sedang</h2><br />
+                        <p><strong>Gerak tari dengan beberapa level yaitu:</strong></p><strong>Tari level tinggi </strong>yaitu gerakan tarian di mana penari melakukan gerakan seperti melompat dan terbang. Contohnya pada tari piring, tari reog ponorogo dan lain sebagainya.<strong>Tari level sedang</strong> yaitu gerakan tarian di mana penari melakukan gerakan seperti duduk dan berdiri. Contohnya pada tari payung, tari jangget, tari tor-tor, dan lain sebagainya.<strong>Tari level rendah</strong> yaitu gerakan tarian di mana penari melakukan gerakan seperti setengah duduk, berlutut, atau duduk. Contohnya pada tari saman, tari kapur sirih, dan lain sebagainya.<p></p>Pembahasan<p><strong>Seni tari adalah</strong> gerak ekspresif yang dilakukan pada tempat dan waktu tertentu untuk mengkomunikasikan suatu perasaan atau pesan. Tingkat kesulitan gerakan atau teknik yang ada dalam seni gerak tari bisa jadi sulit bagi sebagian orang. Saat kita bergerak, ada berbagai tingkat aktivitas, seperti kadang berdiri, duduk, atau melompat. Ketinggian gerak yang kita buat sering disebut level. <strong>Ada beberapa  level tarian, yaitu:</strong></p><strong>Level tinggi adalah level tertinggi dalam seni tari. </strong>Aktivitas level tinggi dapat difasilitasi dengan penggunaan alat bantu. Jenis alat yang umum digunakan adalah panggung kecil dan trap. Cara lain untuk menciptakan ilusi melayang adalah dengan menggunakan tali.<strong>Level sedang adalah tingkat gerak yang biasanya digunakan untuk tarian tradisional Indonesia. </strong>Level menengah biasanya menggunakan tongkat sebagai fitur untuk membantu gerakan tari. Tongkat sering ditemukan dalam gerak tari Jawa, Sunda, Kalimantan dan Papua. Tongkat atau tombak yang digunakan dalam tarian ini dimaksudkan untuk membangkitkan perasaan berperang.<strong>Level yang lebih rendah adalah untuk berguling, dan jatuh ke tanah.</strong> Gerakan tari level rendah biasanya dipadukan dengan beberapa gerakan tari level tinggi dan menengah. Seni gerak tari level rendah dapat dimasukkan dalam koreografi atau gerakan-gerakan yang dipersiapkan agar semua tingkatan gerak tari diterapkan dengan baik.<p></p>Pelajari lebih lanjut<p>Materi tentang macam-macam level tari https://brainly.co.id/tugas/13844354</p><p>Materi tentang tari level tinggi, sedang, rendah https://brainly.co.id/tugas/10890727</p><p>Materi tentang contoh tari level tinggi, sedang, rendah https://brainly.co.id/tugas/29339819</p><p></p>Detail jawaban<p>Kelas:  I</p><p>Mapel:  Seni Budaya</p><p>Bab:  Menirukan Gerak Tari</p><p>Kode:  1.19.6</p><p></p><p><strong>#AyoBelajar</strong></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-level-rendah-level-sedang-dan-level-tinggi-pada-gerak-tari%e2%80%8b">
+                            15. Jelaskan perbedaan level rendah level sedang dan level tinggi pada gerak tari​</h2><br />
+                        <p>LEVEL TINGGI ADALAH SUATU GERAKAN TARIAN DIMANA PARA PENARI NYA MELAKUKAN HAL SEPERTI MELOMPAT,MELAYANG. ... LEVEL SEDANG ADALAH GERAKAN PADA SAAT PENARINYA BERDIRI DAN DUDUK, BANYAK PADA TARI DARI JAWA,SUNDA,DAN KALIMANTAN. LEVEL RENDAH ADALAH TARI SAAT PENARINYA SEDANG MELAKUKAN GERAKAN TIDURAN ATAU TERTEMBAK.</p><p></p><p></p><p><strong>J</strong><strong>a</strong><strong>d</strong><strong>i</strong><strong>k</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>j</strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>t</strong><strong>e</strong><strong>r</strong><strong>c</strong><strong>e</strong><strong>r</strong><strong>d</strong><strong>a</strong><strong>s</strong></p><p><strong>PERBEDAAN</strong><strong> </strong><strong>LEVEL</strong><strong> </strong><strong>GERAK </strong><strong> </strong><strong>PADA</strong><strong> </strong><strong>TARI</strong></p><strong>Level</strong> <strong>Tinggi</strong>, yaitu level gerakan pada tarian yang umumnya dilakukan dengan gerakan meloncat yang mana salah satu tangan diatas. Biasanya gerakannya dilakukan dengan berdiri dan peragaan level ini akan tampak jelas ketika dilakukan secara berkelompok. Contohnya adalah Tari Serampang Dua Belas, Tari Mandau, Tari seudati dll. <strong>Level</strong> <strong>Sedang</strong>, peragaan level ini umumnya dimiliki oleh seluruh tarian. Level ini ditunjukkan saat posisi penari berdiri secara lurus dipentas. Gerakan yang dilakukan mempunyai kesan maskulinitas,sebab umumnya dilakukan oleh penari pria. Contohnya Tari Piring, Tari Yapong, Tari Jangget dll. <strong>Level</strong> <strong>Rendah</strong><strong>,</strong><strong> </strong>pada level rendah gerakan yang dilakukan biasanya ialah duduk. Selain duduk gerakan berguling juga termasuk kedalam level rendah pada tarian. Contohnya adalah Tari Saman, Tari Sekapur Sirih. <p></p>Pembahasan :<p>Apasih yang dimaksud seni tari? yuk bahas! </p><p>Seni Tari adalah sebuah cabang kesenian untuk mengekspresikan, mengungkapkan keindahan yang dituangkan dalam bentuk gerakan yang indah. </p><p><strong>Unsur </strong><strong>-</strong><strong> </strong><strong>Unsur </strong><strong>Seni </strong><strong>Tari</strong></p><p>Seni tari terdiri atau memiliki 2 unsur yakni unsur utama dan unsur pendukung. </p><p>Unsur utama terdiri dari :</p>Wiraga (raga/gerakan)Wirama (irama) Wirasa (rasa) <p>Sedangkan, unsur pendukung nya terdiri dari :</p>Ragam gerakRagam iringanRiasan dan kostum<p></p><p><strong>Fungsi </strong><strong>Seni </strong><strong>Tari</strong></p><p>Ternyata seni tari tidak hanya berfungsi sebagai sarana hiburan lho, apa aja ya? berikut ulasanya :</p>Sebagai sarana pertunjukan, pada fungsi ini sebuah tarian lebih menonjolkan pada nilai koreografisnya yang indah dan terkonsep. Sebagai sarana upacara adat, biasanya seringkali digunakan pada upacara - upacara adat ataupun keagamaan. Pada tarian ini tentunya menunjukan kekhidmatan kepada yang maha kuasa. Sebagai sarana hiburan, sesuai dengan namanya tentunya fungsi ini mengarah pada hiburan yang ditunjukan atau diberikan untuk khalayak ramai atau masyarakat.Sebagai sarana pergaulan/kesenian, sementara itu untuk fungsi ini lebih menekankan pada tujuanya sebagai media komunikasi atau interaksi antarsesama dan sebagai sarana untuk melestarikan budaya - budaya suatu daerah. <p></p><p>Tau ga kalau sebuah gerak tarian memiliki level? </p><p><strong> </strong><strong>Level </strong><strong> </strong><strong>Gerak </strong><strong>Tari </strong>adalah sebuah jangkauan gerak atau pergerakan dalam ruang gerak dari seorang penari tersebut. Level gerak tari juga berfungsi agar tarian yang ditampilkan tidak monoton dan lebih bervariasi. Namun, level gerak tari juga harus disesuaikan dengan karakter tarian yanh dibawakan. Level gerak tari ini terdiri dari level tinggi, sedang (medium), dan rendah. </p><p></p><p><strong>#</strong><strong>Ayobelajar</strong></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-dari-a-level-tinggib-level-sedangc-level-rendah">
+                            16. Jelaskan perbedaan dari : 
+a. level tinggi
+b level sedang
+c level rendah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>C.Level rendah adalah tarian yg dilakukan dengan cara duduk dan berbaring, contohnya tari Saman. </p><p></p><p>B.Level sedang adalah tarian yg dilakukan dengan cara membungkuk dan jongkok, contohnya tari srimpi dan tari Bambangan Cakil. </p><p></p><p>A.Level tinggi adalah tarian yg dilakukan dengan cara melompat, contohnya tari balet.</p><p></p><p>maaf kalo salah</p><p></p><p></p><p></p><p></p><p><strong>Jawaban:</strong></p><p>LEVEL TINGGI: adalah suatu gerakan tarian dimana para penari nya melakukan hal seperti melompat, melayang</p><p>LEVEL SEDANG: adalah gerakan pada saat penarinya berdiri dan duduk, banyak pada tari dari jawa sunda, kalimantan</p><p>LEVEL RENDAH: adalah tari saat penarinya sedang melakukan gerakan tiduran atau tertembak</p><br />
+                                            <h2 class="ez-toc-section" id="perbandingan-arsitektur-komputer-modern">
+                            17. Perbandingan arsitektur komputer modern ???</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perbandingan arsitektur komputer modern dapat dibagi menjadi beberapa aspek, di antaranya adalah:</p><p></p><p>1. Prosesor (CPU)</p><p>Arsitektur prosesor komputer modern umumnya dapat dibagi menjadi dua jenis, yaitu arsitektur RISC (Reduced Instruction Set Computing) dan CISC (Complex Instruction Set Computing). Prosesor RISC memiliki set instruksi yang lebih sedikit tetapi setiap instruksi dapat dijalankan dengan lebih cepat, sedangkan prosesor CISC memiliki set instruksi yang lebih banyak tetapi setiap instruksi memerlukan waktu eksekusi yang lebih lama.</p><p></p><p>2. Memori</p><p>Terdapat beberapa jenis memori dalam arsitektur komputer modern, di antaranya adalah RAM (Random Access Memory), ROM (Read-Only Memory), dan cache. RAM adalah tipe memori utama yang digunakan untuk menyimpan data yang sedang diproses oleh prosesor, ROM digunakan untuk menyimpan data yang tidak dapat diubah oleh pengguna, dan cache adalah jenis memori yang digunakan untuk meningkatkan kecepatan akses ke data yang sering digunakan oleh prosesor.</p><p></p><p>3. Bus</p><p>Bus adalah jalur komunikasi yang digunakan untuk menghubungkan berbagai komponen pada motherboard. Arsitektur bus pada komputer modern umumnya menggunakan bus serial seperti PCI Express, yang memiliki kecepatan transfer data yang tinggi dan efisien dalam penggunaan energi.</p><p></p><p>4. Storage</p><p>Terdapat beberapa jenis media penyimpanan pada komputer modern, di antaranya adalah hard disk drive (HDD), solid state drive (SSD), dan flash drive. HDD adalah tipe media penyimpanan yang menggunakan piringan magnetik untuk menyimpan data, sedangkan SSD dan flash drive menggunakan teknologi memori flash yang lebih cepat dan lebih tahan terhadap kejutan dan getaran.</p><p></p><p>5. Grafis</p><p>Arsitektur grafis pada komputer modern umumnya menggunakan prosesor grafis terpisah (discrete graphics processing unit/ dGPU) atau prosesor grafis terintegrasi (integrated graphics processing unit/ iGPU) yang terletak pada prosesor utama. dGPU memiliki kinerja grafis yang lebih baik daripada iGPU, tetapi biasanya memerlukan daya yang lebih besar dan memakan ruang yang lebih besar pada motherboard.</p><p></p><p>6. Periferal</p><p>Periferal pada komputer modern umumnya menggunakan standar koneksi USB dan Bluetooth yang memiliki kecepatan transfer data yang tinggi dan kompatibilitas yang luas. Selain itu, teknologi nirkabel seperti Wi-Fi dan NFC juga semakin umum digunakan untuk menghubungkan perangkat ke komputer.</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-level-sedang-medium-pada-level-tari">
+                            18. Jelaskan pengertian level sedang medium pada level Tari</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Level Tinggi</p><p>Level tinggi akan lebih terang bila diperagakan secara kelompok, gerakan dengan level tinggi berupa gerakan menyerupai meloncat keatas dan salah satu tangan keatas. </p><p></p><p>Level Sedang atau Medium</p><p>Level sedang ini akan terlihat monoton jikalau diperagakan secara kelompok lantaran level gerakan spesialuntuk berupa gerak bangun menyerupai biasa, sehingga diharapkan level gerak yang divariasi jikalau diperagakan secara kelompok.</p><p></p><p>Level Rendah</p><p>Seperti level sedang yang diharapkan variasi, misal gerak penari level rendah dengan memperagakan jengkeng atau duduk. Variasi dalam level rendah sanggup dengan memanfaatkan ruang gerak serta penerapan tenaga dan didiberi aksen - aksen gerak. </p><p></p><p>variasi tarian yang didominasi dengan level rendah misalnya Tari Saman atau Tari Kecak. Tarian tersebut dengan gerak bermacam-macam menyerupai gerakan sedikit naik, gerak ke samping dan sebagainya.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-penerapan-level-tinggi-level-sedang-level-rendah">
+                            19. jelaskan penerapan level tinggi level sedang level rendah</h2><br />
+                        1. Level Tinggi<br />Biasanya pada level tinggi, penari melakukan gerakan meloncat sambil menggerakkan salah satu tangannya ke atas dan peragaan level ini akan tampak jelas jika dilakukan secara kelompok. <br />2.  Level Sedang (Medium)<br />Pada level sedang, penari melakukan gerakan berdiri seperti biasa. Level medium jika dilakukan dalam kelompok secara terus-menerus akan terkesan monoton. Oleh karena itu, level ini harus divariasi dengan level lain jika dipakai dalam peragaan tari secara berkelompok.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tentang-level-tinggilevel-sedang-dan-level-rendah-dalam-level-gerak-tari%e2%80%8b">
+                            20. jelaskan tentang level tinggi,level sedang dan level rendah dalam level gerak tari​</h2><br />
+                        1. Level tinggi<br />Gerak level tinggi,  contohnya melompat,  melayang, atau gerak terbang.  Gerak level tinggi dapat menggunakan alat bantu berupa susuna panggung kecil (trap)  atau alat bantu tali yang berfungsi untuk memberikan kesan melayang pada gerak tari yang ditampilkan. Level tinggi pada gerak tari sering dilakukan pada Balet. Penari Balet sering melakukan gerak level tinggi yaitu melayang.<br /><br />2. Level sedang <br />pada dasarnya level sedang ditunjukkan pada posisi penari berdiri secara lurus diatas pentas.  Gerak yang dilakukan memiliki dmkesan maskulinitas karena gerak seperti ini sering digunakan oleh penari pria. Properti dengan menggunakan tongkat sering dijumpai gerak tari Jawa, Sunda, Kalimantan, dan Papua, serta daerah lain. <br /><br />3. Level rendah<br />Gerak berguling yang dilakukan dalam gerak tari disebut gerak level rendah. Pada gerak level rendah, ketinggian minimal dicapai penari. Contoh tari yang melakukan level rendah adalah tari Barong. <br />
+                                            <h2 class="ez-toc-section" id="berapa-level-pembagian-mesin-komputer">
+                            21. Berapa level pembagian mesin komputer</h2><br />
+                        a. Input Device (Alat Masukan)<br /><br />Adalah perangkat keras komputer yang berfungsi sebagai alat untuk memasukan data atau perintah ke dalam komputer<br /><br />b. Output Device (Alat Keluaran)<br /><br />Adalah perangkat keras komputer yang berfungsi untuk menampilkan keluaran sebagai hasil pengolahan data. Keluaran dapat berupa hard-copy (ke kertas), soft-copy (ke monitor), ataupun berupa suara.<br /><br />c. I/O Ports<br /><br />Bagian ini digunakan untuk menerima ataupun mengirim data ke luar sistem. Peralatan input dan output di atas terhubung melalui port ini.<br /><br />d. CPU (Central Processing Unit)<br /><br />CPU merupakan otak sistem komputer, dan memiliki dua bagian fungsi operasional, yaitu: ALU (Arithmetical Logical Unit) sebagai pusat pengolah data, dan CU (Control Unit) sebagai pengontrol kerja komputer.<br /><br />e. Memori<br /><br />Memori terbagi menjadi dua bagian yaitu memori internal dan memori eksternal. Memori internal berupa RAM (Random Access Memory) yang berfungsi untuk menyimpan program yang kita olah untuk sementara waktu, dan ROM (Read Only Memory) yaitu memori yang haya bisa dibaca dan berguna sebagai penyedia informasi pada saat komputer pertama kali dinyalakan.<br /><br />f. Data Bus<br /><br />Adalah jalur-jalur perpindahan data antar modul dalam sistem komputer. Karena pada suatu saat tertentu masing-masing saluran hanya dapat membawa 1 bit data, maka jumlah saluran menentukan jumlah bit yang dapat ditransfer pada suatu saat. Lebar data bus ini menentukan kinerja sistem secara keseluruhan. Sifatnya bidirectional, artinya CPU dapat membaca dan menirma data melalui data bus ini. Data bus biasanya terdiri atas 8, 16, 32, atau 64 jalur paralel.<br /><br />g. Address Bus<br /><br />Digunakan untuk menandakan lokasi sumber ataupun tujuan pada proses transfer data. Pada jalur ini, CPU akan mengirimkan alamat memori yang akan ditulis atau dibaca.Address bus biasanya terdiri atas 16, 20, 24, atau 32 jalur paralel.<br /><br />h. Control Bus<br /><br />Control Bus digunakan untuk mengontrol penggunaan serta akses ke Data Bus dan Address Bus. Terdiri atas 4 sampai 10 jalur paralel.<br /><br />Komputer dilihat dari sudut pandang Fungsi<br /><br />￼<br /><br />Fungsi – Pemindahan data<br /><br />￼<br /><br />žContoh: dari keyboard ke layar monitor<br /><br />Fungsi – Penyimpanan data<br /><br />￼<br /><br />žContoh: download dari internet<br /><br />Fungsi – Pengolahan data<br /><br />￼<br /><br />žContoh: updating bank statement<br /><br />Struktur Komputer – Top Level<br /><br />￼<br /><br />Struktur CPU<br /><br />￼<br /><br />KOMPUTER MESIN 6 LEVEL<br /><br />￼<br /><br />žLevel 0 dari mesin tersebut merupakan level logika digital, dimana berisi logika-logika yang diwujudkan dalam bentuk logika gerbang. Level inilah yang merupakan hardware sesungguhnya dari sebuah mesin. Logika digital dibentuk dalam suatu komponen analog seperti misalnya transistor dan sebagainya.žLevel 1 merupakan level arsitektur mikro. Pada level ini terdapat rangkaian dasar sebuah prosesor yang disebut dengan Arithmetic Logic Unit (ALU)yang terdiri dari sekumpulan register yang mampu melakukan operasi-operasi logika aritmatika sederhana. Pada level ini juga terdapat program yang mengendalikan beberapa operasi di dalamnya yang disebut dengan nama program mikro. Disamping sebagai pengendali, program mikro ini juga berfungsi sebagai interpreter atau penerjemah untuk instruksi-instruksi dari level di atasnya.žLevel 2 disebut juga sebagai level arsitektur perangkat instruksi. Biasa disebut juga level ISA (Instruction Set Architecture). Level ini berisikan instruksi-instruksi dasar sebuah mesin seperti yang biasanya terdapat pada manual book dari produk-produk komponen komputer yang dikeluarkan oleh pabrik.žLevel 3 merupakan level mesin sistem operasi. Level ini merupakan level pengaturan mesin yang dilakukan oleh sebuah perangkat lunak yang disebut dengan sistem operasi. Artinya adalah bahwa pekerjaan-pekerjaan yang dilakukan oleh mesin diinterpretasikan secara parsial oleh sistem operasi.Level 4 merupakan level bahasa rakitan. Jika pada level 0 sampai dengan level 3 implementasinya dikerjakan oleh programmer sistem, mulai level 4 pekerjaan dapat dilakukan oleh programer aplikasižLevel 5 merupakan level bahasa tingkat tinggi. Pada level ini, programer yang ingin memberikan instruksi pada komputer tidak perlu susah-susah belajar bahasa mesin karena bahasa yang dipakai adalah bahasa tinggi yang dipahami manusia<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-penerapan-level-tinggi-level-sedang-level-rendah">
+                            22. Jelaskan penerapan level tinggi level sedang level rendah</h2><br />
+                        Level tinggi : Level tinggi pada gerak tari sering dilakukan pada tradisi tari balet.<br /><br />Level sedang :gerak pada level sedang hampir dimiliki oleh semua tari tradisional Indonesia. <br /><br />Level Rendah : Berguling dari satu tempat ketempat lain. Terus bergerak seolah tanpa lelah. <br />
+                                            <h2 class="ez-toc-section" id="jelaskan-level-interaktifitas-dalam-media-pembelajaran-berbasis-komputer">
+                            23. Jelaskan Level Interaktifitas dalam media pembelajaran berbasis Komputer?</h2><br />
+                        <p><strong>Level interaktivitas dalam media pembelajaran berbasis komputer </strong>adalah: sebuah kemudahan yang diberikan kepada pengguna untuk mengakses berbagai macam bentuk media di dalam sebuah media pembelajaran berbasis komputer sehingga kemudahan akses tersebut memberikan kepuasan bagi penggunanya.</p><p></p>Pembahasan<p>Ada setidaknya<strong> empat level interaktivitas dalam media pembelajaran berbasis komputer </strong>yang harus kita ketahui, antara lain:</p><strong>Umpan balik</strong>. Tingkatan ini merupakan level yang paling rendah dalam interaktivitas media berbasis komputer. Umpan balik terhadap siswa dapat diberikan secara langsung maupun dilakukan beberapa saat kemudian dan biasanya bersifat sederhana, korektif (menyatakan benar atau salah), memberikan penjelasan, dan bisa diatur dengan atau tanpa kendali siswa.<strong>Manipulasi</strong>. Tingkatan ini merupakan perubahan secara real time yang menyediakan transformasi informasi berdasarkan jawaban siswa. Manipulasi terbagi atas dua jenis, yakni berupa kendali siswa (siswa yang menggerakkan elemen sendiri seperti drag and drop) dan kendali sistem otomatis (siswa tinggal memperhatikan simulasi yang bergerak sendiri).<strong>Adaptasi</strong>. Level ini menyesuaikan kebiasaan siswa dan memilihkan tugas pembelajaran, evaluasi, dan lain-lain sesuai dengan kebiasaan siswa ketika online.<strong>Komunikasi</strong>. Level ini merupakan tingkatan tertinggi yang membutuhkan media pembelajaran online yang dinamis dan tersinkronisasi antara siswa dan guru secara real time.<p></p>Pelajari lebih lanjutMateri tentang media pembelajaran berbasis ICT https://brainly.co.id/tugas/22640260	Materi tentang langkah penggunaan media pembelajaran https://brainly.co.id/tugas/22668167Materi tentang media digital berbasis komputer https://brainly.co.id/tugas/22535120<p></p>Detail jawaban<p>Kelas : 10</p><p>Mapel : TI</p><p>Bab : Ketentuan Penggunaan Teknologi Informasi dan Komunikasi</p><p>Kode: 10.11.3</p><p><strong>#AyoBelajar #SPJ2</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tingkat-bahasa-pemrograman-yang-berisi-instruksi-intruksi-yang-di-tujukan-kepada-komputer-dengan-menggunakan-kode-kode-biner-adalah-a-high-levelb-pemrograman-java-scriptc-medium-leveld-low-level">
+                            24. Tingkat bahasa pemrograman yang berisi instruksi-intruksi yang di tujukan kepada komputer dengan menggunakan kode-kode biner adalah...A.high levelB.pemrograman java scriptC.medium levelD.low level​</h2><br />
+                        <p> jawabannya</p><p></p><p> D.low level</p><p> </p><p></p><p>maaf kalau salah maaf sekali kalau salah</p><p></p><p>Jawaban:</p><p>D. low level</p><p>Penjelasan:</p><p>Bahasa program tingkat rendah atau low level berisi instruksi-instruksi yang ditujukan kepada komputer dengan menggunakan kode biner (binary code) yang mana kode-kode tersebut akan langsung diterjemahkan oleh komputer tanpa perlu melalui proses kompilasi</p><p></p><p>Semoga membantu</p><p>Maaf kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tiga-elemen-level-gerak-dalam-tari-level-rendah-level-sedang-dan-level-tinggi">
+                            25. Jelaskan tiga elemen level gerak dalam tari, level rendah, level sedang dan level tinggi!</h2><br />
+                        <strong>Level rendah</strong> adalah suatu level dalam tarian yang dilakukan dengan cara duduk dan berbaring.<strong>Level sedang</strong> adalah suatu level dalam tarian dilakukan dengan cara berdiri.<strong>Level tinggi</strong> adalah suatu level dalam tarian yang dilakukan dengan cara melompat.<p></p><strong>✧ ☛ Pembahasan ☚ ✧</strong><strong>➩ Pengertian tarian</strong>Tarian adalah suatu gerakan yang berirama yang dilakukan pada di suatu tempat dengan waktu tertentu yang mempunyai tujuan untuk mengekspresikan sebuah perasaan dan menyampaikan suatu pesan dari seseorang ataupun secara berkelompok. <p></p><strong>➩ Jenis - jenis pada tarian</strong><strong>Tari Tunggal</strong> adalah suatu tarian yang dilakukan oleh satu orang saja. Contoh tariannya seperti tari gambyong, tari gatotkaca, tari koncar, dan Tari gunung sari. <strong>Tari berpasangan</strong> adalah suatu tarian yang dilakukan oleh dua orang. Tarian tersebut bisa dilakukan oleh perempuan dengan perempuan, laki - laki dengan laki - laki, dan laki - laki dengan perempuan. <strong>Tari kelompok</strong> adalah suatu tarian yang dilakukan dengan ramai - ramai atau dengan menggunakan banyaknya penari. <p></p><strong>➩ Unsur utama pada tarian</strong><strong>Wiraga</strong> adalah suatu unsur yang pertama kali dilakukan oleh seorang penari supaya tarian yang ditampilkan tersebut bisa menampakkan gerakan badan dalam posisi apapun. <strong>Wirama</strong> adalah suatu unsur yang paling penting dalam sebuah tarian. Mengapa demikian? karena dalam suatu tarian si penari tersebut harus bisa memadukan musik pengiring dan gerakan badan yang dilakukan pada seorang penari<strong>Wirasa</strong> adalah suatu unsur dalam tarian yang bertujuan untuk menyampaikan suatu perasaan yang ada didalam jiwa tersebut. <p></p><strong>➩ Macam - macam level pada tarian</strong><strong>Level rendah</strong> adalah suatu level dalam tarian yang dilakukan dengan cara duduk dan berbaring. Contoh tariannya seperti tari saman. <strong>Level sedang</strong> adalah suatu level dalam tarian dilakukan dengan cara berdiri. Contoh tariannya seperti Tari Jaipong, Tari tor-tor, dan Tari piring. Level tinggi adalah suatu level dalam tarian yang dilakukan dengan cara melompat. Contoh tariannya seperti Tari balet dan Tari Perang. <p></p><strong>➩ Contoh tarian dengan daerah asalnya</strong>Tari Seudati yang berasal dari AcehTari Kecak yang berasal dari BaliTari Pendet yang berasal dari BaliTari Merak yang berasal dari Jawa BaratTari Jaipong yang berasal dari Jawa BaratTari Perang yang berasal dari PapuaTari Serimpi yang berasal dari Jawa Tengah<p></p><strong>✧ </strong><strong>☛</strong><strong> Kesimpulan </strong><strong>☚</strong><strong> ✧</strong><p>Jadi, dapat disimpulkan bahwa <strong>level rendah</strong> adalah suatu level dalam tarian yang dilakukan dengan cara duduk dan berbaring, sedangkan <strong>level sedang</strong> adalah suatu level dalam tarian dilakukan dengan cara berdiri, serta <strong>level tinggi</strong> adalah suatu level dalam tarian yang dilakukan dengan cara melompat.</p><p></p><strong>➤ Pelajari Lebih Lanjut</strong><strong>Materi tentang macam-macam level tari</strong> : https://brainly.co.id/tugas/13844354<strong>Materi tentang tari pada level rendah, level sedang, dan level tinggi pada tarian</strong> : https://brainly.co.id/tugas/12279682<strong>Contoh gerak tari dengan level tinggi, level rendah, dan level sedang</strong> : https://brainly.co.id/tugas/20020068<p></p><strong>➤ Detail Jawaban</strong><p><strong>Kelas</strong> : 3 SMP</p><p><strong>Mapel</strong> : Seni Budaya</p><p><strong>Materi</strong> : Bab 13 - Komposisi Tari</p><p><strong>Kode Kategorisasi</strong> : 9.19.13</p><p></p>#Semangat#TingkatkanPrestasimu#BelajarBersamaBrainly<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-level-level-raid%e2%80%8b">
+                            26. Jelaskan level-level RAID?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Raid terdiri dapat dibagi menjadi enam level yang berbeda: Raid level 0. Menggunakan kumpulan disk dengan striping pada level blok, tanpa redundansi. ... RAID level 2. Merupakan pengorganisasian dengan error correction code (ECC). Seperti pada memory dimana pendeteksian mengalami error mengunakan paritas bit.</p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-level-tinggilevel-sedangdan-level-rendah">
+                            27. jelaskan level tinggi,level sedang,dan level rendah</h2><br />
+                        level tinggi adalah level yang paling sulit di bandingkan level sedang dan level rendah.<br /><br />sedangkan, level aedang adalah level yang berada di tengah-tengah atau juga level yang lebih sulit dari level redah dan lebih mudah dari pada level tinggi<br /><br />sedangkan, level rendah adalah level yang paling mudah Dari pada level yang lain<br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-level-sedang-mediumpada-level-tari">
+                            28. Jelaskan pengertian level Sedang (Medium)pada level tari</h2><br />
+                        <p></p><p>Pada level sedang, penari melakukan gerakan berdiri seperti biasa. Level medium jika dilakukan dalam kelompok secara terus-menerus akan terkesan monoton. Oleh karena itu, level ini harus divariasi dengan level lain jika dipakai dalam peragaan tari secara berkelompok.</p><p></p><p>Semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="3-level-abstraksi-pd-komputer%e2%80%8b">
+                            29. 3 level abstraksi pd komputer​</h2><br />
+                        <p>Jawaban:</p><p>3level abstraksi..abstraksi adalah proses representasi data dan program dalam bentuk sama dengan pengertiannya (semantik), dengan menyembunyikan rincian / detail implementasi. Abstraksi mencoba menyembunyikan detail agar programmer dapat berfokus pada konsep tertentu saja pada satu waktu.</p><p>Penjelasan:</p><p>Tiga level abstraksi data:</p><p></p><p>Level Fisik (Physical Level). Pemakai melihat data sebagai gabungan dari struktur dan datanya sendiri dan berkompeten dalam mengetahui bagaimana representasi fisik dari penyimpanan/pengorganisasian data (teks, angka, himpunan bit data, dll).</p><p>Level Lojik/Konseptual (Conseptual Level). Menggambarkan data apa yang sebenarnya (secara fungsional) disimpan dalam basis data dan hubungannya dengan data yang lain.</p><p>Level Penampakan (View Level). Untuk pemakai yang hanya membutuhkan sebagian data/informasi dalam basis data yang kemunculannya di mata pemakai diatur oleh aplikasi end-user.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tiga-elemen-level-gerak-dalam-tari-level-rendah-level-sedang-dan-level-tinggi%e2%80%8b">
+                            30. Jelaskan tiga elemen level gerak dalam tari, level rendah, level sedang dan level tinggi!​</h2><br />
+                        <p><strong>jawaban </strong></p><p><strong>jawaban Berikut penjelasan setiap level beserta contoh tariannya:</strong></p><p></p><p><strong>jawaban Berikut penjelasan setiap level beserta contoh tariannya:1. Level Rendah</strong></p><p><strong>jawaban Berikut penjelasan setiap level beserta contoh tariannya:1. Level RendahLevel rendah saat menari biasanya ketika penarik melakukan gerakan rebah atau berguling di lantai. Gerakan berguling biasanya dilakukan penari dari satu area ke area lain seakan tanpa lelah. Contoh level gerak tari rendah yaitu tari saman dari Aceh dan tari sekapur sirih dari Jambi.</strong></p><p></p><p><strong>jawaban Berikut penjelasan setiap level beserta contoh tariannya:1. Level RendahLevel rendah saat menari biasanya ketika penarik melakukan gerakan rebah atau berguling di lantai. Gerakan berguling biasanya dilakukan penari dari satu area ke area lain seakan tanpa lelah. Contoh level gerak tari rendah yaitu tari saman dari Aceh dan tari sekapur sirih dari Jambi.2. Level Sedang</strong></p><p><strong>jawaban Berikut penjelasan setiap level beserta contoh tariannya:1. Level RendahLevel rendah saat menari biasanya ketika penarik melakukan gerakan rebah atau berguling di lantai. Gerakan berguling biasanya dilakukan penari dari satu area ke area lain seakan tanpa lelah. Contoh level gerak tari rendah yaitu tari saman dari Aceh dan tari sekapur sirih dari Jambi.2. Level SedangLevel sedang hampir selalu ada di setiap tarian, termasuk tari tradisional di Indonesia. Gerak pada level ini ditunjukkan dengan posisi penari berdiri, tak jarang menggunakan properti tongkat atau tombak jika tarian bertema peperangan. Contoh gerak tari level sedang yaitu tari piring dari Sumatera Barat, tari jaipong dari Jawa Barat, tari tor-tor dari Sumatera Utara, dan lainnya</strong></p><p></p><p><strong>jawaban Berikut penjelasan setiap level beserta contoh tariannya:1. Level RendahLevel rendah saat menari biasanya ketika penarik melakukan gerakan rebah atau berguling di lantai. Gerakan berguling biasanya dilakukan penari dari satu area ke area lain seakan tanpa lelah. Contoh level gerak tari rendah yaitu tari saman dari Aceh dan tari sekapur sirih dari Jambi.2. Level SedangLevel sedang hampir selalu ada di setiap tarian, termasuk tari tradisional di Indonesia. Gerak pada level ini ditunjukkan dengan posisi penari berdiri, tak jarang menggunakan properti tongkat atau tombak jika tarian bertema peperangan. Contoh gerak tari level sedang yaitu tari piring dari Sumatera Barat, tari jaipong dari Jawa Barat, tari tor-tor dari Sumatera Utara, dan lainnya3. Level Tinggi</strong></p><p><strong>jawaban Berikut penjelasan setiap level beserta contoh tariannya:1. Level RendahLevel rendah saat menari biasanya ketika penarik melakukan gerakan rebah atau berguling di lantai. Gerakan berguling biasanya dilakukan penari dari satu area ke area lain seakan tanpa lelah. Contoh level gerak tari rendah yaitu tari saman dari Aceh dan tari sekapur sirih dari Jambi.2. Level SedangLevel sedang hampir selalu ada di setiap tarian, termasuk tari tradisional di Indonesia. Gerak pada level ini ditunjukkan dengan posisi penari berdiri, tak jarang menggunakan properti tongkat atau tombak jika tarian bertema peperangan. Contoh gerak tari level sedang yaitu tari piring dari Sumatera Barat, tari jaipong dari Jawa Barat, tari tor-tor dari Sumatera Utara, dan lainnya3. Level TinggiGerak tari level tinggi ditemukan pada tari balet. Penari dengan gerakan level tinggi membentuk pola melayang yang baik dan benar. Selain pada tari balet, contoh gerak tari level tinggi yaitu tari perang dari Papua.</strong></p><p></p><p></p><p><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>semoga </strong><strong>membantu</strong><strong> </strong></p><p><strong>jadi</strong><strong> </strong><strong>kan</strong><strong> </strong><strong>jawaban</strong><strong> </strong><strong>yg</strong><strong> </strong><strong>terbaik</strong></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/TWRse5BMCvk?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>bahasa_lain</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/bahasa-krama-akeh.html">Bahasa Krama Akeh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/mengapa-pancasila-dikatakan-memiliki-dimensi-realitas.html">Mengapa Pancasila Dikatakan Memiliki Dimensi Realitas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/reptil-yang-dapat-dijadikan-ternak-kesayangan-dari-australia-adalah.html">Reptil Yang Dapat Dijadikan Ternak Kesayangan Dari Australia Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/apa-yang-dimaksud-dengan-penyerbukan-bastar.html">Apa Yang Dimaksud Dengan Penyerbukan Bastar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/sebutkan-batas-batas-negara-asean.html">Sebutkan Batas Batas Negara Asean</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/qs-an-nisa-ayat-101.html">Qs An Nisa Ayat 101</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/bahasa-sunda-alis.html">Bahasa Sunda Alis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/berikut-contoh-makanan-khas-daerah-yang-mengandung-karbohidrat-kecuali.html">Berikut Contoh Makanan Khas Daerah Yang Mengandung Karbohidrat Kecuali</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/laer-gado-artinya.html">Laer Gado Artinya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/ikhlas-adalah-brainly.html">Ikhlas Adalah Brainly</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/ciri-khusus-harimau.html">Ciri Khusus Harimau</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/kuat-dan-lemah-adalah-tekanan-nada-pada.html">Kuat Dan Lemah Adalah Tekanan Nada Pada</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/tahsinul-kitabah-adalah.html">Tahsinul Kitabah Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/apa-yang-dimaksud-tangga-nada-laras-pelog.html">Apa Yang Dimaksud Tangga Nada Laras Pelog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/makna-birama-4-4-adalah.html">Makna Birama 4 4 Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/sasmitane-tembang-macapat.html">Sasmitane Tembang Macapat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/apa-yang-bisa-kamu-simpulkan-tentang-luas-permukaan-bangun-gabungan.html">Apa Yang Bisa Kamu Simpulkan Tentang Luas Permukaan Bangun Gabungan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/cara-membuat-bendera-hias.html">Cara Membuat Bendera Hias</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/definisi-hukum-menurut-leon-duguit.html">Definisi Hukum Menurut Leon Duguit</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/dimana-biasanya-tempat-mistik.html">Dimana Biasanya Tempat Mistik</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://truestudy.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://truestudy.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

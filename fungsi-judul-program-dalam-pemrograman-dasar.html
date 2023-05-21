@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Judul Program Dalam Pemrograman Dasar - QnA</title>
+    <meta name="description" content="Fungsi Judul Program Dalam Pemrograman Dasar, , , , , , , 0, Cara mendeklarasikan macam-macam fungsi di dalam pemrograman | Matkul.xyz, matkul.xyz, 940 x 510, png, , 20, fungsi-judul-program-dalam-pemrograman-dasar, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Judul Program Dalam Pemrograman Dasar - QnA" />
+    <meta property="og:description" content="Fungsi Judul Program Dalam Pemrograman Dasar, , , , , , , 0, Cara mendeklarasikan macam-macam fungsi di dalam pemrograman | Matkul.xyz, matkul.xyz, 940 x 510, png, , 20, fungsi-judul-program-dalam-pemrograman-dasar, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Judul Program Dalam Pemrograman Dasar - QnA" />
+    <meta name="twitter:description" content="Fungsi Judul Program Dalam Pemrograman Dasar, , , , , , , 0, Cara mendeklarasikan macam-macam fungsi di dalam pemrograman | Matkul.xyz, matkul.xyz, 940 x 510, png, , 20, fungsi-judul-program-dalam-pemrograman-dasar, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://truestudy.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://truestudy.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://truestudy.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://truestudy.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://truestudy.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://truestudy.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://truestudy.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://truestudy.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Judul Program Dalam Pemrograman Dasar</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">ica1033</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Judul+Program+Dalam+Pemrograman+Dasar" alt="Fungsi Judul Program Dalam Pemrograman Dasar">
+                    </div>
+                    <p></p>
+                    <p>fungsi judul program dalam pemrograman dasar</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-judul-program-dalam-pemrograman-dasar">1.
+                                            fungsi judul program dalam pemrograman dasar</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-judul-dalam-pemrograman-dasar">2.
+                                            Fungsi judul dalam pemrograman dasar</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bahasa-pemrograman-adalah-suatu-bahasa-yang-digunakan-untuk-membuat-program-berdasarkan-jenis-software-bahasa-pemrograman-dibedakan-menjadi-dua-yaitu-bahasa-pemrograman-konvensional-dan-bahasa-pemrog">3.
+                                            Bahasa pemrograman adalah suatu bahasa yang digunakan untuk membuat program. Berdasarkan jenis software bahasa pemrograman dibedakan menjadi dua yaitu bahasa pemrograman konvensional dan bahasa pemrograman visual.Adapun tujuan dari pembuatan program pada Sistem Informasi berfungsi untuk​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-cin-pada-pemrograman-dasar%e2%80%8b">4.
+                                            fungsi cin pada pemrograman dasar​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-perbedaan-program-dan-pemrograman%e2%80%8b">5.
+                                            apakah perbedaan program dan pemrograman?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#program-jumlah-dan-hasil-kali-pemrograman-dasar">6.
+                                            program jumlah dan hasil kali (pemrograman dasar )</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mohon-di-bantu-yahhhhberdasarkan-fungsinya-software-dibagi-menjadi-7-yaitu1-sistem-operasi2-bahasa-pemrograman3-program-bantu4-program-aplikasi5-program-paket6-program-permainan7-program-mult">7.
+                                            Mohon di bantu yahhhh
+Berdasarkan fungsinya software dibagi menjadi 7 yaitu:
+1.sistem operasi
+2.bahasa pemrograman
+3.program bantu
+4.program aplikasi
+5.program paket
+6.program permainan
+7.program multimedia
+ Jelaskan masing masing program tersebut.......</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebuah-inturksi-standar-untuk-memerintah-computer-agar-menjalankan-fungsinya-dinamakan-%e2%80%a6-a-bahasa-pemrogramanb-programc-program-visuald-pemrograman%e2%80%8b">8.
+                                            Sebuah inturksi standar untuk memerintah computer agar menjalankan fungsinya dinamakan ….A. Bahasa PemrogramanB. ProgramC. Program VisualD. Pemrograman​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-terdapat-sebuah-string-dasarpemrograman-agar-dapat-menampilkanstring-pemrograman-maka-dapatmenggunakan-fungsi-hotsa-right-dasar-pemrograman-13b-left-dasar-pemrograman-7c-len">9.
+                                            5. Terdapat sebuah string "DasarPemrograman". Agar dapat menampilkanstring "Pemrograman", maka dapatmenggunakan fungsi .... HOTSa. Right ("Dasar Pemrograman", 13)b. Left ("Dasar Pemrograman", 7)C. Len ("Pemrograman")d. Mid ("Dasar Pemrograman", 7, 11)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-fungsi-dan-prosedur-dalam-pemrograman-dasar">10.
+                                            pengertian fungsi dan prosedur dalam pemrograman dasar?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-hubungan-antara-program-pemrograman-dan-bahasa-pemrograman">11.
+                                            apa hubungan antara program, pemrograman, dan bahasa pemrograman</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#program-aplikasi-pascal-dan-java-berfungsi-sebagai-pemrograman">12.
+                                            program aplikasi pascal dan java  berfungsi sebagai...... pemrograman</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#soal-pemrograman-dasar1-apa-yang-dimaksud-dengan-bahasa-pemrograman2-jelaskan-beberapa-alasan-mengapa-bahasa-c-banyak-digunakan3-apa-yang-dimaksud-dengan-output-program4-apa-perbedaan-pengg">13.
+                                            SOAL PEMROGRAMAN DASAR
+1. APA YANG DIMAKSUD DENGAN BAHASA PEMROGRAMAN?
+2. JELASKAN BEBERAPA ALASAN MENGAPA BAHASA C BANYAK DIGUNAKAN!
+3. APA YANG DIMAKSUD DENGAN OUTPUT PROGRAM?
+4. APA PERBEDAAN PENGGUNAAAN FUNGSI PUTS DAN PRINTF?
+5. PERHATIKAN KODE PROGRAM BERIKUT!
+Bagaimana output dari program tersebut apabila pengguna memasukkan huruf m</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kuliah-ini-menggunakan-buku-acuan-berjudul-dasar-dasar-algoritma-pemrograman-bagian-manakah-yang-harus-ditulis-miringa-menggunakanb-bukuc-berjuduld-dasar-dasar-algoritma-pemrogramane-algor">14.
+                                            Kuliah ini menggunakan buku acuan berjudul Dasar-Dasar Algoritma Pemrograman. Bagian manakah yang harus ditulis miring?
+a. menggunakan
+b. buku
+c. berjudul
+d. Dasar-Dasar Algoritma Pemrograman
+e. algoritma</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pemrograman-yang-dilakukan-tanpamenuliskan-kode-kode-programmelainkan-menyusun-blok-blok-programyang-dapat-dilakukan-dengan-mudah-a-program-blokb-program-utilitasc-perangkat-lunak-pemrogramand">15.
+                                            Pemrograman yang dilakukan tanpamenuliskan kode-kode program,melainkan menyusun blok-blok programyang dapat dilakukan dengan mudah...A. Program BlokB. Program UtilitasC. Perangkat Lunak PemrogramanD. Bahasa Pemrograman​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-hubungan-antara-program-dasar-dengan-pemrograman%e2%80%8b">16.
+                                            jelaskan hubungan antara program dasar dengan pemrograman​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-serangkaian-instruksi-yang-tertulis-untuk-melakukan-suatu-fungsi-spesifik-pada-computer-disebut-%e2%80%a6-%c2%a0a-bahasa-pemrogramanb-pemrograman-visualc-programd-pemrograman%e2%80%8b">17.
+                                            1. Serangkaian instruksi yang tertulis untuk melakukan suatu fungsi spesifik pada computer , disebut …. *a. Bahasa pemrogramanb. Pemrograman visualc. Programd. Pemrograman​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-program-sederhana-untuk-menampilkan-hari-ini-saya-belajar-pemrograman-dasar%e2%80%8b">18.
+                                            tuliskan program sederhana untuk menampilkan hari ini saya belajar pemrograman dasar​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-adalah-jenis-bahasa-pemrograman-berdasarkan-listing-program-yang-ada-sekarang-ini-kecuali">19.
+                                            Berikut ini adalah jenis bahasa pemrograman berdasarkan listing program yang ada sekarang ini, kecuali.....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#aplikasi-yang-dapat-menjalankan-suatu-program-untuk-melakukan-fungsi-%e2%80%93-fungsi-dari-embedded-system-melalui-sintaks-pemrograman-adalah-%e2%80%8b">20.
+                                            Aplikasi Yang Dapat Menjalankan Suatu Program Untuk Melakukan Fungsi – Fungsi Dari Embedded System Melalui Sintaks Pemrograman Adalah...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kapan-pemrogram-menulis-program-yang-sebenarnya">21.
+                                            kapan pemrogram menulis program yang sebenarnya?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-kaitan-program-dan-pemrograman%e2%80%8b">22.
+                                            Apa kaitan program dan pemrograman​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#program-dan-bahasa-pemrograman">23.
+                                            PROGRAM DAN BAHASA PEMROGRAMAN</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-contoh-contoh-program-pemrograman-dasar">24.
+                                            Buat Contoh contoh program pemrograman dasar</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#badan-fungsi-pemrograman-dasar-adalah">25.
+                                            Badan Fungsi Pemrograman Dasar Adalah?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-diskusikanlah-secara-bersama-sama-mengenai-konsep-dasar-pemrograman-logika-seperti-tautologi-implikasi-konjungsi-disjungsi-negasi-dan-quantifier-jelaskan-masing-masing-konsep-dan-berikan-cont">26.
+                                            1. Diskusikanlah secara bersama-sama mengenai konsep dasar Pemrograman Logika seperti tautologi, implikasi, konjungsi, disjungsi, negasi, dan quantifier. Jelaskan masing-masing konsep dan berikan contoh penggunaannya dalam Pemrograman Logika.2. Buatlah program sederhana menggunakan aturan (rule) dan fakta (fact) di dalam file .pl. Program tersebut minimal menggunakan konsep dasar Pemrograman Logika seperti tautologi, implikasi, konjungsi, disjungsi, negasi, dan quantifier. Program tersebut dapat berupa permainan tebak-tebakan atau program untuk menentukan suatu kategori suatu objek.3. Presentasikan program yang telah dibuat di depan kelas dan jelaskan penggunaan konsep dasar Pemrograman Logika dalam program tersebut.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menghitung-luas-persegi-panjang-menggunakan-program-berulangsmk-pemrograman-dasar">27.
+                                            menghitung luas persegi panjang menggunakan program berulang#SMK pemrograman Dasar</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-output-atau-hasil-atau-yang-keluar-dari-program-diatasmateri-pemrograman-dasar-mohon-dijawab-%e2%80%8b">28.
+                                            Apa output atau hasil atau yang keluar dari program diatasmateri pemrograman dasar mohon dijawab ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-antara-program-pemrograman-programer-aplikasi-pemrograman-dan-bahasa-pemrograman">29.
+                                            Apa perbedaan antara program, pemrograman, programer, aplikasi pemrograman dan bahasa pemrograman</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-perhatikan-kode-program-berikutoutput-yang-ditampilkan-pada-text-1-text-adalah-a-abc-db-8c-28d-48-2-terdapat-sebuah-string-dasar-pemrograman-agar-dapat-menampilkan-string-pemrograman">30.
+                                            1.perhatikan kode program berikut!output yang ditampilkan pada text 1. text adalah a. a/b+c-db. 8c. 28d. 48 2. terdapat sebuah string " dasar pemrograman". agar dapat menampilkan string "pemrograman", maka dapat menggunakan fungsi....a. right ("Dasar Pemrograman",13)b. left ("Dasar Pemrograman", 7)c. Len (" Pemrograman")d. Mid (" Dasar Pemrograman",7,11 ) plis jawab kak butuh bangetjawab yang benar yak ​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="fungsi-judul-program-dalam-pemrograman-dasar">
+                            1. fungsi judul program dalam pemrograman dasar</h2><br />
+                        untuk menunjukkan program apa yang sedang dibuat<br />
+                                            <h2 class="ez-toc-section" id="fungsi-judul-dalam-pemrograman-dasar">
+                            2. Fungsi judul dalam pemrograman dasar</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>untuk menunjukkan program apa yang sedang di buat</p><br />
+                                            <h2 class="ez-toc-section" id="bahasa-pemrograman-adalah-suatu-bahasa-yang-digunakan-untuk-membuat-program-berdasarkan-jenis-software-bahasa-pemrograman-dibedakan-menjadi-dua-yaitu-bahasa-pemrograman-konvensional-dan-bahasa-pemrog">
+                            3. Bahasa pemrograman adalah suatu bahasa yang digunakan untuk membuat program. Berdasarkan jenis software bahasa pemrograman dibedakan menjadi dua yaitu bahasa pemrograman konvensional dan bahasa pemrograman visual.Adapun tujuan dari pembuatan program pada Sistem Informasi berfungsi untuk​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>membantu  manusia dalam mengelola data untuk menjadi informasi.</p><p></p><p><strong>semoga tepat dan membantu &lt;</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-cin-pada-pemrograman-dasar%e2%80%8b">
+                            4. fungsi cin pada pemrograman dasar​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>fungsi cin terdapat pada c++, biasanya digunakan untuk menangkap masukan yang di masukkan pengguna dari terminal. </p><br />
+                                            <h2 class="ez-toc-section" id="apakah-perbedaan-program-dan-pemrograman%e2%80%8b">
+                            5. apakah perbedaan program dan pemrograman?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Program adalah deretan instruksi yang diberikan kepada komputer untuk menjalankan suatu pekerjaan tertentu.</p><p>Program adalah perantara bagi komputer untuk menjalankan suatu perintah.</p><p>Pemrograman. Pemrograman adalah suatu proses penulisan dan penyuntingan kode sumber sehingga membentuk sebuah program.</p><br />
+                                            <h2 class="ez-toc-section" id="program-jumlah-dan-hasil-kali-pemrograman-dasar">
+                            6. program jumlah dan hasil kali (pemrograman dasar )</h2><br />
+                        1. Program Penjumlahan :<br /><br />Program Jumlah_Bilangan;<br />uses wincrt;<br />var a,b,z : integer;<br />Begin <br />Writeln('Menghitung Jumlah 2 Bilangan Bulat');<br />Write('Nilai Pertama:');<br />Readln(a);<br />Writeln('Nilai Kedua:');<br />Readln(b);<br />z:=a+b;<br />writeln('hasil jumlah adalah:',z);<br />End.<br /><br />2. Program Perkalian :<br /><br />Program Kali_Bilangan;<br />uses wincrt;<br />var a,b,z : integer;<br />Begin <br />Writeln('Perkalian 2 Bilangan Bulat');<br />Write('Nilai Pertama:');<br />Readln(a);<br />Writeln('Nilai Kedua:');<br />Readln(b);<br />z:=a*b;<br />writeln('Hasil Kali Adalah:',z);<br />End.<br /><br />
+                                            <h2 class="ez-toc-section" id="mohon-di-bantu-yahhhhberdasarkan-fungsinya-software-dibagi-menjadi-7-yaitu1-sistem-operasi2-bahasa-pemrograman3-program-bantu4-program-aplikasi5-program-paket6-program-permainan7-program-mult">
+                            7. Mohon di bantu yahhhh
+Berdasarkan fungsinya software dibagi menjadi 7 yaitu:
+1.sistem operasi
+2.bahasa pemrograman
+3.program bantu
+4.program aplikasi
+5.program paket
+6.program permainan
+7.program multimedia
+ Jelaskan masing masing program tersebut.......</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Macam-Macam Perangkat Lunak</p><p></p><p>Secara umum, software digunakan untuk mempermudah pengorganisasian kinerja Hardware . Dengan adanya software akan mengurangi interaksi manusia pada Hardware yang bermacam-macam.</p><p>Kita dapat mengelompokkan software berdasarkan fungsi atau dukungannya terhadap hardware. Dukungan pada hardware dapat digambarkan dalam diagram dibawah ini:</p><p>￼￼</p><p>Dari gambar terlihat dibawah hardware langsung terdapat software sistem operasi. Software sistem Operasi ini yang melakukan hubungan dengan hardware secara langsung. Hardware yang beroperasi tanpa sistem operasi akan mempunya operasi yang terbatas dan tidak dapat di gunakan untuk menjalasnkansoftware aplikasi.</p><p>Berdasarkan fungsinya, software dibagi menjadi tujuh, yaitu</p><p></p><p>Sistem Operasi</p><p></p><p>Program Aplikasi</p><p></p><p>Bahasa Pemrograman</p><p></p><p>Program Bantu</p><p></p><p>Program Paket</p><p></p><p>Program Permainan</p><p></p><p>Program Multimedia</p><p></p><p>1. SISTEM OPERASI</p><p>Sistem operasimerupakan program utama yang langsung berinteraksi dengan bahasa yang di kenal oleh mesin komputer ( bahasa mesin). Penggunaan processor, memory, hardisk dan komponen lainnya diatur oleh sistem operasi . Contoh Sistem Operasi :</p><p></p><p>Produk Microsoft : Windows 3.1, Windows 95, Windows 98, Windows 2000, WIndows Me, WIndows XP, Windows Vista, WIndows NT (untuk jaringan).</p><p></p><p>Produk Novel : Linux, Redhat, OpenSuse, Ubuntu, Mandrake, Mandriva,dll</p><p></p><p>Produk Apple : Macintosh</p><p></p><p>Produk IBM : DOS, UNIX</p><p></p><p>2. Program Aplikasi</p><p>Program aplikasi merupakan program yang di buat untuk tujuan tertentu, misalnya untuk penjualan di supermarket, untuk mengelola data rumah sakit, untuk mencetak kuitansi, mengedit foto, dan sebagainya.</p><p>3. Bahasa Pemrograman</p><p>Bahasa pemrograman merupakan bahasa yang dipakai untuk membuat program komputer. dengan bahasa pemrograman , kita dapat menyusun perintah-perintah yang harus dijalankan oleh komputer sehingga menghasilkan informasi atau melakukan pekerjaan sesuai dengan keinginan. Tingkatan Bahasa Pemrograman ada 4 yaitu :</p><p></p><p>Low Languange Program ( Bahasa Pemgrograman Tingkat Rendah), contohnya Assembly machine</p><p></p><p>Middle Language Program ( Bahasa Pemrograman Tingkat Menengah), contohnya Bahasa C++</p><p></p><p>High Language Program ( Bahasa Pemrograman Tingkat Tinggi ), Contohnya Pascal, Borland , Fotran</p><p></p><p>4GL ( Bahasa Pemrograman Tingkat ke 4 ), contohnya Visual Basic, Visual FoxPro</p><p></p><p>4. Program Bantu ( Utility )</p><p>Program Bantu merupakan program yang bertujuan untuk mengatur konfigurasi komputer, menjaga komputer dari serangan virus dan hacker, menyelamatkan data dan sebagainya. Program jenis ini tidak banyak melibatkan pengguna dalam penggunaannya, tetapi bekerja sendiri sesuai dengan perintah dan fungsinya. Contoh program bantu yang kita kenal yaitu Anti Virus, Backup , Disk Defragmenter, dsbnya.</p><p>5. Program Paket</p><p>Program paket merupakan gabungan dari beberapa aplikasi yang di paket menjadi kesatuan untuk menangani suatu bidan pekerjaan yang saling berkaitan. Contoh paket yang paling terkenal adalah Microsoft Office dimana didalamnya terdapat program untuk mengolah kata (Microsoft Word), untuk mengolah angka ( Microsoft Excel), Untuk Program Presentasi ( Microsoft Power Point) dll.</p><p>Dilihat dari bidang pekerjaan yang ditangani, program paket dapat dibedakan menjadi:</p><p>1. Aplikasi perkantoran, misalnya : Microsoft Office dan StarOffice</p><p>2. Aplikasi database, misalnya : oracle dan SQL Server</p><p>3. Aplikasi grafik, misalnya Adobe Photoshop dan Corel Draw</p><p>6. Program Permainan</p><p>Program permainan merupakan program-program yang dibuat untuk menampilkan permainan interaktif pada layar komputer.</p><p>Contoh program permainan yang sudah dikenal yaitu :</p><p>a. Solitaire, tersedia pada Accessories WIndows</p><p>b. Counter Strike, umumnya dimainkan di game center</p><p>c. Kurusetra, terkenal sebagai game asli buatan indonesia</p><p>7. Program Multimedia</p><p>Program Multimedia mencakup program-program yang memainkan musik atau lagu, memutar film atau video, untuk menangkap siaran radio atau televisi dan program lainnya. contoh Program multimedia yaitu :</p><p>a. Winamp, umumnya digunakan untuk memainkan lagu mp3</p><p>b. JetAudio dapat memainkan berbagai format lagu serta video</p><p>c. RealPlayer, dapat menangkap siaran radio dan TV dari Internet</p><p></p><p><strong>Penjelasan:</strong></p><p>semoga membantu </p><p>maaf kalau jawabannya kepanjangan</p><p>(✿^‿^)</p><br />
+                                            <h2 class="ez-toc-section" id="sebuah-inturksi-standar-untuk-memerintah-computer-agar-menjalankan-fungsinya-dinamakan-%e2%80%a6-a-bahasa-pemrogramanb-programc-program-visuald-pemrograman%e2%80%8b">
+                            8. Sebuah inturksi standar untuk memerintah computer agar menjalankan fungsinya dinamakan ….A. Bahasa PemrogramanB. ProgramC. Program VisualD. Pemrograman​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A.Bahasa pemrograman</p><p><strong>Penjelasan:</strong></p>SEMOGA MEMBANTU JANGAN LUPA JADIIN JAWABAN TERCERDAS<br />
+                                            <h2 class="ez-toc-section" id="5-terdapat-sebuah-string-dasarpemrograman-agar-dapat-menampilkanstring-pemrograman-maka-dapatmenggunakan-fungsi-hotsa-right-dasar-pemrograman-13b-left-dasar-pemrograman-7c-len">
+                            9. 5. Terdapat sebuah string "DasarPemrograman". Agar dapat menampilkanstring "Pemrograman", maka dapatmenggunakan fungsi .... HOTSa. Right ("Dasar Pemrograman", 13)b. Left ("Dasar Pemrograman", 7)C. Len ("Pemrograman")d. Mid ("Dasar Pemrograman", 7, 11)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. Right ("Dasar Pemrograman", 13)
+</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pengertian-fungsi-dan-prosedur-dalam-pemrograman-dasar">
+                            10. pengertian fungsi dan prosedur dalam pemrograman dasar?</h2><br />
+                        suatu program yang terpisah dalam blok sendiri<br />
+                                            <h2 class="ez-toc-section" id="apa-hubungan-antara-program-pemrograman-dan-bahasa-pemrograman">
+                            11. apa hubungan antara program, pemrograman, dan bahasa pemrograman</h2><br />
+                        hubungannya sangat penting karena hub suatu program dengan bahasa pemrograman saling melengkapi tanpa adanya bahasa pemrograman manusia sulit untuk mengetahui program /pemrograman apa yang ada dan yang terjadi dalam komputer, karena komputer menggunakan bahasa mesin yang hanya mengenak kode 0 dan 1 atau angka biner . dan program digunakan untuk mengatur komp agar melakukan sesuatu tanpa ada program,bahasa pemrograman,pemrograman komputer  tidak dapat menjalankan,membaca apapun di dalamnya<br />
+                                            <h2 class="ez-toc-section" id="program-aplikasi-pascal-dan-java-berfungsi-sebagai-pemrograman">
+                            12. program aplikasi pascal dan java  berfungsi sebagai...... pemrograman</h2><br />
+                        Berfungsi sebagai <strong>Bahasa Pemrograman</strong><br /><br />Semoga Membantu!<br /><br />
+                                            <h2 class="ez-toc-section" id="soal-pemrograman-dasar1-apa-yang-dimaksud-dengan-bahasa-pemrograman2-jelaskan-beberapa-alasan-mengapa-bahasa-c-banyak-digunakan3-apa-yang-dimaksud-dengan-output-program4-apa-perbedaan-pengg">
+                            13. SOAL PEMROGRAMAN DASAR
+1. APA YANG DIMAKSUD DENGAN BAHASA PEMROGRAMAN?
+2. JELASKAN BEBERAPA ALASAN MENGAPA BAHASA C BANYAK DIGUNAKAN!
+3. APA YANG DIMAKSUD DENGAN OUTPUT PROGRAM?
+4. APA PERBEDAAN PENGGUNAAAN FUNGSI PUTS DAN PRINTF?
+5. PERHATIKAN KODE PROGRAM BERIKUT!
+Bagaimana output dari program tersebut apabila pengguna memasukkan huruf m</h2><br />
+                        <p><strong>Jawaban:</strong></p>Bahasa pemrograman adalah instruksi standar untuk memerintah komputer. Jadi program yang ditulis nantinya akan diterjemahkan ke bahasa yang dimengerti oleh komputerIni yang saya tau ya, tolong cari referensi lain untuk jawaban yang lebih logis. Menurut saya kenapa C banyak digunakan itu dikarenakan efficiency memory dan memory managementnya yang fleksibelOutput program adalah hasil keluaran dari program yang dijalankanYang pertama, puts tidak membutuhkan specifier seperti %d, %c, %f dan printf membutuhkan specifier sesuai dengan tipe datanya. Yang kedua puts tidak perlu memberikan "\n" untuk ke line selanjutnya dan jika menggunakan printf kita membutuhkan "\n" untuk ke line selanjutnyam<p></p><br />
+                                            <h2 class="ez-toc-section" id="kuliah-ini-menggunakan-buku-acuan-berjudul-dasar-dasar-algoritma-pemrograman-bagian-manakah-yang-harus-ditulis-miringa-menggunakanb-bukuc-berjuduld-dasar-dasar-algoritma-pemrogramane-algor">
+                            14. Kuliah ini menggunakan buku acuan berjudul Dasar-Dasar Algoritma Pemrograman. Bagian manakah yang harus ditulis miring?
+a. menggunakan
+b. buku
+c. berjudul
+d. Dasar-Dasar Algoritma Pemrograman
+e. algoritma</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>e. algoritma </p><p><strong>Penjelasan:</strong></p><p>semoga membantu..... </p><p>maaf kalo salah.... </p><br />
+                                            <h2 class="ez-toc-section" id="pemrograman-yang-dilakukan-tanpamenuliskan-kode-kode-programmelainkan-menyusun-blok-blok-programyang-dapat-dilakukan-dengan-mudah-a-program-blokb-program-utilitasc-perangkat-lunak-pemrogramand">
+                            15. Pemrograman yang dilakukan tanpamenuliskan kode-kode program,melainkan menyusun blok-blok programyang dapat dilakukan dengan mudah...A. Program BlokB. Program UtilitasC. Perangkat Lunak PemrogramanD. Bahasa Pemrograman​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A.Program Blok</p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-hubungan-antara-program-dasar-dengan-pemrograman%e2%80%8b">
+                            16. jelaskan hubungan antara program dasar dengan pemrograman​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>j</strong>elas berhubungan, karena mau program sedasar apapun jika tidak di lakukan pemrograman/coding ya ga bakal jalan, krn gaada yang bisa dijalankan krn blom di coding</p><br />
+                                            <h2 class="ez-toc-section" id="1-serangkaian-instruksi-yang-tertulis-untuk-melakukan-suatu-fungsi-spesifik-pada-computer-disebut-%e2%80%a6-%c2%a0a-bahasa-pemrogramanb-pemrograman-visualc-programd-pemrograman%e2%80%8b">
+                            17. 1. Serangkaian instruksi yang tertulis untuk melakukan suatu fungsi spesifik pada computer , disebut …. *a. Bahasa pemrogramanb. Pemrograman visualc. Programd. Pemrograman​</h2><br />
+                        <p></p><p>c.progamm</p><p></p><p></p><p>sebuah progam biasanya memiliki suatu bentuk model pengeksekusian tertentu agar dapat secara langsung dieksekusi oleh komputer</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-program-sederhana-untuk-menampilkan-hari-ini-saya-belajar-pemrograman-dasar%e2%80%8b">
+                            18. tuliskan program sederhana untuk menampilkan hari ini saya belajar pemrograman dasar​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>berikut menampilkan hari di berbagai bahasa‎ pemrograman, </p><p></p><p><strong>-</strong><strong> </strong><strong>P</strong><strong>‎</strong><strong>ython:</strong></p><p>fro‎m date‎time impo‎rt da‎te</p><p>‎</p><p>tang‎gal = ‎d‎ate.to‎day().strftim‎e("%‎B ‎%‎d‎, %Y"‎) </p><p>pri‎nt(tan‎ggal) </p><p></p><p><strong>-</strong><strong>‎</strong><strong> </strong><strong>JavaS</strong><strong>‎</strong><strong>cript</strong><strong>:</strong><strong>‎</strong></p><p>v‎ar tan‎ggal =‎ new ‎Date‎().to‎Loca‎leStrin‎g() </p><p>co‎nsol‎e.log(‎tangg‎al) ‎</p><p></p><p><strong>-</strong><strong>‎</strong><strong> </strong><strong>C</strong><strong>‎</strong><strong>+</strong><strong>‎</strong><strong>+</strong></p><p>#‎in‎clude &lt;i‎o‎stre‎am‎&gt;‎</p><p>‎#incl‎u‎d‎e ‎&lt;c‎hr‎o‎no‎&gt;</p><p>#in‎clude &lt;c‎time‎&gt;    </p><p>‎</p><p>in‎‎t m‎ai‎n‎(‎) {‎</p><p>   ‎ auto w‎ak‎tu_skrg = std‎::‎ch‎ro‎no::s‎yst‎em_‎clock‎‎:‎:now‎();</p><p>‎</p><p>    std::ti‎me_‎t tanggal =‎ std::ch‎rono::system_clock::to_time_t(waktu_skrg);</p><p></p><p>    st‎d::co‎ut ‎&lt;‎&lt; "skrg t‎an‎ggal,‎ " &lt;&lt; st‎d::ctim‎e(‎&amp;tang‎gal);</p><p>}‎</p><p>‎</p><p>Refer‎e‎‎nsi unt‎uk p‎‎em‎ula‎, ‎‎http‎s://‎www‎.w3scho‎ols.c‎om/</p><p></p><p>Bagaim‎ana ca‎‎ra‎ memb‎uat‎ ba‎hasa sen‎d‎iri‎? </p><p>‎http‎s://‎gi‎th‎ub‎.c‎om‎/Fast‎ering18‎/M‎em‎buat-B‎ahasa-Pemrogr‎a‎man</p><br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-adalah-jenis-bahasa-pemrograman-berdasarkan-listing-program-yang-ada-sekarang-ini-kecuali">
+                            19. Berikut ini adalah jenis bahasa pemrograman berdasarkan listing program yang ada sekarang ini, kecuali.....</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Pertanyaan baru di Bahasa lain</p><p>Bagi bagi point lagi</p><p>Sebutkan 4 kebiasaan Nabi saat berbicara (berkomunikasi) dengan teman bicaranya? Jawab sopana</p><p>Tembung tembung kang dianggep angel saka asiling nyemak manut para siswacritane neng "gunung kelud njeblug maneh"cari kata kata yg susah dan tolong ar …</p><p>aku kangenbahasa jawanya apa⊙_⊙</p><p>tentukanlah penertiban administrasi pemerintahan wazir dibantu oleh beberapa depertemen</p><p>tembung² kang dianggep angel saka asiling nyemak manut para siswa</p><p>berasal dari daerah manakan barang barang ini</p><p>Tulisna lan jelentrehno isi isi perangane teks narasi</p><p>Apakah pekabaran injil yang dilakukan paulus dan silas </p><p>Cinta membaca skala termometer menunjukkan angka 30 derajat celcius waktu mengukur suhu tubuh temannya. keterampilan yang dimiliki oleh sinta adalah </p><br />
+                                            <h2 class="ez-toc-section" id="aplikasi-yang-dapat-menjalankan-suatu-program-untuk-melakukan-fungsi-%e2%80%93-fungsi-dari-embedded-system-melalui-sintaks-pemrograman-adalah-%e2%80%8b">
+                            20. Aplikasi Yang Dapat Menjalankan Suatu Program Untuk Melakukan Fungsi – Fungsi Dari Embedded System Melalui Sintaks Pemrograman Adalah...​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jenis-jenis aplikasi komputer misalnya seperti: Pengolah kata – Microsoft Word, OpenOffice, Pengolah angka – Microsoft Excel, Presentasi – Microsoft PowerPoint, Anti virus dan masih banyak lagi yang lainnya.</p><p><strong>Penjelasan:</strong></p><p>maaf klo slh</p><br />
+                                            <h2 class="ez-toc-section" id="kapan-pemrogram-menulis-program-yang-sebenarnya">
+                            21. kapan pemrogram menulis program yang sebenarnya?</h2><br />
+                        <p>1. saat ada tugas</p><p>2. saat tugas menjadi deadline</p><p>3. saat programmer lagi mood</p><p>4. saat ada komputer</p><p>5. saat seseorang mengerti cara membuat program/coding</p><br /><p>yang pasti saat membuat algoritma coding.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-kaitan-program-dan-pemrograman%e2%80%8b">
+                            22. Apa kaitan program dan pemrograman​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Hubungannya sangat penting karena hub suatu program dengan bahasa pemrograman saling melengkapi tanpa adanya bahasa pemrograman manusia sulit untuk mengetahui program /pemrograman apa yang ada dan yang terjadi dalam komputer, karena komputer menggunakan bahasa mesin yang hanya mengenak kode 0 dan 1 atau angka biner . dan program digunakan untuk mengatur komp agar melakukan sesuatu tanpa ada program,bahasa pemrograman,pemrograman komputer  tidak dapat menjalankan,membaca apapun di dalamnya</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="program-dan-bahasa-pemrograman">
+                            23. PROGRAM DAN BAHASA PEMROGRAMAN</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Bahasa pemrograman, atau sering diistilahkan juga dengan bahasa komputer atau bahasa pemrograman komputer, adalah instruksi standar untuk memerintah komputer. Bahasa pemrograman ini merupakan suatu himpunan dari aturan sintaks dan semantik yang dipakai untuk mendefinisikan program komputer.</p><p><strong>Penjelasan:</strong></p><p>Semoga membantu ya</p><p><strong>Jawaban:</strong></p><p>PEMROGRAMAN DAN BAHASA PEMROGRAMAN</p>Pemrograman: Dasar-dasar instruksi untuk memerintah sesuatuBahasa Pemrograman: Bahasa yang digunakan untuk memprogram sesuatu misalnya Bahasa pemrograman C,C++,C#,Java,PHP,dll<p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="buat-contoh-contoh-program-pemrograman-dasar">
+                            24. Buat Contoh contoh program pemrograman dasar</h2><br />
+                        <p> </p><p></p><p> </p><p>1.Bahasa Pemrograman JavaScript. Contoh bahasa pemrograman yang pertama yaitu JavaScript. ...</p><p></p><p>2. Bahasa Pemrograman Java. ...</p><p></p><p>3. Bahasa Pemrograman Python. ...</p><p></p><p>4. Bahasa Pemrograman C# ...</p><p></p><p>Bahasa Pemrograman PHP. ...</p><p></p><p>6. Bahasa Pemrograman C++ ...</p><p></p><p>7. Bahasa Pemrograman C. ...</p><p></p><p>Bahasa Pemrograman TypeScript.</p><p></p><p></p><p><strong>Jawaban:</strong></p><p>1. Bahasa Pemrograman JavaScript</p><p>2.  Bahasa Pemrograman Java</p><p>3. Bahasa Pemrograman Python</p><p>4. Bahasa Pemrograman C#</p><p>5. Bahasa Pemrograman PHP</p><p>6. Bahasa Pemrograman C++</p><p>7. Bahasa Pemrograman C</p><p>8. Bahasa Pemrograman TypeScript</p><p>9. Bahasa Pemrograman Ruby</p><p>10. Bahasa Pemrograman Swift</p><p>11. Bahasa Pemrograman Go</p><p>12. Bahasa Pemrograman Kotlin</p><p>13. Bahasa Pemrograman Perl</p><p>14. SQL</p><p>15. Bahasa Pemrograman VBA (Visual Basic for Application)</p><p>16. HTML dan CSS</p><p>yang aku tau hanya itu maaf kalo salah semoga bermanfaat</p><br />
+                                            <h2 class="ez-toc-section" id="badan-fungsi-pemrograman-dasar-adalah">
+                            25. Badan Fungsi Pemrograman Dasar Adalah?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi dasar dari bahasa pemograman adalah agar komputer dapat mengolah data sesuai dengan alur yang dibuat secara sistematis oleh penyusunnya. Lebih lanjut, pemograman dapat memudahkan pengoperasian sebuah mesin sehingga meringankan pekerjaan manusia.</p><p></p><p><strong>Penjelasan:</strong></p><p>Produksi bahasa pemograman dilakukan melalui proses yang cukup kompleks. Dimulai dengan penyusunan, pengujian, analisis, penyuntingan, hingga optimalisasi. Kode sumber disusun, kemudian diubah menjadi kode mesin, lalu diterjemahkan oleh prosesor sebagai perintah.</p><p></p><p>Bahasa pemograman bisa digunakan untuk membuat program atau perangkat lunak, sekaligus menjadi perintah bagi perangkat keras komputer untuk memulainya agar kemudian dapat dioperasikan oleh pengguna.</p><br />
+                                            <h2 class="ez-toc-section" id="1-diskusikanlah-secara-bersama-sama-mengenai-konsep-dasar-pemrograman-logika-seperti-tautologi-implikasi-konjungsi-disjungsi-negasi-dan-quantifier-jelaskan-masing-masing-konsep-dan-berikan-cont">
+                            26. 1. Diskusikanlah secara bersama-sama mengenai konsep dasar Pemrograman Logika seperti tautologi, implikasi, konjungsi, disjungsi, negasi, dan quantifier. Jelaskan masing-masing konsep dan berikan contoh penggunaannya dalam Pemrograman Logika.2. Buatlah program sederhana menggunakan aturan (rule) dan fakta (fact) di dalam file .pl. Program tersebut minimal menggunakan konsep dasar Pemrograman Logika seperti tautologi, implikasi, konjungsi, disjungsi, negasi, dan quantifier. Program tersebut dapat berupa permainan tebak-tebakan atau program untuk menentukan suatu kategori suatu objek.3. Presentasikan program yang telah dibuat di depan kelas dan jelaskan penggunaan konsep dasar Pemrograman Logika dalam program tersebut.​</h2><br />
+                        <p>1. Konsep Dasar Pemrograman Logika</p>Pemrograman Logika adalah paradigma pemrograman yang berfokus pada penyelesaian masalah dengan menggunakan logika matematika. Konsep dasar dalam pemrograman logika meliputi:Tautologi: suatu kalimat atau pernyataan yang selalu benar, tidak peduli apa pun nilai dari variabel yang terlibat di dalamnya. Contoh tautologi adalah "Jika hujan turun, maka tanah akan basah" karena kalimat tersebut selalu benar.Implikasi: hubungan antara dua pernyataan di mana jika pernyataan pertama benar, maka pernyataan kedua juga benar. Contoh implikasi adalah "Jika kamu belajar, kamu akan lulus" karena jika kamu belajar, kamu akan memperoleh pengetahuan dan keterampilan yang diperlukan untuk lulus.Konjungsi: hubungan antara dua pernyataan di mana keduanya harus benar agar keseluruhan pernyataan juga benar. Contoh konjungsi adalah "Dia suka makan nasi dan lauk pauk" karena keduanya harus benar agar keseluruhan pernyataan benar.Disjungsi: hubungan antara dua pernyataan di mana salah satu atau keduanya harus benar agar keseluruhan pernyataan benar. Contoh disjungsi adalah "Dia akan makan pizza atau pasta" karena jika dia makan salah satu dari keduanya, maka pernyataan tersebut benar.Negasi: pernyataan yang menyatakan kebalikan dari suatu pernyataan. Contoh negasi dari pernyataan "Dia senang berenang" adalah "Dia tidak senang berenang".Quantifier: suatu konstruksi bahasa yang digunakan untuk mengekspresikan kuantitas dari suatu variabel atau nilai yang dibicarakan. Ada dua jenis quantifier dalam pemrograman logika: universal quantifier (untuk semua) dan existential quantifier (ada satu). Contoh universal quantifier adalah "Semua manusia adalah makhluk hidup", sementara contoh existential quantifier adalah "Ada sebuah benda hitam di meja".<p>2. Contoh Program</p><p>Berikut contoh program sederhana yang menggunakan aturan dan fakta dalam pemrograman logika untuk menentukan apakah sebuah angka ganjil atau genap.<br /></p><p>% Fakta</p><p>genap(X) :- 0 is mod(X, 2).</p><p>ganjil(X) :- 1 is mod(X, 2).</p><p></p><p>% Aturan</p><p>tipe_angka(X) :- genap(X), write(X), write(' adalah bilangan genap').</p><p>tipe_angka(X) :- ganjil(X), write(X), write(' adalah bilangan ganjil').</p><p></p><p>% Contoh penggunaan</p><p>?- tipe_angka(4).</p><p>Output: 4 adalah bilangan genap</p><p></p><p>?- tipe_angka(7).</p><p>Output: 7 adalah bilangan ganjil</p><p></p><p>Pada program di atas/gambar, terdapat dua fakta yang didefinisikan, yaitu <strong>`genap(X)`</strong> dan <strong>ganjil(X)`</strong>, yang digunakan untuk menentukan apakah sebuah angka genap atau ganjil. Selain itu, terdapat satu aturan <strong>`tipe_angka(X)` </strong>yang menggunakan aturan konjungsi untuk mengecek apakah sebuah angka genap dan menggunakan aturan disjungsi untuk mengecek apakah sebuah angka ganjil. Dalam program ini, jika sebuah angka memenuhi kriteria genap atau ganjil, maka program akan mencetak hasil yang sesuai dengan aturan yang dipenuhi.</p><p>3. Penjelasan Program</p><p>Program sederhana di atas menggunakan konsep dasar pemrograman logika seperti aturan, fakta, konjungsi, disjungsi, dan negasi. Fakta <strong>`genap(X)`</strong> dan `<strong>ganjil(X)`</strong> menggunakan negasi dengan menggunakan fungsi `<strong>mod` </strong>untuk menentukan apakah sebuah angka habis dibagi dua atau tidak. Aturan `<strong>tipe_angka(X)`</strong> menggunakan konjungsi untuk mengecek apakah sebuah angka memenuhi kriteria genap, dan disjungsi untuk mengecek apakah sebuah angka memenuhi kriteria ganjil.</p><p>Program ini dapat digunakan untuk menentukan tipe sebuah angka (ganjil atau genap) secara otomatis, tanpa perlu dilakukan pengecekan manual. Dalam kasus lain, konsep dasar pemrograman logika dapat digunakan untuk menyelesaikan masalah lain dengan cara yang sama efisiennya.</p><br />
+                                            <h2 class="ez-toc-section" id="menghitung-luas-persegi-panjang-menggunakan-program-berulangsmk-pemrograman-dasar">
+                            27. menghitung luas persegi panjang menggunakan program berulang#SMK pemrograman Dasar</h2><br />
+                        2 x p + 2 x l =<br /><br />maaf kalau salah<br />
+                                            <h2 class="ez-toc-section" id="apa-output-atau-hasil-atau-yang-keluar-dari-program-diatasmateri-pemrograman-dasar-mohon-dijawab-%e2%80%8b">
+                            28. Apa output atau hasil atau yang keluar dari program diatasmateri pemrograman dasar mohon dijawab ​</h2><br />
+                        <p>Menurut program yang telah ditulis, kode program tersebut akan mengalami error saat proses Compile, sehingga tidak akan bisa memproses Output</p><p>Cara untuk memperbaiki hanya mengganti <strong>void </strong>dengan <strong>int</strong></p><p></p><p><strong>#include &lt;stdio.h&gt;
+</strong></p><p><strong>
+</strong></p><p><strong>int main() {
+</strong></p><p><strong>    printf("Aku sayang kamu, tapi kamu sayang dia");
+</strong></p><p><strong>}</strong></p><p><strong></strong></p><p></p><p>Sedangkan untuk output, telah saya sediakan pada gambar</p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-antara-program-pemrograman-programer-aplikasi-pemrograman-dan-bahasa-pemrograman">
+                            29. Apa perbedaan antara program, pemrograman, programer, aplikasi pemrograman dan bahasa pemrograman</h2><br />
+                        PROGRAM, PEMROGRAMAN, PROGRAMMER, APLIKASI PEMROGRAMAN, DAN BAHASA PEMROGRAMAN
+
+Jawaban
+<p><strong>Program
+</strong></p><p>Program adalah deretan instruksi yang diberikan kepada komputer untuk menjalankan suatu pekerjaan tertentu. Untuk menjalankan suatu perintah, komputer membutuhkan program. Program adalah perantara bagi komputer untuk menjalankan suatu perintah.
+</p><p><strong>Pemrograman
+</strong></p><p>Pemrograman adalah suatu proses penulisan dan penyuntingan kode sumber sehingga membentuk sebuah program. Bisa dikatakan bahwa pemrogramman adalah proses pembuatan sebuah program. Dalam proses ini dibutuhkan analisa, pengetesan, dan pembetulan kesalahan.  </p><p><strong>Programmer
+</strong></p><p>Programmer adalah orang yang menulis program. Programmer adalah seseorang yang memiliki kemampuan atau ahli di dalam bidang pemrogramman yang membuat atau merencanakan suatu program. Programmer membuat program di dalam komputer.
+</p><p><strong>Program Aplikasi
+</strong></p><p>Program Aplikasi adalah software atau perangkat lunak komputer yang dibuat untuk melakukan tugas tertentu. Software adalah jembatan antara user dengan hardware. Tanpa software, user tidak akan dapat memberikan perintah kepada hardware.  </p><p><strong>Bahasa Pemrograman
+</strong></p><p>Bahasa Pemrograman adalah untaian instruksi atau perintah yang biasanya terdiri dari banyak baris yang bisa dimengerti oleh komputer. Bahasa pemrograman adalah sesuatu yang harus dikuasai oleh seorang program developer. Ada banyak jenis Bahasa pemrogramman, diantaranya:
+</p>PHP
+<p>PHP (PHP Hypertext Pre-processor) merupakan Bahasa pemrograman yang paling banyak digunakan di Indonesia. PHP adalah Bahasa pemrograman gratis. Beberapa website ternama menggunakan PHP sebagai basicnya, diantaranya Facebook, Wordpress, dan Digg.
+</p>JAVA
+<p>Java merupakan Bahasa pemrograman yang dapat dijalankan di berbagai platform. Java dapat dijalankan di PC sampai perangkat mobile. Java adalah salah satu Bahasa pemrograman terpopuler di dunia.  </p>C
+<p>Bahasa C adalah salah satu Bahasa pemrograman tertua yang ada. Bahasa C dikembangkan dari sekitar tahun 70an. Bahasa C bisa dikatakan merupakan “bapak” dari Bahasa pemrograman lain seperti C++, Java, C#, dsb.
+</p><p>
+</p><p>Semoga membantu :)
+</p><p>
+</p><p><strong>Pelajari Lebih Lanjut
+</strong></p><p>https://brainly.co.id/tugas/433775
+</p><p>https://brainly.co.id/tugas/3361512
+</p><p>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------</p><p><strong>Detil Jawaban
+</strong></p><p>Kelas: 10
+</p><p>Mapel: TIK
+</p><p>Bab: 10.11.6
+</p><p>Kode: Mengenal Pemrograman Komputer
+</p><p>Kata Kunci: Pemrograman, Bahasa Pemrograman
+</p><br /><br />
+                                            <h2 class="ez-toc-section" id="1-perhatikan-kode-program-berikutoutput-yang-ditampilkan-pada-text-1-text-adalah-a-abc-db-8c-28d-48-2-terdapat-sebuah-string-dasar-pemrograman-agar-dapat-menampilkan-string-pemrograman">
+                            30. 1.perhatikan kode program berikut!output yang ditampilkan pada text 1. text adalah a. a/b+c-db. 8c. 28d. 48 2. terdapat sebuah string " dasar pemrograman". agar dapat menampilkan string "pemrograman", maka dapat menggunakan fungsi....a. right ("Dasar Pemrograman",13)b. left ("Dasar Pemrograman", 7)c. Len (" Pemrograman")d. Mid (" Dasar Pemrograman",7,11 ) plis jawab kak butuh bangetjawab yang benar yak ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. b.28</p><p></p><p>2. b. left ("Dasar Pemrograman",7) </p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/uqVJc9lLknA?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/the-writer-s-purpose-in-writing-the-text-is.html">The Writer s Purpose In Writing The Text Is</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/dina-hi-yuni-what-s-your-daughter-doing-these-days.html">Dina Hi Yuni What s Your Daughter Doing These Days</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/contoh-tari-tunggal-putra.html">Contoh Tari Tunggal Putra</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/gerakan-palang-tunggal.html">Gerakan Palang Tunggal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/gambar-segi-sembilan.html">Gambar Segi Sembilan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/struktur-lewis-hno3.html">Struktur Lewis Hno3</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/cara-pemasangan-voltmeter-dan-amperemeter-adalah.html">Cara Pemasangan Voltmeter Dan Amperemeter Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/teks-eksplanasi-lebih-banyak-menggunakan-bentuk-kalimat.html">Teks Eksplanasi Lebih Banyak Menggunakan Bentuk Kalimat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/kota-a-dan-kota-b-memiliki-jarak-800-km.html">Kota A Dan Kota B Memiliki Jarak 800 Km</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/tepuk-nyamuk-permainan.html">Tepuk Nyamuk Permainan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/berikut-merupakan-teknik-dasar-pencak-silat-kecuali.html">Berikut Merupakan Teknik Dasar Pencak Silat Kecuali</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/sifat-benda-cair-volumenya.html">Sifat Benda Cair Volumenya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/berikut-aktivitas-yang-menunjukkan-gaya-berupa-tarikan-adalah.html">Berikut Aktivitas Yang Menunjukkan Gaya Berupa Tarikan Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/descriptive-text-cristiano-ronaldo.html">Descriptive Text Cristiano Ronaldo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/nirleka-artinya.html">Nirleka Artinya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/lir-ilir-bertangga-nada.html">Lir Ilir Bertangga Nada</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/hewan-yang-mengalami-metagenesis.html">Hewan Yang Mengalami Metagenesis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/ringkasan-perjuangan-pangeran-diponegoro.html">Ringkasan Perjuangan Pangeran Diponegoro</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/berikut-yang-bukan-merupakan-tujuan-pementasan-pantomim-adalah.html">Berikut Yang Bukan Merupakan Tujuan Pementasan Pantomim Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/3-7-15-31.html">3 7 15 31</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://truestudy.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://truestudy.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

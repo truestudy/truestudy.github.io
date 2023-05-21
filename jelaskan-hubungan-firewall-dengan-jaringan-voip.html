@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jelaskan Hubungan Firewall Dengan Jaringan Voip - QnA</title>
+    <meta name="description" content="Jelaskan Hubungan Firewall Dengan Jaringan Voip, MAPEL TLJ FUNGSI FIREWALL PADA JARINGAN VOIP, , , , TKJ SMK TEKNOLOGI KARAWANG, 2020-11-18T01:00:48.000000Z, 20, Mikrotik VS Cisco. Perbandingan antara Mikrotik dan Cisco | by Afif, medium.com, 1400 x 793, jpeg, , 20, jelaskan-hubungan-firewall-dengan-jaringan-voip, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jelaskan Hubungan Firewall Dengan Jaringan Voip - QnA" />
+    <meta property="og:description" content="Jelaskan Hubungan Firewall Dengan Jaringan Voip, MAPEL TLJ FUNGSI FIREWALL PADA JARINGAN VOIP, , , , TKJ SMK TEKNOLOGI KARAWANG, 2020-11-18T01:00:48.000000Z, 20, Mikrotik VS Cisco. Perbandingan antara Mikrotik dan Cisco | by Afif, medium.com, 1400 x 793, jpeg, , 20, jelaskan-hubungan-firewall-dengan-jaringan-voip, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jelaskan Hubungan Firewall Dengan Jaringan Voip - QnA" />
+    <meta name="twitter:description" content="Jelaskan Hubungan Firewall Dengan Jaringan Voip, MAPEL TLJ FUNGSI FIREWALL PADA JARINGAN VOIP, , , , TKJ SMK TEKNOLOGI KARAWANG, 2020-11-18T01:00:48.000000Z, 20, Mikrotik VS Cisco. Perbandingan antara Mikrotik dan Cisco | by Afif, medium.com, 1400 x 793, jpeg, , 20, jelaskan-hubungan-firewall-dengan-jaringan-voip, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://truestudy.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://truestudy.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://truestudy.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://truestudy.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://truestudy.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://truestudy.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://truestudy.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://truestudy.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Jelaskan Hubungan Firewall Dengan Jaringan Voip</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">ida7541</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Jelaskan+Hubungan+Firewall+Dengan+Jaringan+Voip" alt="Jelaskan Hubungan Firewall Dengan Jaringan Voip">
+                    </div>
+                    <p></p>
+                    <p>jelaskan hubungan firewall dengan jaringan VoIP​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-hubungan-firewall-dengan-jaringan-voip%e2%80%8b">1.
+                                            jelaskan hubungan firewall dengan jaringan VoIP​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-saja-fungsi-dari-firewall-pada-jaringan-voip">2.
+                                            apa saja fungsi dari firewall pada jaringan voip</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#konfigurasi-firewall-pada-jaringan-voip">3.
+                                            konfigurasi firewall pada jaringan voip</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-3-jaringan-interface-pada-firewall-dmz">4.
+                                            Sebutkan dan jelaskan 3 jaringan interface pada firewall DMZ</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-configurasi-firewall-pada-voiptrmksh">5.
+                                            Apa Configurasi Firewall pada voip?
+Trmksh:)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-permasalahan-firewall-pada-jaringan-serta-cara-mengatasi">6.
+                                            sebutkan dan jelaskan permasalahan firewall pada jaringan serta cara mengatasi </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-contoh-penggunaan-voip-pada-jaringan%e2%80%8b">7.
+                                            jelaskan contoh penggunaan voip pada jaringan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jaringan-voip-merupakan-jaringan-dengan-struktur-yang-cukup-rumit-sehingga-keamanan-yang-dimiliki-pun-harus-lebih-terjamin-perlindungan-dengan-menggunakan-firewall-sangat-penting-untuk-komputasi-per">8.
+                                            Jaringan VoIP merupakan jaringan dengan struktur yang cukup rumit. Sehingga keamanan yang dimiliki pun harus lebih terjamin. Perlindungan dengan menggunakan firewall sangat penting untuk komputasi perangkat seperti komputer server yang diaktifkan dengan koneksi internet. Hal ini sebab ...A. firewall memiliki komponen-komponen yang dapat mencegah segala kemungkinan serangan pada jaringanB. firewall bekerja pada port IEEEC. firewall didesain untuk mengijinkan trusted data, menolak layanan yang mudah diserang, serta mencegah jaringan internal dari luarD. firewall dapat mencegah adanya human erro sehingga dapat memperkecil tingkat serangan pada jaringanE. firewall tidak harus melakukan pengaturan policy setting sehingga lebih aman pada jaringan VoIPhelp euy ^_^​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#seorang-teknisi-sedang-membangun-sebuah-jaringan-voip-di-salah-satu-perusahaaan-pertambangan-selanjutnya-teknisi-melakukan-pengonfigurasian-firewall-terlebih-dahulu-arsitektur-firewall-yang-mungkin">9.
+                                            Seorang teknisi sedang membangun sebuah jaringan voip di salah satu perusahaaan pertambangan. selanjutnya teknisi melakukan pengonfigurasian firewall terlebih dahulu. arsitektur firewall yang mungkin digunakan oleh teknisi tersebut yaitu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#proses-firewall-dalam-topologi-jaringan-yang-terhubung-internet-adalah">10.
+                                            Proses firewall dalam topologi jaringan yang terhubung Internet adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-permasalahan-firewall-pada-jaringan-serta-cara-mengatasi">11.
+                                            sebutkan dan jelaskan permasalahan firewall pada jaringan serta cara mengatasi </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-kekurangan-dan-kelebihan-dari-firewall-jaringan-voip">12.
+                                            sebutkan kekurangan dan kelebihan dari firewall jaringan voip?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-keuntungankerugian-ekstension-pada-jaringan-voip">13.
+                                            jelaskan keuntungan/kerugian ekstension pada jaringan voip</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#firewall-adalah-pelindung-teknologi-jaringan-sistem-informasi-jelaskan">14.
+                                            Firewall adalah pelindung teknologi jaringan sistem informasi.  Jelaskan! </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-apa-kaitan-firewall-pada-suatu-lalu-lintas-jaringan%e2%80%8b">15.
+                                            Jelaskan apa kaitan firewall pada suatu lalu lintas jaringan?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-hubungan-voip-dengan-jaringan-lokal%e2%80%8b">16.
+                                            Jelaskan hubungan VoIP dengan jaringan lokal​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-jaringan-internet-dgn-voip">17.
+                                            jelaskan perbedaan jaringan internet dgn voip</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-menyimplementasi-firewall-pada-voip">18.
+                                            bagaimana menyimplementasi firewall pada voip ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kelebihan-dan-kekurang-dari-masing-masing-arsitektur-firewall-pada-jaringan-voip%e2%80%8b">19.
+                                            kelebihan dan kekurang dari masing masing arsitektur firewall pada jaringan VoIP​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-mengenai-arsitektur-firewall-pada-jaringan-volp%e2%80%8b">20.
+                                             jelaskan mengenai arsitektur firewall pada jaringan volp​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-ancaman-dalam-sistem-jaringan-komputer-apabila-tidak-menggunakan-firewall%e2%80%8b">21.
+                                            Jelaskan ancaman dalam sistem jaringan komputer apabila tidak menggunakan firewall​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#konsep-firewall-pada-voip">22.
+                                            konsep firewall pada voip</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-jaringan-komputer-dengan-jaringan-voip%e2%80%8b">23.
+                                            perbedaan jaringan komputer dengan jaringan voip​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-jaringan-firewall-pada-voip-tolong-bantu-terima-kasih">24.
+                                            apa fungsi jaringan firewall pada voip tolong bantu terima kasih</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-dhcp-serta-apa-itu-firewall-dan-apa-fungsi-firewall-pada-jaringan-komputer-dan-voip">25.
+                                            Pengertian DHCP serta Apa itu Firewall dan Apa Fungsi Firewall Pada Jaringan Komputer Dan Voip</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-firewall-yang-dirancang-untuk-melindungi-sebuah-komputer-yang-terhubung-ke-jaringan-dari-akses-yang-tidak-dikehendaki-yaitu%e2%80%a6%c2%a0a-personal-firewallb-network-firewallc-packet-filte">26.
+                                            Jenis firewall yang dirancang untuk melindungi sebuah komputer yang terhubung ke jaringan dari akses yang tidak dikehendaki, yaitu… *a. Personal firewallb. Network firewallc. Packet-filter firewalld. Circuit level gatewaye. Application level firewall</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-4-kategori-gangguan-firewall-voip">27.
+                                            sebutkan 4 kategori gangguan firewall voip</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-langkah-langkah-melakukan-pemeriksaan-jaringan-firewall">28.
+                                            jelaskan langkah-langkah melakukan pemeriksaan jaringan firewall</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-bagaimana-menjaga-firewall-dalam-jaringan">29.
+                                            jelaskan bagaimana menjaga firewall dalam jaringan!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hubungan-voip-dengan-jaringan-ip-global">30.
+                                            Hubungan VoIP dengan jaringan IP Global?</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="jelaskan-hubungan-firewall-dengan-jaringan-voip%e2%80%8b">
+                            1. jelaskan hubungan firewall dengan jaringan VoIP​</h2><br />
+                        <p>firewall untuk melindungi pc dari serangan dari luar melalui TCP ataupun UDP sedangkan VoIP adalah Voice over IP jadi firewall harus mengijinkan IP asing agar bisa menggunakan VoIP</p><br />
+                                            <h2 class="ez-toc-section" id="apa-saja-fungsi-dari-firewall-pada-jaringan-voip">
+                            2. apa saja fungsi dari firewall pada jaringan voip</h2><br />
+                        VoIP memiliki ribuan port yang dapat diakses untuk berbagai keperluan. Firewall komputer bertugas menutup port-port tersebut kecuali beberapa port yang perlu tetap terbuka. Firewall di VoIP bertindak sebagai garis pertahanan pertama dalam mencegah semua jenis hacking. Menjaga informasi rahasia dan berharga agar tidak keluar tanpa diketahui oleh pengguna. Dan untuk memodifikasi paket data yang datang melalui firewall<br />
+                                            <h2 class="ez-toc-section" id="konfigurasi-firewall-pada-jaringan-voip">
+                            3. konfigurasi firewall pada jaringan voip</h2><br />
+                        funsi jaringan firewall pada jaringan voip:<br />--voip memiliki ribuan port yg dpt di akses untuk berbagai keperluan.<br />--firewall. pada voip bertindak sebagai garis pertahanan pertama dlm mencegah semua jenis hacking.<br />                      •••Semoga membantu •••<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-3-jaringan-interface-pada-firewall-dmz">
+                            4. Sebutkan dan jelaskan 3 jaringan interface pada firewall DMZ</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jaringan internet, jaringan internal dan jaringan khusus server</p><p><strong>Penjelasan:</strong></p><p>maaf ikut jawab</p><p>mudah-mudahan benar</p><br />
+                                            <h2 class="ez-toc-section" id="apa-configurasi-firewall-pada-voiptrmksh">
+                            5. Apa Configurasi Firewall pada voip?
+Trmksh:)</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Funsi jaringan firewall pada jaringan voip:</p><p>--voip memiliki ribuan port yg dpt di akses untuk berbagai keperluan.</p><p>--firewall. pada voip bertindak sebagai garis pertahanan pertama dlm mencegah semua jenis hacking.</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-permasalahan-firewall-pada-jaringan-serta-cara-mengatasi">
+                            6. sebutkan dan jelaskan permasalahan firewall pada jaringan serta cara mengatasi </h2><br />
+                        Firewal tidak terkonfigurasi dengan benar.<br />cara mengatasinya : lakukan traubleshoting pada konfigurasi firewall &amp; lakukan konfigurasi ulang firewalnya.<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-contoh-penggunaan-voip-pada-jaringan%e2%80%8b">
+                            7. jelaskan contoh penggunaan voip pada jaringan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Voice over Internet Protocol (juga disebut VoIP, IP Telephony, Internet telephony atau Digital Phone) adalah teknologi yang memungkinkan percakapan suara jarak jauh melalui media internet. Data suara diubah menjadi kode digital dan dialirkan melalui jaringan yang mengirimkan paket-paket data, dan bukan lewat sirkuit analog telepon biasa.</p><p></p><p>Definisi VoIP adalah suara yang dikirim melalui protokol internet (IP).</p><p></p><p>Protokol	</p><p>Perbandingan dengan jaringan suara konvensional	</p><p>Aplikasi VoIP dan Keamanannya	</p><p>Keuntungan VoIP	</p><p>Kelemahan dari VoIP	</p><p>Komunitas VoIP	</p><p>Kualitas suara	</p><p>Pranala luar</p><p><strong>Penjelasan:</strong></p><p>Semoga membantu ya</p><p><strong>Jawaban:</strong></p><p>Skype merupakan perangkat lunak komunikasi berbasis VoIP yang ditujukan untuk melakukan komunikasi antar pengguna Skype. Ketika pengguna Skype sedang online ia dapat mencari pengguna Skype lainnya. Skype diberikan fitur-fitur yang memudahkan penggunanya. Terdapat fitur SkypeOut dan SkypeIn, yang membuat pengguna Skype dapat terhubung dengan pengguna telepon konvensional dan seluler. Untuk menggunakan Skype, pengguna harus memiliki username dan password. Setiap username terdaftar dengan sebuah alamat email.</p><p></p><p>Microsoft NetMeeting dikembangkan oleh raksasa software sistem operasi Microsoft, merupakan perangkat lunak yang mendukung VoIP dan Video Conference. Software ini memanfaatkan protokol H.323 untuk Video dan Audio Conference.</p><p><strong>Penjelasan:</strong></p><p><strong>SEMO</strong><strong>GA</strong><strong> MEMBANTU</strong><strong>:</strong><strong>)</strong></p><p><strong>JDIKAN</strong><strong> </strong><strong>JAWABAN</strong><strong> TERBAIK</strong><strong> Y</strong><strong>;</strong><strong>)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="jaringan-voip-merupakan-jaringan-dengan-struktur-yang-cukup-rumit-sehingga-keamanan-yang-dimiliki-pun-harus-lebih-terjamin-perlindungan-dengan-menggunakan-firewall-sangat-penting-untuk-komputasi-per">
+                            8. Jaringan VoIP merupakan jaringan dengan struktur yang cukup rumit. Sehingga keamanan yang dimiliki pun harus lebih terjamin. Perlindungan dengan menggunakan firewall sangat penting untuk komputasi perangkat seperti komputer server yang diaktifkan dengan koneksi internet. Hal ini sebab ...A. firewall memiliki komponen-komponen yang dapat mencegah segala kemungkinan serangan pada jaringanB. firewall bekerja pada port IEEEC. firewall didesain untuk mengijinkan trusted data, menolak layanan yang mudah diserang, serta mencegah jaringan internal dari luarD. firewall dapat mencegah adanya human erro sehingga dapat memperkecil tingkat serangan pada jaringanE. firewall tidak harus melakukan pengaturan policy setting sehingga lebih aman pada jaringan VoIPhelp euy ^_^​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>kalo menurut aku <strong>(</strong><strong>c)</strong></p><p><strong>Penjelasan:</strong></p><p>maaf kalo <strong>salah</strong></p><br />
+                                            <h2 class="ez-toc-section" id="seorang-teknisi-sedang-membangun-sebuah-jaringan-voip-di-salah-satu-perusahaaan-pertambangan-selanjutnya-teknisi-melakukan-pengonfigurasian-firewall-terlebih-dahulu-arsitektur-firewall-yang-mungkin">
+                            9. Seorang teknisi sedang membangun sebuah jaringan voip di salah satu perusahaaan pertambangan. selanjutnya teknisi melakukan pengonfigurasian firewall terlebih dahulu. arsitektur firewall yang mungkin digunakan oleh teknisi tersebut yaitu</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Seorang teknisi sedang membangun sebuah jaringan voip di salah satu perusahaaan pertambangan. selanjutnya teknisi melakukan pengonfigurasian firewall terlebih dahulu. Arsitektur firewall yang mungkin digunakan oleh teknisi tersebut yaitu <strong>arsitektur screened subnet. </strong>Dalam penggunaan arsitektur screened subnet ini perubahaan akan lebih aman dalam hal pengamanan, karena arsitektur screened subne ini yaitu menambahkan sebuah layer pengaman tambahan pada arsitektur screened host.</p><p><strong>Penjelasan:</strong></p><p>Firewall merupakan program dari perangkat lunak yang bertujuan untuk mencegah akses ke jaringan pribadi sehingga data-data kita aman dari hacker.</p><p><strong>Pelajari lebih lanjut:</strong></p><p>Pelajari lebih lanjut materi firewall pada https://brainly.co.id/tugas/1287973</p><p><strong>#BelajarBersamaBrainly</strong></p><br />
+                                            <h2 class="ez-toc-section" id="proses-firewall-dalam-topologi-jaringan-yang-terhubung-internet-adalah">
+                            10. Proses firewall dalam topologi jaringan yang terhubung Internet adalah</h2><br />
+                        Posisi firewall dalam topologi jaringan yang terhubung Internet adalah di antara jaringan publik dan jaringan lokal.Jawabannya:<br />Di antara jaringan publik dan lokal<br /><br />Jadikan Terbaik Ya<br />Semoga Membantu<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-permasalahan-firewall-pada-jaringan-serta-cara-mengatasi">
+                            11. sebutkan dan jelaskan permasalahan firewall pada jaringan serta cara mengatasi </h2><br />
+                        <p>Kalo gw pake VPN om. Beres pokoknya. Bisa unblock web</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-kekurangan-dan-kelebihan-dari-firewall-jaringan-voip">
+                            12. sebutkan kekurangan dan kelebihan dari firewall jaringan voip?</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>kelebihanya</p><p>Mendeteksi adanya malware atau ancaman dari sebuah situs</p><p>Menjaga agar user tidak diarahkan ke dalam situs yang berbahaya</p><p>Memblokir situs – situs tertentu</p><p>Memperingatkan user ketika akan mendownload apapun yang berasal dari situs yang tidak aman</p><p>Mencegah pembajakan terhadap komputer user melalui jaringan komputer</p><p>Sangat berguna ketika user melakukan koneksi jaringan pada tempat umum</p><p></p><p>Kekurangan Firewall</p><p>Bukan merupakan antivirus, sehingga tidak pas untuk mencegah masuknya virus</p><p>Firewall tidak dapat membantu mencegah pencurian data ataupun peretasan yang dilakukan dari dalam</p><p>Tidak semua malware bisa terdeteksi dengan baik</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-keuntungankerugian-ekstension-pada-jaringan-voip">
+                            13. jelaskan keuntungan/kerugian ekstension pada jaringan voip</h2><br />
+                        keuntungan :<br />--&gt; lebih murah<br />--&gt; memanfaatkan infrastruktur yang sudah ada untuk suara<br />--&gt; lebih hemat bandwidth<br /><br />kerugian:<br />--&gt; kualitas lebih buruk daripada pstn<br />--&gt; terdapat delay dalam komunikasi<br />--&gt; peralatannya relatif mahal<br />
+                                            <h2 class="ez-toc-section" id="firewall-adalah-pelindung-teknologi-jaringan-sistem-informasi-jelaskan">
+                            14. Firewall adalah pelindung teknologi jaringan sistem informasi.  Jelaskan! </h2><br />
+                        Firewall adalah perangkat yang berguna untuk melindungi komputer dari masuknya suatu data yang berbahaya. <br /><br />Ketika ada data yang akan masuk kedalam komputer, data tersebut akan dipindai oleh firewall. Ketika data tersebut berbahaya, firewall akan memblokir data tersebut dan akan memberikan dialog bahwa data tersebut telah diblokir karena berbahaya dan tidak akan bisa diakses. (Windows Firewall) jika user mengizinkan masuknya data tersebut, komputer akan rentan terhadap kerusakan dari luar (data pribadi akan hilang, virus, dll)<br /><br />Maaf kalau salah<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-apa-kaitan-firewall-pada-suatu-lalu-lintas-jaringan%e2%80%8b">
+                            15. Jelaskan apa kaitan firewall pada suatu lalu lintas jaringan?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Firewall buat melindungi komputer dari serangan dari luar lewat TCP maupun UDP sedangkan VoIP ialah Voice over IP jadi firewall mesti memungkinkan IP asing biar bisa memakai VoIP.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-hubungan-voip-dengan-jaringan-lokal%e2%80%8b">
+                            16. Jelaskan hubungan VoIP dengan jaringan lokal​</h2><br />
+                        <p><strong>Jawaban:</strong></p>maaf saya tidak tahu:(<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-jaringan-internet-dgn-voip">
+                            17. jelaskan perbedaan jaringan internet dgn voip</h2><br />
+                        
+Perbedaan antara VoIP dengan jaringan suara konvensional adalah sistem 
+pengirimannya. Kalau jaringan suara konvensional langsung terhubung 
+dengan PABX yang biasa disebut Privat Automated Branch Exchange. Kalau 
+pesawat telepon milik perusahaan telkom langsung terhubung dengan STO 
+atau biasa disebut dengan STO (Sentral Telepon Otomat) terdekat. Di 
+dalam STO ini terdapat daftar nomor telepon yang tersusun bertingkat 
+sesuai dengan daerahnya.<br />
+Bentuk paling sederhana dalam sistem VoIP adalah dua komputer terhubung 
+dengan internet. Syarat dasar untuk mengadakan koneksi VoIP adalah harus
+ terkoneksi dengan internet dan mempunyai kartu suara yang dihubungkan 
+dengan speaker dan mikropon dan sebuah perangkat lunak bisa menggunaka 
+yahoo messenger, msn, dll.<br /><strong>-Voice over Internet Protocol</strong> adalah Teknologi 
+yang menjadikan media internet untuk <strong>bisa melakukan komunikasi suara 
+jarak jauh secara langsung</strong>. Sinyal suara analog, seperti yang anda 
+dengar ketika berkomunikasi di telepon diubah menjadi data digital dan 
+dikirimkan melalui jaringan berupa paket-paket data secara real time.<br />-jadi bisa dikatakan voip merupakan pengembangan dari penggunaan internet<br /><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-menyimplementasi-firewall-pada-voip">
+                            18. bagaimana menyimplementasi firewall pada voip ?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Konsep Firewall pada Jaringan VoIP</p><p></p><p>Jaringan VoIP adalah jaringan yang menyediakan layanan multimedia internet aplikasi, memiliki struktur yang cukup rumit dibanding dengan jaringan komputer.</p><p>Proses tersebut harus dirancang untuk menggambungkan control yang dapat mengatasi hal-hal seperti berikut:</p><p>· Mengidentifikasi ancaman yang berlaku</p><p>· Mengidentifikasi serangan dan meminimalkan peluang untuk serangan</p><p>· Meminimalkan dampak dari serangan (jika terjadi)</p><p>· Mengelola dan mengurangi serangan yang sukses secara tepat waktu</p><p></p><p>Ditinjau dariarsitekturnya mencakup :</p><p>1.    Network Segmentation</p><p>Segmentasi jaringan memberikan kemampuan untuk merampingkan dan mengontrol lalu lintas yang mengalir di antara komponen VoIP.</p><p></p><p>2.    Out-of-band Network Manajemen</p><p>Manajemen infrastruktur VoIP juga merupakan dimensi yang perlu dipertimbangkan dalam arsitektur VoIP. Manajemen jaringan VLAN memiliki visibilitas untuk semua VLAN dalam jaringan untuk memantau kesehatan semua komponen VoIP. Biasanya, komponen inti VoIP dikonfigurasi dengan dua antarmuka jaringan. Salah satu antarmuka ditugaskan untuk manajemen VLAN, dan lainnya ke VLAN produksi di mana sinyal dan media stream ditangani</p><p></p><p>3.    Private Addressing</p><p>Private Addressing digunakan sebagai mekanisme lain untuk melindungi terhadap serangan eksternal.</p><p></p><p>4.    Dalam hal pengendalian jaringan dengan menggunakan firewall, ada dua hal yang harus diperhatikan yaitu koneksi firewall yang digunakan (dalam hal ini yang digunakan adalah koneksi TCP), dan konsep firewall yang diterapkan, yaitu IPTables. Dengan dua hal ini diharapkan firewall dapat mengenali apakah koneksi yang ada berupa koneksi baru (NEW), koneksi yang telah ada (ESTABLISH), koneksi yang memiliki relasi dengan koneksi lainnya (RELATED) atau koneksi yang tidak valid (INVALID).  Keempat macam koneksi itulah yang membuat IPTables disebut Statefull Protocol.</p><p></p><p>5.    Berikut ini adalah langkah-langkah yang diperlukan dalam membangun sebuah firewall:</p><p>a. Menentukan topologi jaringan yang akan digunakan. Topologi dan kofigurasijaringan akan menentukan bagaimana firewall akan dibangun.</p><p>b. Menentukan kebijakan atau policy. Kebijakan yang perlu diatur di sini adalah penentuan aturan-aturan yang akan diberlakukan.</p><p>c. Menentukan aplikasi– aplikasi atau servis-servis apa saja yang akan berjalan. Aplikasi dan servis yang akan berjalan harus kita ketahui agar kita dapat menentukan aturanaturan yang lebih spesifik pada firewall kita.</p><p>d. Menentukan penggunapengguna mana saja yang akan dikenakan oleh satu atau lebih aturan firewall.</p><p>e. Menerapkan kebijakan, aturan, dan prosedur dalam implementasi firewall.</p><p></p><p>f. Sosialisasi kebijakan, aturan, dan prosedur yang sudah diterapkan. Batasi sosialisasi hanya kepada personil teknis yang diperlukan saja.</p><p></p><p><strong>Penjelasan:</strong></p><p></p><p>semoga bermanfaat</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="kelebihan-dan-kekurang-dari-masing-masing-arsitektur-firewall-pada-jaringan-voip%e2%80%8b">
+                            19. kelebihan dan kekurang dari masing masing arsitektur firewall pada jaringan VoIP​</h2><br />
+                        <p></p><p>Keuntungan Firewall :</p><p></p><p>Firewall  merupakan  fokus  dari segala  keputusan sekuritas.  Hal  ini  disebabkan  karena Firewall merupakan satu titik tempat keluar masuknya trafik internet pada suatu jaringan. </p><p></p><p>Firewall dapat menerapkan suatu  kebijaksanaan sekuritas. Banyak sekali service‐service yang digunakan di Internet. Tidak semua service tersebut aman digunakan, oleh karenanya Firewall  dapat  berfungsi sebagai  penjaga  untuk  mengawasi service‐service  mana  yang dapat digunakan untuk menuju dan meninggalkan suatu network. </p><p></p><p>Firewall dapat mencatat segala aktivitas yang berkaitan dengan alur data secara efisien. Semua  trafik  yang  melalui  Firewall  dapat  diamati  dan  dicatat  segala  aktivitas  yang berkenaan  dengan  alur  data tersebut.  Dengan  demikian  Network  Administrator  dapat segera  mengetahui  jika  terdapat  aktivitas‐aktivitas  yang  berusaha  untuk  menyerang internal network mereka. </p><p></p><p>Firewall dapat digunakan untuk membatasi pengunaan sumberdaya informasi. Mesin yang menggunakan  Firewall merupakan mesin  yang terhubung pada beberapa network  yang berbeda, sehingga kita dapat membatasi network mana saja yang dapat mengakses suatu service yang terdapat pada network lainnya.</p><p></p><p>Kelemahan Firewall :</p><p></p><p>Firewall tidak dapat melindungi network dari serangan koneksi yang tidak melewatinya(terdapat pintu lain menuju network tersebut).</p><p></p><p>Firewall tidak dapat melindungi dari serangan dengan metoda baru yang belum dikenal oleh Firewall.</p><p></p><p>Firewall tidak dapat melindungi dari serangan virus.</p><p></p><p>Pilihan klasifikasi desain Firewall :</p><p></p><p>Packet Filtering</p><p>Sistem paket filtering atau sering juga disebut dengan screening router adalah router yang melakukan routing paket antara internal dan eksternal network secara selektif sesuai dengan security policy yang digunakan pada network tersebut. Informasi yang digunakan untuk menyeleksi paket‐paket tersebut adalah:</p><p></p><p>IP address asal </p><p></p><p>IP address tujuan</p><p></p><p>Protocol (TCP, UDP, atau ICMP) </p><p></p><p>Port TCP atau UDP asal</p><p></p><p>Port TCP atau UDP tujuan</p><p></p><p>Beberapa contoh routing paket selektif yang dilakukan oleh Screening Router :  </p><p></p><p>Semua koneksi dari luar sistem yang menuju internal network diblokade kecuali untuk koneksi SMTP </p><p></p><p>Memperbolehkan  service  email  dan  FTP,  tetapi  memblok  service‐service berbahaya seperti TFTP, X Window, RPC dan ‘r’ service (rlogin, rsh, rcp, dan lain‐lain).</p><p></p><p>Selain memiliki keuntungan tertentu di antaranya aplikasi screening router ini dapat bersifat transparan dan implementasinya relatif lebih murah dibandingkan metode firewall  yang  lain, sistem paket filtering  ini memiliki beberapa  kekurangan  yakni : tingkat securitynya masih rendah, masih memungkinkan adanya IP Spoofing, tidak ada screening pada layer‐layer di atas network layer.</p><p></p><p> Application Level Gateway (Proxy Services)</p><p>Proxy service merupakan aplikasi spesifik atau program server yang dijalankan pada mesin Firewall, program ini mengambil user request untuk Internet service (seperti FTP, telnet, HTTP) dan meneruskannya (bergantung pada security policy) ke host yang  dituju.</p><p></p><p>Apa Itu VoIP?</p><p></p><p>Memiliki kepanjangan Voice Over Internet Protocol, VoIP teknologi yang dapat digunakan untuk melakukan percakapan merupakan jarak jauh. Media yang digunakan adalah intranet atau internet.</p><p>Secara umum, cara kerja VoIP adalah mengubah data menjadi kode digital. Kemudian kode tersebut melalui jaringan yang mengirimkan paket-paket data. Tidak ada sirkuit analog seperti yang terjadi pada telepon biasa.</p><p>Jika dilihat dari sejarahnya, teknologi VoIP adalah dasar dari Next Generation Network atau NGN dan jaringan seluler 4G . Munculnya teknologi ini berawal dari Radio Amatir sebagai media untuk relay jarak jauh atau eQSO.</p><p>Hubungan telepon dilakukan melalui terminal yaitu PC dan aplikasi. Istilah lain yang digunakan untuk menyebutkan VoIP adalah IP telepon. Teknologi ini dapat digunakan dengan lalu lintas suara yang berbentuk paket dari jaringan lokal dan global.</p><p></p><p>Mengenali Kekurangan VOIP</p><p></p><p>Walaupun terdapat kelebihan, ada juga kekurangan dari VoIP yang harus diperhatikan. Kelemahan yang terjadi jika hendak digunakan.</p><p></p><p>Kualitas suara tidak jernih</p><p>Karena menggunakan bandwidth yang kecil, efek yang dirasakan adalah kualitas suara menurun. Dibandingkan dengan PSTN konvensional, namun jika terdapat koneksi internet pita-lebar seperti Telkom Speedy maka kualitas suara pun akan jernih.</p><p>Adanya jeda komunikasi</p><p>Terkadang terjadi jeda, akibat dari proses perubahan suara dari data sehingga jeda jaringan pun terjadi.</p><p>Adanya batasan sambungan</p><p>Pemerintah RI menerapkan penggunaan jaringan yang dapat disambungkan ke jaringan milik Telkom.</p><p>Adanya konfigurasi khusus</p><p>Bagi komputer atau internet menggunakan NAT atau Network Address Translation maka perlu ada konfigurasi khusus dalam pembuatan VoIP agar bisa berjalan.</p><p>Peralatan yang relatif mahal</p><p>Alat VoIP yang digunakan cukup mahal yaitu alat untuk hubungan VoIP dengan PABX atau IP telephony gateway. Namun jika nanti alat ini cukup populer maka biayanya akan menurun.</p><p>Adanya potensi jaringan terhambat</p><p>Ketika VoIP sering digunakan dan banyak maka potensi data jaringan menjadi sangat mungkin terjadi.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-mengenai-arsitektur-firewall-pada-jaringan-volp%e2%80%8b">
+                            20.  jelaskan mengenai arsitektur firewall pada jaringan volp​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Firewall merupakan alat untuk mengimplementasikan kebijakan security (security policy). Sedangkan kebijakan security, dibuat berdasarkan perimbangan antara fasilitas yang disediakan dengan implikasi security-nya. Semakin ketat kebijakan security, semakin kompleks konfigurasi layanan informasi atau semakin sedikit fasilitas yang tersedia di jaringan.</p><p></p><p>Firewall juga berfungsi sebagai pintu penyangga antara jaringan yang dilindunginya dengan</p><p>Konsep Firewall pada Jaringan VoIP.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-ancaman-dalam-sistem-jaringan-komputer-apabila-tidak-menggunakan-firewall%e2%80%8b">
+                            21. Jelaskan ancaman dalam sistem jaringan komputer apabila tidak menggunakan firewall​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>karena kalau tidak menggunakan firewall virus rentan datang</p><br />
+                                            <h2 class="ez-toc-section" id="konsep-firewall-pada-voip">
+                            22. konsep firewall pada voip</h2><br />
+                         • Firewall merupakan alat untuk mengimplementasikan kebijakan security (security policy). Sedangkan kebijakan security, dibuat berdasarkan perimbangan antara fasilitas yang disediakan dengan implikasi security-nya. Semakin ketat kebijakan security, semakin kompleks konfigurasi layanan informasi atau semakin sedikit fasilitas yang tersedia di jaringan.<br /><br />• Firewall juga berfungsi sebagai pintu penyangga antara jaringan yang dilindunginya dengan dengan jaringan lainnya atau biasa disebut gateway.<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-jaringan-komputer-dengan-jaringan-voip%e2%80%8b">
+                            23. perbedaan jaringan komputer dengan jaringan voip​</h2><br />
+                        <p>Jaringan Komputer :</p><p></p><p>Hubungan satu sama lain komputer atau sekumpulan perangkat komputer dengan jangkauan kecil.</p><p></p><p>Bersifat Offline atau Peer to Peer.</p><p></p><p>Jaringan VoIP :  </p><p>Hubungan satu jaringan dengan lainnya dalam skala besar.</p><p></p><p>Menggunakan ISP atau layanan internet.</p><p></p><p>.</p><p>.</p><p>.</p><p>Semoga membantu</p><p>Greitsan George</p><p><strong>-=Oxford University Expert=-</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-jaringan-firewall-pada-voip-tolong-bantu-terima-kasih">
+                            24. apa fungsi jaringan firewall pada voip tolong bantu terima kasih</h2><br />
+                        <p>Mengontrol dan mengawasi paket data yang mengalir di jaringan, Firewall harus dapat mengatur, memfilter dan mengontrol lalu lintas data yang diizin untuk mengakses jaringan privat yang dilindungi firewall
+</p><p>Firewall harus dapat melakukan pemeriksaan terhadap paket data yang akan melawati jaringan privat
+</p><p>Melakukan autentifikasi terhadap akses
+</p><p>Firewall mampu memeriksa lebih dari sekedar header dari paket data, kemampuan ini menuntut firewall untuk mampu mendeteksi protokol aplikasi tertentu yang spesifikasi
+</p><p>Mencatat setiap transaksi kejadian yang terjadi di firewall. Ini memungkinkan membantu sebagai pendeteksian dini akan kemungkinan penjebolan jaringan</p><br />
+                                            <h2 class="ez-toc-section" id="pengertian-dhcp-serta-apa-itu-firewall-dan-apa-fungsi-firewall-pada-jaringan-komputer-dan-voip">
+                            25. Pengertian DHCP serta Apa itu Firewall dan Apa Fungsi Firewall Pada Jaringan Komputer Dan Voip</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>DHCP (Dynamic Host Configuration Protocol) adalah protokol yang berbasis arsitektur client/server yang dipakai untuk memudahkan pengalokasian alamat IP dalam satu jaringan.</p><p></p><p>Firewall adalah Tembok api, tembok pelindung atau dinding api adalah suatu sistem yang dirancang untuk mencegah akses yang tidak diinginkan dari atau ke dalam suatu jaringan internal.</p><p></p><p>Fungsi Firewall Pada Jaringan Komputer. Firewall berfungsi untuk mengontrol dan mengawasi arus paket data yang mengalir pada jaringan. Selain itu, fungsi firewall juga mencakup modifikasi paket data yang datang sehingga mampu menyembunyikan sebuah IP address</p><p></p><p>semoga membantu</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jenis-firewall-yang-dirancang-untuk-melindungi-sebuah-komputer-yang-terhubung-ke-jaringan-dari-akses-yang-tidak-dikehendaki-yaitu%e2%80%a6%c2%a0a-personal-firewallb-network-firewallc-packet-filte">
+                            26. Jenis firewall yang dirancang untuk melindungi sebuah komputer yang terhubung ke jaringan dari akses yang tidak dikehendaki, yaitu… *a. Personal firewallb. Network firewallc. Packet-filter firewalld. Circuit level gatewaye. Application level firewall</h2><br />
+                        <p><strong>A</strong><strong>.</strong><strong>Personal firewall</strong><strong>y</strong></p><p><strong>Firewall personal</strong></p><p><strong>Firewall personalFirewall jenis ini dirancang khusus untuk  memproteksi sebuah komputer yang terhubung ke jaringan dari akses yang tidak dikehendaki. tembok api jenis ini akhir-akhir ini berevolusi menjadi sebuah perpaduan acara yang bertujuan untuk mengamankan komputer secara total, dengan ditambahkannya berbagai fitur pengaman tambahan semacam perangkat proteksi terhadap virus, anti-spyware, anti-spam, dan lainnya. Biasanya Firewall personal berupa perangkat lunak atau software. Dan setiap software firewall memiliki fitur yang berbeda-beda pula</strong></p><p><strong>Firewall personalFirewall jenis ini dirancang khusus untuk  memproteksi sebuah komputer yang terhubung ke jaringan dari akses yang tidak dikehendaki. tembok api jenis ini akhir-akhir ini berevolusi menjadi sebuah perpaduan acara yang bertujuan untuk mengamankan komputer secara total, dengan ditambahkannya berbagai fitur pengaman tambahan semacam perangkat proteksi terhadap virus, anti-spyware, anti-spam, dan lainnya. Biasanya Firewall personal berupa perangkat lunak atau software. Dan setiap software firewall memiliki fitur yang berbeda-beda pulaContoh dari firewall personal , sebagai berikut microsoft windows firewall, symantec norton personal firewall, kerio personal firewall, dan lain-lainnya . Firewall Personal secara garis besarnya hanya  mempunyai dua fungsi pokok,  yaitu sebagai packet filter fir</strong></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-4-kategori-gangguan-firewall-voip">
+                            27. sebutkan 4 kategori gangguan firewall voip</h2><br />
+                        <p>4 kategori gangguan firewall voip yaitu:</p><p></p><p>1.Interruption</p><p></p><p>2.Interception</p><p></p><p>3.Modification</p><p></p><p><strong>4.fabrication</strong></p>Penjelasan
+<p>Hallo teman- teman BrainlyLovers!!! pada waktu luang kali ini kita bersama- sama akan  mencoba melakukan menjawab pertanyaan yang berhubungan dengan pelajaran sekolah menengah pertama mata pelajaran ilmu pengetahuan sosial. Semangat belajar yaa semoga sukses!!!</p><p></p><p>File transfer protocol atau FTP merupakan protokol internet yang beroperasi dalam level aplikasi merupakan standart dalam proses mentransfer file antar mesin komputer di dalam sebuah framework. FTP digunakan dalam arsitektur jaringan komputer pada client- server.</p><p></p><p>voIP merupakan suatu sistem yang harus menggunakan jaringan internet dalam mengirimkan data dalam bentuk suara dari 1 tempat ketempat yang lain dengan perantara protokol IP</p><p></p><p>4 kategori gangguan firewall voIP:</p><p></p><p>1.Interruption</p><p></p><p>Merupakan sebuah aset dalam sebuah sistem diserang hingga tidak dapat dipakai oleh seseorang yang berwenang</p><p></p><p>2.Interception</p><p></p><p>Merupakan sebuah pihak yang tidak memiliki wewenang mendapatkan akses pada sebuah aset</p><p></p><p>3.Modification</p><p></p><p>Merupakan sebuah pihak yang tidak memiliki wewenang tetapi dapat melakukan perubahan pada sebuah aset</p><p></p><p>4.Fabrocation</p><p></p><p>Merupakan sebuah pihak yang tidak mmemiliki wewenang menyisipkan objek yang palsu ke dalam aset.</p><p></p>Pelajari lebih lanjut
+<p>Adik-adik semua masih kepingin belajar materi ilmu pengetahuan sosial kan? Yuk adik-adik cek link di bawah ini yaa!!! Semoga dapat membantu adik-adik dalam belajar dan semoga membantu ya</p><p></p><p>1.Pengertian dari little space syndrome pada link berikut https://brainly.co.id/tugas/22231761#</p><p></p><p>2.Pendapat tentang kurangnya partisipasi masyarakat dama pembangunan di daerahnya pada link berikut https://brainly.co.id/tugas/18323544#</p><p></p><p>3.Kelebihan dan kekurangan analisis media massa pada link berikut https://brainly.co.id/tugas/9119481#</p><p></p>Detail jawaban
+<p>Kelas: 11</p><p></p><p>Mapel: sosiologi</p><p></p><p>Bab: kebudayaan dan multikulturalisme</p><p></p><p>Kode: 11.20.5</p><p></p><p>Kata kunci: penfertian FTP, pengertiap voIP, 4 kategori gangguan firewall voIP</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-langkah-langkah-melakukan-pemeriksaan-jaringan-firewall">
+                            28. jelaskan langkah-langkah melakukan pemeriksaan jaringan firewall</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>✨<strong>F</strong><strong>I</strong><strong>R</strong><strong>E</strong><strong>W</strong><strong>A</strong><strong>L</strong><strong>L</strong></p><p>Firewall adalah sebuah perangkat lunak atau sistem keamanan jaringan yang memonitor dan mengontrol semua yang keluar dan masuk ke lalu lintas jaringan berdasarkan aturan keamanan tingkat lanjut dan yang ditetapkan.</p><p></p><p>✨<strong>L</strong><strong>A</strong><strong>N</strong><strong>G</strong><strong>K</strong><strong>A</strong><strong>H</strong><strong>-</strong><strong>L</strong><strong>A</strong><strong>N</strong><strong>G</strong><strong>K</strong><strong>A</strong><strong>H</strong><strong> </strong><strong>M</strong><strong>E</strong><strong>L</strong><strong>A</strong><strong>K</strong><strong>U</strong><strong>K</strong><strong>A</strong><strong>N</strong><strong> </strong><strong>P</strong><strong>E</strong><strong>M</strong><strong>E</strong><strong>R</strong><strong>I</strong><strong>K</strong><strong>S</strong><strong>A</strong><strong>A</strong><strong>N</strong><strong> </strong><strong>J</strong><strong>A</strong><strong>R</strong><strong>I</strong><strong>N</strong><strong>G</strong><strong>A</strong><strong>N</strong><strong> </strong><strong>F</strong><strong>I</strong><strong>R</strong><strong>E</strong><strong>W</strong><strong>A</strong><strong>L</strong><strong>L</strong></p><p></p><p><strong>☆</strong><strong> </strong><strong>1. Packet Filtering</strong></p><p>Metode pertama adalah packet filtering alias penyaringan paket. Firewall packet filtering merupakan arsitektur yang tertua dan paling dasar.</p><p>pada dasarnya packet filtering ini melakukan pemeriksaan sederhana paket data di router maupun di switch. Kemudian, setelah itu informasi yang didapatkan seperti nomor port, alamat IP tujuan dan asal, juga informasi tingkat permukaan lainnya diperiksa tanpa membuka paket untuk memeriksa isinya. Langkah akhir adalah jika paket informasi tersebut setelah diperiksa tidak lulus inspeksi, maka paketnya akan dibuang.</p><p></p><p><strong>☆</strong><strong> </strong><strong>2. Stateful Inspection</strong></p><p>Hal ini digunakan untuk menentukan apakah informasi berwenang untuk menyebrangi firewall ke jaringan. Sedangkan Dosal menyebutkan bahwa metode firewall ini menggabungkan teknologi inspeksi paket dan verifikasi handshake TCP untuk menciptakan tingkat perlindungan yang lebih besar.</p><p></p><p><strong>☆</strong><strong> </strong><strong>3. Circuit-Level Gateways</strong></p><p>Circuit-Level Gateways berfungsi memverifikasi TCP (transmission control protocol) handshake karena dirancang untuk memastikan sesi dari suatu paket itu sah. Metode yang satu ini dimaksudkan untuk dengan mudah dan cepat untuk menyetujui atau menolak lalu lintas tanpa menggunakan sumber daya komputasi yang signifikan.</p><p></p><p><strong>☆</strong><strong> </strong> <strong>4. Firewall Proxy</strong></p><p>Metode selanjutnya adalah firewall proxy atau application-level gateway. Metode ini beroperasi pada lapisan aplikasi untuk memfilter lalu lintas masuk antara jaringan dan sumber lalu lintas. Kemudian dikirimkan melalui perangkat proxy lain maupun solusi berbasis cloud. Firewall proxy membuat koneksi ke sumber lalu lintas dan memeriksa data yang masuk daripada membiarkan lalu lintas terhubung langsung. </p><p></p><p><strong>☆</strong><strong> </strong><strong>5. Application Gateway</strong></p><p>Metode terakhir adalah application gateway atau dalam bahasa Indonesianya adalah gateway aplikasi. Apa maksudnya? Teknik gateway aplikasi ini menggunakan metode keamanan. Metode ini diterapkan pada aplikasi tertentu seperti Telnet dan server File Transfer Protocol.</p><p></p><p><strong>M</strong><strong>A</strong><strong>A</strong><strong>F</strong><strong> </strong><strong>A</strong><strong>P</strong><strong>A</strong><strong>B</strong><strong>I</strong><strong>L</strong><strong>A</strong><strong> </strong><strong>A</strong><strong>D</strong><strong>A</strong><strong> </strong><strong>K</strong><strong>E</strong><strong>S</strong><strong>A</strong><strong>L</strong><strong>A</strong><strong>H</strong><strong>A</strong><strong>N</strong><strong>.</strong><strong>.</strong></p><p><strong>S</strong><strong>E</strong><strong>M</strong><strong>O</strong><strong>G</strong><strong>A</strong><strong> </strong><strong>M</strong><strong>E</strong><strong>M</strong><strong>B</strong><strong>A</strong><strong>N</strong><strong>T</strong><strong>U</strong><strong> </strong><strong>Y</strong><strong>A</strong><strong>.</strong><strong>.</strong></p><p><strong>T</strong><strong>H</strong><strong>A</strong><strong>N</strong><strong>K</strong><strong> </strong><strong>Y</strong><strong>O</strong><strong>U</strong><strong>.</strong><strong>.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-bagaimana-menjaga-firewall-dalam-jaringan">
+                            29. jelaskan bagaimana menjaga firewall dalam jaringan!</h2><br />
+                        <p>Firewall bekerja dengan menyaring data (packet) antara jaringan di internet. Ia bisa membolehkan atau tidak membolehkan suatu packet diakses oleh sebuah komputer.</p><br />
+                                            <h2 class="ez-toc-section" id="hubungan-voip-dengan-jaringan-ip-global">
+                            30. Hubungan VoIP dengan jaringan IP Global?</h2><br />
+                        <p>Dari namanya saja kita sudah bisa menebak jika antara VoIP (Voice over Internet Protocol) dengan jaringan IP (Internet Protocol) global memiliki kaitan atau hubungan yang erat bukan? Dalam hal ini, perangkat yang digunakan untuk mentransmisikan suara yang berbentuk data digital VoIP menggunakan medium IP, dan akan saling terhubung dengan jaringan IP yang ada di seluruh dunia.   </p><p></p>Pembahasan:<p>Sederhananya VoIP adalah teknologi yang memungkinkan kita berkomunikasi dalam bentuk suara secara real time melalui internet. Pada umumnya setiap hal yang berkaitan dengan internet mau tidak mau akan menggunakan metode pengiriman data yang disebut dengan IP.</p><p></p><p>Sebagai ilustrasinya sebut saja kamu memiliki perangkat komputer dengan headset-nya. Nah, ketika melakukan panggilan VoIP komputer tersebut akan terhubung dengan internet melalui ISP yang akan memberikan alamat IP sebelum akhirnya dihubungkan dengan perangkat tujuan.</p><p></p><p>Oh ya, skema dari VoIP ini bisa bervariasi. Bisa antara perangkat digital (komputer, smartphone), analog seperti telepon biasa atau kombinasi diantara keduanya. </p><p></p>Pelajari lebih lanjut:<p>1. Apa yang dimaksud dengan instilah Voice over Internet Protocol atau VoiP? https://brainly.co.id/tugas/2286763</p><p>2. Prosedur komunikasi dengan metode VoIP https://brainly.co.id/tugas/15563383</p><p>3. Hubungan antara telepon SIP dan PBX Server https://brainly.co.id/tugas/22407044</p><p></p><p></p>Detil jawaban:<p>Kelas: 7</p><p>Mapel: TIK</p><p>Bab: Bab 3 - Peranan Teknologi Informasi dan Komunikasi dalam Kehidupan</p><p>Kode: 7.113</p><p></p><p><strong>Kata kunci:</strong> Voip, voice over internet protocol, ip, jaringan, internet</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/ULinLvaJsR8?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>fisika</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/the-medicine-is-intended-for-relieving.html">The Medicine Is Intended For Relieving</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/konjungsi-urutan-waktu-adalah.html">Konjungsi Urutan Waktu Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/sebutkan-besaran-besaran-pokok.html">Sebutkan Besaran Besaran Pokok</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/peta-konsep-klasifikasi-5-kingdom.html">Peta Konsep Klasifikasi 5 Kingdom</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/koordinat-kutub-dari-titik-2-2-adalah.html">Koordinat Kutub Dari Titik 2 2 Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/qs-an-nisa-ayat-101.html">Qs An Nisa Ayat 101</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/sebuah-bola-berongga-terbuat-dari-perunggu.html">Sebuah Bola Berongga Terbuat Dari Perunggu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/kelipatan-bilangan-3-4-dan-7-adalah.html">Kelipatan Bilangan 3 4 Dan 7 Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/panca-dasa-pramiteng-prabhu.html">Panca Dasa Pramiteng Prabhu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/diketahui-k-adalah-penyelesaian-dari-persamaan-1-per-6-x.html">Diketahui K Adalah Penyelesaian Dari Persamaan 1 Per 6 X</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/perbedaan-pola-penyajian.html">Perbedaan Pola Penyajian</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/arti-jadidun.html">Arti Jadidun</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/ciri-segi-banyak-tidak-beraturan.html">Ciri Segi Banyak Tidak Beraturan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/perbedaan-lem-fox-biru-dan-merah.html">Perbedaan Lem Fox Biru Dan Merah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/budak-yang-dimerdekakan-abu-bakar.html">Budak Yang Dimerdekakan Abu Bakar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/unsur-intrinsik-roro-mendut.html">Unsur Intrinsik Roro Mendut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/2kg-berapa-ons.html">2kg Berapa Ons</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/apa-kepanjangan-dari-pbsi.html">Apa Kepanjangan Dari Pbsi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/naskah-podcast.html">Naskah Podcast</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://truestudy.github.io/ibukota-negara-vietnam-adalah.html">Ibukota Negara Vietnam Adalah</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://truestudy.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://truestudy.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://truestudy.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
